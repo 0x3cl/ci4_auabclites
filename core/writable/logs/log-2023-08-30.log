@@ -1,0 +1,766 @@
+CRITICAL - 2023-08-30 00:07:33 --> syntax error, unexpected token ","
+in APPPATH\Views\Home\bulletin.php on line 15.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/bulletin', [], true)
+ 3 APPPATH\Controllers\Home\ViewsController.php(43): view('Home/bulletin')
+ 4 APPPATH\Controllers\Home\ViewsController.php(178): App\Controllers\Home\ViewsController->renderView('Home/bulletin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:10:22 --> preg_replace(): Unknown modifier '''
+in APPPATH\Views\Home\bulletin.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_replace(): Unknown modifier \'\'\'', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\bulletin.php', 15)
+ 2 APPPATH\Views\Home\bulletin.php(15): preg_replace('/[^A-Za-z0-9-]+/\'/', '-', 'No classes tomorrow August 05, 2023')
+ 3 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\bulletin.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/bulletin', [], true)
+ 6 APPPATH\Controllers\Home\ViewsController.php(43): view('Home/bulletin')
+ 7 APPPATH\Controllers\Home\ViewsController.php(178): App\Controllers\Home\ViewsController->renderView('Home/bulletin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin()
+ 9 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:10:32 --> preg_replace(): Unknown modifier '''
+in APPPATH\Views\Home\bulletin.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_replace(): Unknown modifier \'\'\'', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\bulletin.php', 15)
+ 2 APPPATH\Views\Home\bulletin.php(15): preg_replace('/[^A-Za-z0-9-]+/\'/', '-', 'No classes tomorrow August 05, 2023')
+ 3 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\bulletin.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/bulletin', [], true)
+ 6 APPPATH\Controllers\Home\ViewsController.php(43): view('Home/bulletin')
+ 7 APPPATH\Controllers\Home\ViewsController.php(178): App\Controllers\Home\ViewsController->renderView('Home/bulletin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin()
+ 9 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:13:39 --> preg_replace() expects at least 3 arguments, 1 given
+in APPPATH\Views\Home\bulletin.php on line 73.
+ 1 APPPATH\Views\Home\bulletin.php(73): preg_replace('2023\'s University Week')
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(43): view('Home/bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(178): App\Controllers\Home\ViewsController->renderView('Home/bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:14:34 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Home\bulletin.php on line 15.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/bulletin', [], true)
+ 4 APPPATH\Controllers\Home\ViewsController.php(43): view('Home/bulletin')
+ 5 APPPATH\Controllers\Home\ViewsController.php(178): App\Controllers\Home\ViewsController->renderView('Home/bulletin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:22:27 --> Class "App\Controllers\Home\PageNotFoundException" not found
+in APPPATH\Controllers\Home\ViewsController.php on line 190.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement')
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:24:15 --> Undefined variable $data
+in APPPATH\Controllers\Home\ViewsController.php on line 201.
+ 1 APPPATH\Controllers\Home\ViewsController.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Controllers\\Home\\ViewsController.php', 201)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement', 'no-classes-tomorrow-august-05-2023')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:24:20 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\templates\header.php on line 51.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home/templates/header', [], true)
+ 4 APPPATH\Controllers\Home\ViewsController.php(43): view('home/templates/header', [...])
+ 5 APPPATH\Controllers\Home\ViewsController.php(204): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement', 'no-classes-tomorrow-august-05-2023')
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:24:43 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\templates\header.php on line 51.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home/templates/header', [], true)
+ 4 APPPATH\Controllers\Home\ViewsController.php(43): view('home/templates/header', [...])
+ 5 APPPATH\Controllers\Home\ViewsController.php(210): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement', 'no-classes-tomorrow-august-05-2023')
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:26:09 --> in_array(): Argument #2 ($haystack) must be of type array, string given
+in APPPATH\Controllers\Home\ViewsController.php on line 206.
+ 1 APPPATH\Controllers\Home\ViewsController.php(206): in_array([...], 'announcement')
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement', 'no-classes-tomorrow-august-05-2023')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:35:36 --> Undefined array key "column"
+in APPPATH\Models\CustomModel.php on line 57.
+ 1 APPPATH\Models\CustomModel.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "column"', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Models\\CustomModel.php', 57)
+ 2 APPPATH\Controllers\Home\ViewsController.php(213): App\Models\CustomModel->get_data([...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement', 'no-classes-tomorrow-august-05-2023')
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:35:38 --> Undefined array key "column"
+in APPPATH\Models\CustomModel.php on line 57.
+ 1 APPPATH\Models\CustomModel.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "column"', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Models\\CustomModel.php', 57)
+ 2 APPPATH\Controllers\Home\ViewsController.php(213): App\Models\CustomModel->get_data([...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement', 'no-classes-tomorrow-august-05-2023')
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:38:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\templates\header.php on line 51.
+ 1 APPPATH\Views\Home\templates\header.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\templates\\header.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home/templates/header', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(43): view('home/templates/header', [...])
+ 6 APPPATH\Controllers\Home\ViewsController.php(247): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement', 'no-classes-tomorrow-august-05-2023')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:38:57 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Models\CustomModel.php on line 72.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\PROJECTS\\system\\latest_auabclites\\app\\Models\\CustomModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CustomModel')
+ 3 APPPATH\Controllers\Home\ViewsController.php(13): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CustomModel')
+ 4 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\Home\ViewsController->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(483): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:39:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\Home\templates\header.php on line 51.
+ 1 APPPATH\Views\Home\templates\header.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\templates\\header.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home/templates/header', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(43): view('home/templates/header', [...])
+ 6 APPPATH\Controllers\Home\ViewsController.php(247): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement', 'no-classes-tomorrow-august-05-2023')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:44:52 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\bulletin.php on line 22.
+ 1 APPPATH\Views\Home\bulletin.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\bulletin.php', 22)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(179): App\Controllers\Home\ViewsController->renderView('Home/bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:44:53 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\home.php on line 70.
+ 1 APPPATH\Views\Home\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 6 APPPATH\Controllers\Home\ViewsController.php(105): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:44:54 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\home.php on line 70.
+ 1 APPPATH\Views\Home\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 6 APPPATH\Controllers\Home\ViewsController.php(105): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:45:16 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\home.php on line 70.
+ 1 APPPATH\Views\Home\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 6 APPPATH\Controllers\Home\ViewsController.php(105): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:45:20 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\home.php on line 70.
+ 1 APPPATH\Views\Home\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 6 APPPATH\Controllers\Home\ViewsController.php(105): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:45:28 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\home.php on line 70.
+ 1 APPPATH\Views\Home\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 6 APPPATH\Controllers\Home\ViewsController.php(105): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:45:56 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\home.php on line 70.
+ 1 APPPATH\Views\Home\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 6 APPPATH\Controllers\Home\ViewsController.php(105): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:46:22 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\home.php on line 70.
+ 1 APPPATH\Views\Home\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 6 APPPATH\Controllers\Home\ViewsController.php(105): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:46:36 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\home.php on line 70.
+ 1 APPPATH\Views\Home\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 6 APPPATH\Controllers\Home\ViewsController.php(105): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:46:48 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\home.php on line 70.
+ 1 APPPATH\Views\Home\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 6 APPPATH\Controllers\Home\ViewsController.php(105): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:46:52 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\home.php on line 70.
+ 1 APPPATH\Views\Home\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 6 APPPATH\Controllers\Home\ViewsController.php(105): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:46:58 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\home.php on line 70.
+ 1 APPPATH\Views\Home\home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php', 70)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 6 APPPATH\Controllers\Home\ViewsController.php(105): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:48:43 --> Too few arguments to function App\Controllers\Home\ViewsController::bulletin_view(), 1 passed in D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php on line 915 and at least 2 expected
+in APPPATH\Controllers\Home\ViewsController.php on line 183.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement')
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 00:56:13 --> Undefined variable $new
+in APPPATH\Controllers\Home\ViewsController.php on line 228.
+ 1 APPPATH\Controllers\Home\ViewsController.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $new', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Controllers\\Home\\ViewsController.php', 228)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 01:01:28 --> syntax error, unexpected single-quoted string "join", expecting "]"
+in APPPATH\Controllers\Home\ViewsController.php on line 129.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\PROJECTS\\system\\latest_auabclites\\app\\Controllers\\Home\\ViewsController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home\\ViewsController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home\\ViewsController')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Home\\ViewsController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 01:36:24 --> Undefined array key 0
+in APPPATH\Controllers\Home\ViewsController.php on line 231.
+ 1 APPPATH\Controllers\Home\ViewsController.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Controllers\\Home\\ViewsController.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 01:36:44 --> Attempt to read property "category" on array
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 9.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 9)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(240): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 01:36:46 --> Attempt to read property "category" on array
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 9.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 9)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(240): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 01:36:47 --> Attempt to read property "category" on array
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 9.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 9)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(240): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 01:37:56 --> Undefined array key 0
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 9.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 9)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(240): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 01:39:57 --> Undefined array key 0
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 34.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 34)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(240): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-30 01:59:59 --> mysqli_sql_exception: Unknown column 'lites_bulletin_image.is_banner' in 'where clause' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(233): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-30 01:59:59 --> Unknown column 'lites_bulletin_image.is_banner' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lites_bulletin`
+WHERE `lites_bulletin_image`.`is_banner` = :lites_bulletin_image.is_banner:
+AND `lites_bulletin`.`bulletin_id` = :lites_bulletin.bulletin_id:', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(233): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-30 02:00:09 --> mysqli_sql_exception: Unknown column 'lites_bulletin.bulletin_id' in 'where clause' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(233): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-30 02:00:09 --> Unknown column 'lites_bulletin.bulletin_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lites_bulletin_image`
+WHERE `lites_bulletin_image`.`is_banner` = :lites_bulletin_image.is_banner:
+AND `lites_bulletin`.`bulletin_id` = :lites_bulletin.bulletin_id:', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(233): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 02:47:20 --> Undefined variable $announcement
+in APPPATH\Controllers\Home\ViewsController.php on line 212.
+ 1 APPPATH\Controllers\Home\ViewsController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $announcement', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Controllers\\Home\\ViewsController.php', 212)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 03:30:20 --> Call to undefined function format_timestamp_to_data()
+in APPPATH\Views\Admin\sub-pages\delete-bulletin.php on line 36.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/sub-pages/delete-bulletin', [], true)
+ 4 APPPATH\Controllers\Admin\ViewsController.php(56): view('Admin/sub-pages/delete-bulletin')
+ 5 APPPATH\Controllers\Admin\ViewsController.php(592): App\Controllers\Admin\ViewsController->renderView('Admin/sub-pages/delete-bulletin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->delete_bulletin('105')
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 03:30:50 --> Undefined variable $value
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 133.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 133)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(334): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('announcement')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-30 04:32:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'auabclites', 3306, '', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Admin\ViewsController.php(115): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->dashboard()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\PROJECTS\system\latest_auabclites\app\Controllers\Admin\ViewsController.php(115): App\Models\CustomModel->get_data(Array)
+#5 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->dashboard()
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#10 {main}
+CRITICAL - 2023-08-30 04:32:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lites_user_widgets`
+ORDER BY `widget_id` ASC', [], false)
+ 3 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Admin\ViewsController.php(115): App\Models\CustomModel->get_data([...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 04:46:10 --> Call to undefined function Config\group()
+in APPPATH\Config\Routes.php on line 57.
+ 1 SYSTEMPATH\Router\RouteCollection.php(770): CodeIgniter\Router\RouteCollection->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 2 APPPATH\Config\Routes.php(46): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+ 3 SYSTEMPATH\Router\RouteCollection.php(337): require('D:\\PROJECTS\\system\\latest_auabclites\\app\\Config\\Routes.php')
+ 4 SYSTEMPATH\CodeIgniter.php(783): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-30 06:19:05 --> mysqli_sql_exception: Table 'auabclites.lites_factulty' doesn't exist in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(362): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-30 06:19:05 --> Table 'auabclites.lites_factulty' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lites_factulty`', [], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(362): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 06:19:19 --> Undefined array key "site_faculty"
+in APPPATH\Views\Home\faculty.php on line 14.
+ 1 APPPATH\Views\Home\faculty.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "site_faculty"', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\faculty.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\faculty.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/faculty', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/faculty')
+ 6 APPPATH\Controllers\Home\ViewsController.php(372): App\Controllers\Home\ViewsController->renderView('Home/faculty', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 06:19:27 --> Undefined array key "site_faculty"
+in APPPATH\Views\Home\faculty.php on line 14.
+ 1 APPPATH\Views\Home\faculty.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "site_faculty"', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\faculty.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\faculty.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/faculty', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/faculty')
+ 6 APPPATH\Controllers\Home\ViewsController.php(372): App\Controllers\Home\ViewsController->renderView('Home/faculty', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 06:19:28 --> Undefined array key "site_faculty"
+in APPPATH\Views\Home\faculty.php on line 14.
+ 1 APPPATH\Views\Home\faculty.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "site_faculty"', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\faculty.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\faculty.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/faculty', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/faculty')
+ 6 APPPATH\Controllers\Home\ViewsController.php(372): App\Controllers\Home\ViewsController->renderView('Home/faculty', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 06:51:00 --> Undefined property: stdClass::$description
+in APPPATH\Views\Admin\sub-pages\update-faculty.php on line 77.
+ 1 APPPATH\Views\Admin\sub-pages\update-faculty.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$description', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Admin\\sub-pages\\update-faculty.php', 77)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Admin\\sub-pages\\update-faculty.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/sub-pages/update-faculty', [], true)
+ 5 APPPATH\Controllers\Admin\ViewsController.php(56): view('Admin/sub-pages/update-faculty')
+ 6 APPPATH\Controllers\Admin\ViewsController.php(694): App\Controllers\Admin\ViewsController->renderView('Admin/sub-pages/update-faculty', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->update_faculty('12')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 06:59:19 --> explode(): Argument #2 ($string) must be of type string, stdClass given
+in APPPATH\Views\Home\faculty.php on line 41.
+ 1 APPPATH\Views\Home\faculty.php(41): explode('\\n', Object(stdClass))
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\faculty.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/faculty', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/faculty')
+ 6 APPPATH\Controllers\Home\ViewsController.php(372): App\Controllers\Home\ViewsController->renderView('Home/faculty', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-30 07:28:46 --> Undefined property: stdClass::$position
+in APPPATH\Views\Home\faculty.php on line 46.
+ 1 APPPATH\Views\Home\faculty.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$position', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\faculty.php', 46)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\faculty.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/faculty', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/faculty')
+ 6 APPPATH\Controllers\Home\ViewsController.php(372): App\Controllers\Home\ViewsController->renderView('Home/faculty', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-30 07:31:53 --> mysqli_sql_exception: Unknown column 'lites_faculty_positions' in 'field list' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_f...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_f...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_f...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_f...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(362): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-30 07:31:53 --> Unknown column 'lites_faculty_positions' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_faculty`.`first_name`, `lites_faculty`.`last_name`, `lites_faculty`.`description`, `lites_faculty`.`image`, `lites_faculty_positions` as `position`
+FROM `lites_faculty`
+INNER JOIN `lites_faculty_positions` ON `lites_faculty_positions`.`faculty_id` = `lites_faculty`.`position`', [], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(362): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-30 07:32:31 --> mysqli_sql_exception: Unknown column 'lites_faculty_positions' in 'field list' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_f...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_f...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_f...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_f...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(362): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-30 07:32:31 --> Unknown column 'lites_faculty_positions' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_faculty`.`first_name`, `lites_faculty`.`last_name`, `lites_faculty`.`description`, `lites_faculty`.`image`, `lites_faculty_positions` as `position`
+FROM `lites_faculty`
+INNER JOIN `lites_faculty_positions` ON `lites_faculty_positions`.`id` = `lites_faculty`.`position`', [], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(362): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-30 07:33:21 --> mysqli_sql_exception: Unknown column 'lites_faculty_positions' in 'field list' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_f...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_f...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_f...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_f...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(362): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-30 07:33:21 --> Unknown column 'lites_faculty_positions' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_faculty`.`first_name`, `lites_faculty`.`last_name`, `lites_faculty`.`description`, `lites_faculty`.`image`, `lites_faculty_positions` as `position`
+FROM `lites_faculty`
+INNER JOIN `lites_faculty_positions` ON `lites_faculty_positions`.`id` = `lites_faculty`.`position_id`', [], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(362): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-30 09:20:37 --> mysqli_sql_exception: Unknown column 'lites_position.id' in 'order clause' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_f...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_f...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_f...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_f...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(362): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-30 09:20:37 --> Unknown column 'lites_position.id' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_faculty`.`id`, `lites_faculty`.`image`, `lites_faculty`.`first_name`, `lites_faculty`.`last_name`, `lites_faculty_positions`.`id` as `position_id`, `lites_faculty_positions`.`position` as `position`, `lites_faculty`.`description`
+FROM `lites_faculty`
+INNER JOIN `lites_faculty_positions` ON `lites_faculty`.`position_id` = `lites_faculty_positions`.`id`
+ORDER BY `lites_position`.`id` DESC', [], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(362): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->faculty()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')

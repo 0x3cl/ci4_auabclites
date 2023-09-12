@@ -1,0 +1,13 @@
+CRITICAL - 2023-09-04 01:33:25 --> Undefined variable $current_page
+in APPPATH\Views\Home\sub-pages\view-news-page.php on line 76.
+ 1 APPPATH\Views\Home\sub-pages\view-news-page.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_page', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-news-page.php', 76)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-news-page.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-news-page', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-news-page')
+ 6 APPPATH\Controllers\Home\ViewsController.php(431): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-news-page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_news('3')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')

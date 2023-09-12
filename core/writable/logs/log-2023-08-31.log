@@ -1,0 +1,928 @@
+ERROR - 2023-08-31 04:08:45 --> mysqli_sql_exception: Unknown column 'lites_officers_positions.id' in 'order clause' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 04:08:45 --> Unknown column 'lites_officers_positions.id' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lites_officers`
+ORDER BY `lites_officers_positions`.`id` ASC', [], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:10:24 --> Undefined array key "type"
+in APPPATH\Models\CustomModel.php on line 27.
+ 1 APPPATH\Models\CustomModel.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "type"', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Models\\CustomModel.php', 27)
+ 2 APPPATH\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data([...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:10:26 --> Undefined array key "type"
+in APPPATH\Models\CustomModel.php on line 27.
+ 1 APPPATH\Models\CustomModel.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "type"', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Models\\CustomModel.php', 27)
+ 2 APPPATH\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data([...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 04:10:38 --> mysqli_sql_exception: Unknown column 'lites_officers_positions.id' in 'order clause' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 04:10:38 --> Unknown column 'lites_officers_positions.id' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lites_officers`
+INNER JOIN `lites_positions` ON `lites_officers`.`position_id` = `lites_positions`.`id`
+ORDER BY `lites_officers_positions`.`id` ASC', [], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:14:04 --> syntax error, unexpected token ".", expecting variable or "{" or "$"
+in APPPATH\Views\Home\officers.php on line 14.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/officers', [], true)
+ 3 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/officers')
+ 4 APPPATH\Controllers\Home\ViewsController.php(421): App\Controllers\Home\ViewsController->renderView('Home/officers', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:22:13 --> Undefined array key "site_offcers"
+in APPPATH\Views\Home\officers.php on line 15.
+ 1 APPPATH\Views\Home\officers.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "site_offcers"', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/officers', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/officers')
+ 6 APPPATH\Controllers\Home\ViewsController.php(421): App\Controllers\Home\ViewsController->renderView('Home/officers', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:24:37 --> Undefined array key 26
+in APPPATH\Views\Home\officers.php on line 26.
+ 1 APPPATH\Views\Home\officers.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 26', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php', 26)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/officers', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/officers')
+ 6 APPPATH\Controllers\Home\ViewsController.php(421): App\Controllers\Home\ViewsController->renderView('Home/officers', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:24:46 --> Undefined array key 26
+in APPPATH\Views\Home\officers.php on line 26.
+ 1 APPPATH\Views\Home\officers.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 26', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php', 26)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/officers', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/officers')
+ 6 APPPATH\Controllers\Home\ViewsController.php(421): App\Controllers\Home\ViewsController->renderView('Home/officers', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:28:25 --> Unsupported operand types: string + int
+in APPPATH\Views\Home\officers.php on line 22.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/officers', [], true)
+ 4 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/officers')
+ 5 APPPATH\Controllers\Home\ViewsController.php(421): App\Controllers\Home\ViewsController->renderView('Home/officers', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:28:30 --> Attempt to read property "last_name" on string
+in APPPATH\Views\Home\officers.php on line 26.
+ 1 APPPATH\Views\Home\officers.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "last_name" on string', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php', 26)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/officers', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/officers')
+ 6 APPPATH\Controllers\Home\ViewsController.php(421): App\Controllers\Home\ViewsController->renderView('Home/officers', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:29:17 --> Undefined variable $officers
+in APPPATH\Views\Home\officers.php on line 21.
+ 1 APPPATH\Views\Home\officers.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $officers', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/officers', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/officers')
+ 6 APPPATH\Controllers\Home\ViewsController.php(421): App\Controllers\Home\ViewsController->renderView('Home/officers', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:30:31 --> array_splice() expects at least 2 arguments, 1 given
+in APPPATH\Views\Home\officers.php on line 19.
+ 1 APPPATH\Views\Home\officers.php(19): array_splice([...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/officers', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/officers')
+ 6 APPPATH\Controllers\Home\ViewsController.php(421): App\Controllers\Home\ViewsController->renderView('Home/officers', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:30:33 --> array_splice() expects at least 2 arguments, 1 given
+in APPPATH\Views\Home\officers.php on line 19.
+ 1 APPPATH\Views\Home\officers.php(19): array_splice([...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/officers', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/officers')
+ 6 APPPATH\Controllers\Home\ViewsController.php(421): App\Controllers\Home\ViewsController->renderView('Home/officers', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 04:39:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`last_name`, `lites_officers`.`image`, `lites_officers`.`name` as `position`...' at line 1 in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_o...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_o...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_o...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_o...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 04:39:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`last_name`, `lites_officers`.`image`, `lites_officers`.`name` as `position`...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_officers`.`first_name`. `lites_officers`.`last_name`, `lites_officers`.`image`, `lites_officers`.`name` as `position`
+FROM `lites_officers`
+INNER JOIN `lites_positions` ON `lites_officers`.`position_id` = `lites_positions`.`id`
+ORDER BY `lites_officers`.`position_id` ASC', [], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 04:39:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`last_name`, `lites_officers`.`image`, `lites_officers`.`name` as `position`...' at line 1 in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_o...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_o...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_o...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_o...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 04:39:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`last_name`, `lites_officers`.`image`, `lites_officers`.`name` as `position`...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_officers`.`first_name`. `lites_officers`.`last_name`, `lites_officers`.`image`, `lites_officers`.`name` as `position`
+FROM `lites_officers`
+INNER JOIN `lites_positions` ON `lites_officers`.`position_id` = `lites_positions`.`id`
+ORDER BY `lites_officers`.`position_id` ASC', [], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 04:40:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`last_name`, `lites_officers`.`image`, `lites_positions`.`name` as `position...' at line 1 in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_o...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_o...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_o...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_o...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 04:40:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`last_name`, `lites_officers`.`image`, `lites_positions`.`name` as `position...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_officers`.`first_name`. `lites_officers`.`last_name`, `lites_officers`.`image`, `lites_positions`.`name` as `position`
+FROM `lites_officers`
+INNER JOIN `lites_positions` ON `lites_officers`.`position_id` = `lites_positions`.`id`
+ORDER BY `lites_officers`.`position_id` ASC', [], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 04:40:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`last_name`, `lites_officers`.`image`, `lites_positions`.`name` as `position...' at line 1 in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_o...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_o...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_o...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_o...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 04:40:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`last_name`, `lites_officers`.`image`, `lites_positions`.`name` as `position...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_officers`.`first_name`. `lites_officers`.`last_name`, `lites_officers`.`image`, `lites_positions`.`name` as `position`
+FROM `lites_officers`
+INNER JOIN `lites_positions` ON `lites_officers`.`position_id` = `lites_positions`.`id`
+ORDER BY `lites_officers`.`position_id` ASC', [], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(403): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 04:47:30 --> Undefined variable $key
+in APPPATH\Views\Home\officers.php on line 15.
+ 1 APPPATH\Views\Home\officers.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\officers.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/officers', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/officers')
+ 6 APPPATH\Controllers\Home\ViewsController.php(423): App\Controllers\Home\ViewsController->renderView('Home/officers', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->officers()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 09:08:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'auabclites', 3306, '', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(66): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(66): App\Models\CustomModel->get_data(Array)
+#5 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#10 {main}
+CRITICAL - 2023-08-31 09:08:49 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lites_images`', [], false)
+ 3 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home\ViewsController.php(66): App\Models\CustomModel->get_data([...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 09:22:12 --> Undefined variable $render
+in APPPATH\Controllers\Home\ViewsController.php on line 195.
+ 1 APPPATH\Controllers\Home\ViewsController.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $render', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Controllers\\Home\\ViewsController.php', 195)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news', '1', '2023s-university-week')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 09:26:23 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\templates\header.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home/templates/header', [], true)
+ 4 APPPATH\Controllers\Home\ViewsController.php(43): view('home/templates/header', [...])
+ 5 APPPATH\Controllers\Home\ViewsController.php(337): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news', '106', '2023s-university-week')
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 09:26:25 --> Cannot access offset of type string on string
+in APPPATH\Views\Home\templates\header.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home/templates/header', [], true)
+ 4 APPPATH\Controllers\Home\ViewsController.php(43): view('home/templates/header', [...])
+ 5 APPPATH\Controllers\Home\ViewsController.php(337): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news', '106', '2023s-university-week')
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 09:41:00 --> Undefined variable $value
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 145.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 145)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(337): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news', '106', 'newly-elected-officers')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 09:42:06 --> Undefined array key "bulletin"
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 144.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bulletin"', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 144)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(337): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news', '106', 'newly-elected-officers')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 09:42:09 --> Attempt to read property "title" on array
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 144.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 144)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(337): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news', '106', 'newly-elected-officers')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 10:11:29 --> Call to undefined function format_timestamp_to_data()
+in APPPATH\Views\Admin\manage-research.php on line 41.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/manage-research', [], true)
+ 4 APPPATH\Controllers\Admin\ViewsController.php(56): view('Admin/manage-research')
+ 5 APPPATH\Controllers\Admin\ViewsController.php(946): App\Controllers\Admin\ViewsController->renderView('Admin/manage-research', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_research()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 10:16:01 --> Call to undefined function format_timestamp_date()
+in APPPATH\Views\Home\research.php on line 19.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/research', [], true)
+ 4 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/research')
+ 5 APPPATH\Controllers\Home\ViewsController.php(468): App\Controllers\Home\ViewsController->renderView('Home/research', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 10:36:18 --> Undefined array key "bulletin_data"
+in APPPATH\Views\Home\research.php on line 13.
+ 1 APPPATH\Views\Home\research.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bulletin_data"', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\research.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\research.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/research', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/research')
+ 6 APPPATH\Controllers\Home\ViewsController.php(468): App\Controllers\Home\ViewsController->renderView('Home/research', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 10:36:36 --> Undefined property: stdClass::$id
+in APPPATH\Views\Home\research.php on line 16.
+ 1 APPPATH\Views\Home\research.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\research.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\research.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/research', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/research')
+ 6 APPPATH\Controllers\Home\ViewsController.php(468): App\Controllers\Home\ViewsController->renderView('Home/research', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 10:53:00 --> mysqli_sql_exception: Unknown column 'lites_reseach_technologies.name' in 'field list' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(524): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 10:53:00 --> Unknown column 'lites_reseach_technologies.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_reseach_technologies`.`name` as `technologies`
+FROM `lites_research_technologies`
+INNER JOIN `lites_technologies` ON `lites_technologies`.`id` = `lites_research_technologies`.`technologies_id`
+WHERE `lites_research_technologies`.`research_id` = :lites_research_technologies.research_id:', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(524): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 10:56:04 --> mysqli_sql_exception: Unknown column 'lites_research_platforms.technologies_id' in 'on clause' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_p...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_p...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_p...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_p...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(524): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 10:56:04 --> Unknown column 'lites_research_platforms.technologies_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_platforms`.`name` as `platforms`
+FROM `lites_research_platforms`
+INNER JOIN `lites_platforms` ON `lites_platforms`.`id` = `lites_research_platforms`.`technologies_id`
+WHERE `lites_research_platforms`.`research_id` = :lites_research_platforms.research_id:', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(524): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 10:57:40 --> mysqli_sql_exception: Unknown column 'lites_research_repositories.name' in 'field list' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 10:57:40 --> Unknown column 'lites_research_repositories.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research_image`.`filename` as `image`, `lites_research_platforms`.`platform_id`, `lites_research_repositories`.`name`, `lites_research_repositories`.`link`
+FROM `lites_research`
+INNER JOIN `lites_research_image` ON `lites_research`.`id` = `lites_research_image`.`research_id`
+INNER JOIN `lites_research_platforms` ON `lites_research`.`id` = `lites_research_platforms`.`research_id`
+INNER JOIN `lites_research_repositories` ON `lites_research`.`id` = `lites_research_repositories`.`research_id`
+WHERE `lites_research_image`.`is_banner` = :lites_research_image.is_banner:
+AND `lites_research`.`id` = :lites_research.id:
+GROUP BY `lites_research`.`id`', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 11:00:05 --> mysqli_sql_exception: Table 'auabclites.lites_repositiories' doesn't exist in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 11:00:05 --> Table 'auabclites.lites_repositiories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research_image`.`filename` as `image`, `lites_research_platforms`.`platform_id`, `lites_repositories`.`name`, `lites_research_repositories`.`link`
+FROM `lites_research`
+INNER JOIN `lites_research_image` ON `lites_research`.`id` = `lites_research_image`.`research_id`
+INNER JOIN `lites_research_platforms` ON `lites_research`.`id` = `lites_research_platforms`.`research_id`
+INNER JOIN `lites_research_repositories` ON `lites_research`.`id` = `lites_research_repositories`.`research_id`
+INNER JOIN `lites_repositiories` ON `lites_repositories`.`id` = `lites_research_repositories`.`research_id`
+WHERE `lites_research_image`.`is_banner` = :lites_research_image.is_banner:
+AND `lites_research`.`id` = :lites_research.id:
+GROUP BY `lites_research`.`id`', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 11:00:07 --> mysqli_sql_exception: Table 'auabclites.lites_repositiories' doesn't exist in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 11:00:07 --> Table 'auabclites.lites_repositiories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research_image`.`filename` as `image`, `lites_research_platforms`.`platform_id`, `lites_repositories`.`name`, `lites_research_repositories`.`link`
+FROM `lites_research`
+INNER JOIN `lites_research_image` ON `lites_research`.`id` = `lites_research_image`.`research_id`
+INNER JOIN `lites_research_platforms` ON `lites_research`.`id` = `lites_research_platforms`.`research_id`
+INNER JOIN `lites_research_repositories` ON `lites_research`.`id` = `lites_research_repositories`.`research_id`
+INNER JOIN `lites_repositiories` ON `lites_repositories`.`id` = `lites_research_repositories`.`research_id`
+WHERE `lites_research_image`.`is_banner` = :lites_research_image.is_banner:
+AND `lites_research`.`id` = :lites_research.id:
+GROUP BY `lites_research`.`id`', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 11:00:28 --> mysqli_sql_exception: Table 'auabclites.lites_repositiories' doesn't exist in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 11:00:28 --> Table 'auabclites.lites_repositiories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research_image`.`filename` as `image`, `lites_research_platforms`.`platform_id`, `lites_repositories`.`name`, `lites_research_repositories`.`link`
+FROM `lites_research`
+INNER JOIN `lites_research_image` ON `lites_research`.`id` = `lites_research_image`.`research_id`
+INNER JOIN `lites_research_platforms` ON `lites_research`.`id` = `lites_research_platforms`.`research_id`
+INNER JOIN `lites_research_repositories` ON `lites_research`.`id` = `lites_research_repositories`.`research_id`
+INNER JOIN `lites_repositiories` ON `lites_repositiories`.`id` = `lites_research_repositories`.`research_id`
+WHERE `lites_research_image`.`is_banner` = :lites_research_image.is_banner:
+AND `lites_research`.`id` = :lites_research.id:
+GROUP BY `lites_research`.`id`', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 11:00:35 --> mysqli_sql_exception: Table 'auabclites.lites_repositiories' doesn't exist in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 11:00:35 --> Table 'auabclites.lites_repositiories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research_image`.`filename` as `image`, `lites_research_platforms`.`platform_id`, `lites_repositories`.`name`, `lites_research_repositories`.`link`
+FROM `lites_research`
+INNER JOIN `lites_research_image` ON `lites_research`.`id` = `lites_research_image`.`research_id`
+INNER JOIN `lites_research_platforms` ON `lites_research`.`id` = `lites_research_platforms`.`research_id`
+INNER JOIN `lites_research_repositories` ON `lites_research`.`id` = `lites_research_repositories`.`research_id`
+INNER JOIN `lites_repositiories` ON `lites_repositiories`.`id` = `lites_research_repositories`.`research_id`
+WHERE `lites_research_image`.`is_banner` = :lites_research_image.is_banner:
+AND `lites_research`.`id` = :lites_research.id:
+GROUP BY `lites_research`.`id`', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 11:00:46 --> mysqli_sql_exception: Table 'auabclites.lites_repositiories' doesn't exist in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 11:00:46 --> Table 'auabclites.lites_repositiories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research_image`.`filename` as `image`, `lites_research_platforms`.`platform_id`, `lites_repositiories`.`name`, `lites_research_repositories`.`link`
+FROM `lites_research`
+INNER JOIN `lites_research_image` ON `lites_research`.`id` = `lites_research_image`.`research_id`
+INNER JOIN `lites_research_platforms` ON `lites_research`.`id` = `lites_research_platforms`.`research_id`
+INNER JOIN `lites_research_repositories` ON `lites_research`.`id` = `lites_research_repositories`.`research_id`
+INNER JOIN `lites_repositiories` ON `lites_repositiories`.`id` = `lites_research_repositories`.`research_id`
+WHERE `lites_research_image`.`is_banner` = :lites_research_image.is_banner:
+AND `lites_research`.`id` = :lites_research.id:
+GROUP BY `lites_research`.`id`', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 11:00:52 --> mysqli_sql_exception: Unknown column 'lites_repositiories.name' in 'field list' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 11:00:52 --> Unknown column 'lites_repositiories.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research_image`.`filename` as `image`, `lites_research_platforms`.`platform_id`, `lites_repositiories`.`name`, `lites_research_repositories`.`link`
+FROM `lites_research`
+INNER JOIN `lites_research_image` ON `lites_research`.`id` = `lites_research_image`.`research_id`
+INNER JOIN `lites_research_platforms` ON `lites_research`.`id` = `lites_research_platforms`.`research_id`
+INNER JOIN `lites_research_repositories` ON `lites_research`.`id` = `lites_research_repositories`.`research_id`
+WHERE `lites_research_image`.`is_banner` = :lites_research_image.is_banner:
+AND `lites_research`.`id` = :lites_research.id:
+GROUP BY `lites_research`.`id`', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 11:01:37 --> mysqli_sql_exception: Table 'auabclites.lites_repositiories' doesn't exist in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 11:01:37 --> Table 'auabclites.lites_repositiories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research_image`.`filename` as `image`, `lites_research_platforms`.`platform_id`, `lites_repositiories`.`name`, `lites_research_repositories`.`link`
+FROM `lites_research`
+INNER JOIN `lites_research_image` ON `lites_research`.`id` = `lites_research_image`.`research_id`
+INNER JOIN `lites_research_platforms` ON `lites_research`.`id` = `lites_research_platforms`.`research_id`
+INNER JOIN `lites_research_repositories` ON `lites_research`.`id` = `lites_research_repositories`.`research_id`
+INNER JOIN `lites_repositiories` ON `lites_repositiories`.`id` = `lites_research_repositories`.`repositories_id`
+WHERE `lites_research_image`.`is_banner` = :lites_research_image.is_banner:
+AND `lites_research`.`id` = :lites_research.id:
+GROUP BY `lites_research`.`id`', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 11:02:05 --> mysqli_sql_exception: Unknown column 'lites_repositiories.name' in 'field list' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 11:02:05 --> Unknown column 'lites_repositiories.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research_image`.`filename` as `image`, `lites_research_platforms`.`platform_id`, `lites_repositiories`.`name`, `lites_research_repositories`.`link`
+FROM `lites_research`
+INNER JOIN `lites_research_image` ON `lites_research`.`id` = `lites_research_image`.`research_id`
+INNER JOIN `lites_research_platforms` ON `lites_research`.`id` = `lites_research_platforms`.`research_id`
+INNER JOIN `lites_research_repositories` ON `lites_research`.`id` = `lites_research_repositories`.`research_id`
+WHERE `lites_research_image`.`is_banner` = :lites_research_image.is_banner:
+AND `lites_research`.`id` = :lites_research.id:
+GROUP BY `lites_research`.`id`', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-08-31 11:02:38 --> mysqli_sql_exception: Unknown column 'lites_repositiories.name' in 'field list' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web...')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-08-31 11:02:38 --> Unknown column 'lites_repositiories.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research_image`.`filename` as `image`, `lites_research_platforms`.`platform_id`, `lites_repositiories`.`name`, `lites_research_repositories`.`link`
+FROM `lites_research`
+INNER JOIN `lites_research_image` ON `lites_research`.`id` = `lites_research_image`.`research_id`
+INNER JOIN `lites_research_platforms` ON `lites_research`.`id` = `lites_research_platforms`.`research_id`
+INNER JOIN `lites_research_repositories` ON `lites_research`.`id` = `lites_research_repositories`.`research_id`
+INNER JOIN `lites_repositories` ON `lites_repositories`.`id` = `lites_research_repositories`.`repositories_id`
+WHERE `lites_research_image`.`is_banner` = :lites_research_image.is_banner:
+AND `lites_research`.`id` = :lites_research.id:
+GROUP BY `lites_research`.`id`', [...], false)
+ 2 APPPATH\Models\CustomModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(490): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 11:06:46 --> Undefined array key "research_data"
+in APPPATH\Views\Home\sub-pages\view-research.php on line 6.
+ 1 APPPATH\Views\Home\sub-pages\view-research.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "research_data"', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-research', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-research')
+ 6 APPPATH\Controllers\Home\ViewsController.php(577): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-research', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('9', 'job-hound-a-web-based-job-recommender-system')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 12:28:47 --> Undefined property: stdClass::$description
+in APPPATH\Views\Home\sub-pages\view-research.php on line 64.
+ 1 APPPATH\Views\Home\sub-pages\view-research.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$description', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php', 64)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-research', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-research')
+ 6 APPPATH\Controllers\Home\ViewsController.php(577): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-research', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('8', 'sheeshable-resto-management-system')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 12:29:10 --> Undefined property: stdClass::$features
+in APPPATH\Views\Home\sub-pages\view-research.php on line 64.
+ 1 APPPATH\Views\Home\sub-pages\view-research.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$features', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php', 64)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-research', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-research')
+ 6 APPPATH\Controllers\Home\ViewsController.php(577): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-research', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('8', 'sheeshable-resto-management-system')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 12:37:28 --> Undefined property: stdClass::$abstarct
+in APPPATH\Views\Home\sub-pages\view-research.php on line 107.
+ 1 APPPATH\Views\Home\sub-pages\view-research.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$abstarct', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php', 107)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-research', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-research')
+ 6 APPPATH\Controllers\Home\ViewsController.php(577): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-research', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('8', 'sheeshable-resto-management-system')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 13:10:17 --> Undefined array key 0
+in APPPATH\Views\Home\sub-pages\view-research.php on line 6.
+ 1 APPPATH\Views\Home\sub-pages\view-research.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-research', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-research')
+ 6 APPPATH\Controllers\Home\ViewsController.php(577): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-research', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('3', 'sheeshable-resto-management-system')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 13:11:53 --> Undefined array key 0
+in APPPATH\Views\Home\sub-pages\view-research.php on line 6.
+ 1 APPPATH\Views\Home\sub-pages\view-research.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-research', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-research')
+ 6 APPPATH\Controllers\Home\ViewsController.php(577): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-research', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('3', 'sheeshable-resto-management-system')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-08-31 13:36:49 --> syntax error, unexpected single-quoted string "</p>", expecting "," or ";"
+in APPPATH\Views\Home\sub-pages\view-research.php on line 52.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-research', [], true)
+ 3 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-research')
+ 4 APPPATH\Controllers\Home\ViewsController.php(575): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-research', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_view('10', 'prod-finder-a-web-based-music-recommender-system')
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')

@@ -1,0 +1,156 @@
+CRITICAL - 2023-09-11 02:33:27 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Api\ApiController.php(31): CodeIgniter\Model->__call('getData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Api\ApiController->get_overview()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 02:34:09 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Api\ApiController.php(31): CodeIgniter\Model->__call('getData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Api\ApiController->get_overview()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 02:34:26 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Api\ApiController.php(31): CodeIgniter\Model->__call('getData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Api\ApiController->get_overview()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 02:34:46 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Api\ApiController.php(31): CodeIgniter\Model->__call('getData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Api\ApiController->get_overview()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 02:34:58 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Api\ApiController.php(31): CodeIgniter\Model->__call('getData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Api\ApiController->get_overview()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 02:35:18 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Api\ApiController.php(31): CodeIgniter\Model->__call('getData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Api\ApiController->get_overview()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 02:35:24 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Api\ApiController.php(31): CodeIgniter\Model->__call('getData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Api\ApiController->get_overview()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 02:36:39 --> Cannot access offset of type string on string
+in APPPATH\Models\CustomModel.php on line 16.
+ 1 APPPATH\Controllers\Api\ApiController.php(31): App\Models\CustomModel->get_data('lites_site_visitors')
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Api\ApiController->get_overview()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 06:33:31 --> Undefined array key "hostname"
+in APPPATH\Middleware\VisitorMiddleware.php on line 34.
+ 1 APPPATH\Middleware\VisitorMiddleware.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "hostname"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Middleware\\VisitorMiddleware.php', 34)
+ 2 SYSTEMPATH\Filters\Filters.php(182): App\Middleware\VisitorMiddleware->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('admin/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 06:34:23 --> Undefined array key "hostname"
+in APPPATH\Middleware\VisitorMiddleware.php on line 34.
+ 1 APPPATH\Middleware\VisitorMiddleware.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "hostname"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Middleware\\VisitorMiddleware.php', 34)
+ 2 SYSTEMPATH\Filters\Filters.php(182): App\Middleware\VisitorMiddleware->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 06:34:36 --> Undefined array key "city"
+in APPPATH\Middleware\VisitorMiddleware.php on line 35.
+ 1 APPPATH\Middleware\VisitorMiddleware.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "city"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Middleware\\VisitorMiddleware.php', 35)
+ 2 SYSTEMPATH\Filters\Filters.php(182): App\Middleware\VisitorMiddleware->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('admin/login', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 06:39:49 --> syntax error, unexpected identifier "Closure", expecting variable
+in FCPATH\core\vendor\maennchen\zipstream-php\src\ZipStream.php on line 111.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(250): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\vendor\\composer/../maennchen/zipstream-php/src/ZipStream.php')
+ 2 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\ZipStream3.php(15): CodeIgniter\Autoloader\Autoloader->loadClassmap('ZipStream\\ZipStream')
+ 3 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\ZipStream0.php(15): PhpOffice\PhpSpreadsheet\Writer\ZipStream3::newZipStream(resource (stream))
+ 4 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(548): PhpOffice\PhpSpreadsheet\Writer\ZipStream0::newZipStream(resource (stream))
+ 5 APPPATH\Libraries\ReportsController.php(132): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('php://output')
+ 6 APPPATH\Libraries\ReportsController.php(41): App\Libraries\ReportsController->parseToExcel('visitor-report', [...])
+ 7 APPPATH\Controllers\Admin\ViewsController.php(1350): App\Libraries\ReportsController->init()
+ 8 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_reports()
+ 9 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 06:44:50 --> syntax error, unexpected identifier "Closure", expecting variable
+in FCPATH\core\vendor\maennchen\zipstream-php\src\ZipStream.php on line 111.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(250): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\vendor\\composer/../maennchen/zipstream-php/src/ZipStream.php')
+ 2 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\ZipStream3.php(15): CodeIgniter\Autoloader\Autoloader->loadClassmap('ZipStream\\ZipStream')
+ 3 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\ZipStream0.php(15): PhpOffice\PhpSpreadsheet\Writer\ZipStream3::newZipStream(resource (stream))
+ 4 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(548): PhpOffice\PhpSpreadsheet\Writer\ZipStream0::newZipStream(resource (stream))
+ 5 APPPATH\Libraries\ReportsController.php(132): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('php://output')
+ 6 APPPATH\Libraries\ReportsController.php(41): App\Libraries\ReportsController->parseToExcel('user-report', [...])
+ 7 APPPATH\Controllers\Admin\ViewsController.php(1350): App\Libraries\ReportsController->init()
+ 8 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_reports()
+ 9 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 06:44:50 --> syntax error, unexpected identifier "Closure", expecting variable
+in FCPATH\core\vendor\maennchen\zipstream-php\src\ZipStream.php on line 111.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(250): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\vendor\\composer/../maennchen/zipstream-php/src/ZipStream.php')
+ 2 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\ZipStream3.php(15): CodeIgniter\Autoloader\Autoloader->loadClassmap('ZipStream\\ZipStream')
+ 3 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\ZipStream0.php(15): PhpOffice\PhpSpreadsheet\Writer\ZipStream3::newZipStream(resource (stream))
+ 4 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(548): PhpOffice\PhpSpreadsheet\Writer\ZipStream0::newZipStream(resource (stream))
+ 5 APPPATH\Libraries\ReportsController.php(132): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('php://output')
+ 6 APPPATH\Libraries\ReportsController.php(41): App\Libraries\ReportsController->parseToExcel('user-report', [...])
+ 7 APPPATH\Controllers\Admin\ViewsController.php(1350): App\Libraries\ReportsController->init()
+ 8 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_reports()
+ 9 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 06:44:56 --> syntax error, unexpected identifier "Closure", expecting variable
+in FCPATH\core\vendor\maennchen\zipstream-php\src\ZipStream.php on line 111.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(250): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\vendor\\composer/../maennchen/zipstream-php/src/ZipStream.php')
+ 2 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\ZipStream3.php(15): CodeIgniter\Autoloader\Autoloader->loadClassmap('ZipStream\\ZipStream')
+ 3 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\ZipStream0.php(15): PhpOffice\PhpSpreadsheet\Writer\ZipStream3::newZipStream(resource (stream))
+ 4 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(548): PhpOffice\PhpSpreadsheet\Writer\ZipStream0::newZipStream(resource (stream))
+ 5 APPPATH\Libraries\ReportsController.php(132): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('php://output')
+ 6 APPPATH\Libraries\ReportsController.php(41): App\Libraries\ReportsController->parseToExcel('visitor-report', [...])
+ 7 APPPATH\Controllers\Admin\ViewsController.php(1350): App\Libraries\ReportsController->init()
+ 8 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_reports()
+ 9 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 06:45:01 --> syntax error, unexpected identifier "Closure", expecting variable
+in FCPATH\core\vendor\maennchen\zipstream-php\src\ZipStream.php on line 111.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(250): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\vendor\\composer/../maennchen/zipstream-php/src/ZipStream.php')
+ 2 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\ZipStream3.php(15): CodeIgniter\Autoloader\Autoloader->loadClassmap('ZipStream\\ZipStream')
+ 3 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\ZipStream0.php(15): PhpOffice\PhpSpreadsheet\Writer\ZipStream3::newZipStream(resource (stream))
+ 4 FCPATH\core\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(548): PhpOffice\PhpSpreadsheet\Writer\ZipStream0::newZipStream(resource (stream))
+ 5 APPPATH\Libraries\ReportsController.php(132): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('php://output')
+ 6 APPPATH\Libraries\ReportsController.php(41): App\Libraries\ReportsController->parseToExcel('referrer-report', [...])
+ 7 APPPATH\Controllers\Admin\ViewsController.php(1350): App\Libraries\ReportsController->init()
+ 8 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_reports()
+ 9 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

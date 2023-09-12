@@ -1,0 +1,246 @@
+CRITICAL - 2023-09-03 06:15:08 --> Attempt to read property "title" on array
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 165.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 165)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(587): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news', '129', 'hails-to-the-cheifsquad')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-09-03 06:15:35 --> Attempt to read property "title" on array
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 165.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 165)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(587): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news', '129', 'hails-to-the-cheifsquad')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-09-03 06:31:24 --> preg_replace(): Empty regular expression
+in APPPATH\Views\Home\sub-pages\view-news.php on line 24.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_replace(): Empty regular expression', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-news.php', 24)
+ 2 APPPATH\Views\Home\sub-pages\view-news.php(24): preg_replace(' ', '-', 'Theres No Place Like Jollibee to Study')
+ 3 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-news.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-news', [], true)
+ 6 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-news')
+ 7 APPPATH\Controllers\Home\ViewsController.php(431): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-news', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_news()
+ 9 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-09-03 06:41:10 --> Undefined variable $value
+in APPPATH\Views\Home\sub-pages\view-bulletin.php on line 165.
+ 1 APPPATH\Views\Home\sub-pages\view-bulletin.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php', 165)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-bulletin.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-bulletin', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-bulletin')
+ 6 APPPATH\Controllers\Home\ViewsController.php(587): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-bulletin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->bulletin_view('news', '124', 'university-week-2023')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-09-03 06:59:02 --> mysqli_sql_exception: Not unique table/alias: 'lites_research' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(912): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_page('1')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-09-03 06:59:02 --> Not unique table/alias: 'lites_research'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research`.`image`, `lites_research`.`is_banner`
+FROM `lites_research`
+INNER JOIN `lites_research` ON `lites_research`.`bulletin_id` = `lites_research`.`id`
+WHERE `lites_research`.`is_banner` = :lites_research.is_banner:
+AND `lites_research`.`category` = :lites_research.category:
+ORDER BY `lites_research`.`id` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(912): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_page('1')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-09-03 06:59:44 --> mysqli_sql_exception: Not unique table/alias: 'lites_research' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(912): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_page('1')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-09-03 06:59:44 --> Not unique table/alias: 'lites_research'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research`.`image`, `lites_research`.`is_banner`
+FROM `lites_research`
+INNER JOIN `lites_research` ON `lites_research`.`bulletin_id` = `lites_research`.`id`
+WHERE `lites_research`.`is_banner` = :lites_research.is_banner:
+AND `lites_research`.`category` = :lites_research.category:
+ORDER BY `lites_research`.`id` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(912): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_page('1')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-09-03 06:59:52 --> mysqli_sql_exception: Unknown column 'lites_bulletin.category' in 'where clause' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(855): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_page('1')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-09-03 06:59:52 --> Unknown column 'lites_bulletin.category' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as result_count
+FROM `lites_research`
+WHERE `lites_bulletin`.`category` = :lites_bulletin.category:', [...], false)
+ 2 APPPATH\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(855): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_page('1')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-09-03 07:02:30 --> mysqli_sql_exception: Unknown column 'lites_bulletin.id' in 'order clause' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `lites_r...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `lites_r...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `lites_r...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_r...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(904): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_page('1')
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-09-03 07:02:30 --> Unknown column 'lites_bulletin.id' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `lites_research`.*, `lites_research_image`.`filename`, `lites_research_image`.`is_banner`
+FROM `lites_research`
+INNER JOIN `lites_research_image` ON `lites_research_image`.`research_id` = `lites_research`.`id`
+WHERE `lites_research_image`.`is_banner` = :lites_research_image.is_banner:
+ORDER BY `lites_bulletin`.`id` DESC
+ LIMIT 10', [...], false)
+ 2 APPPATH\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(904): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_page('1')
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-09-03 07:02:47 --> Undefined property: stdClass::$image
+in APPPATH\Views\Home\sub-pages\view-research-page.php on line 30.
+ 1 APPPATH\Views\Home\sub-pages\view-research-page.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research-page.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research-page.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-research-page', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-research-page')
+ 6 APPPATH\Controllers\Home\ViewsController.php(930): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-research-page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_page('1')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-09-03 07:02:59 --> Undefined property: stdClass::$content
+in APPPATH\Views\Home\sub-pages\view-research-page.php on line 35.
+ 1 APPPATH\Views\Home\sub-pages\view-research-page.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$content', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research-page.php', 35)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research-page.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-research-page', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-research-page')
+ 6 APPPATH\Controllers\Home\ViewsController.php(930): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-research-page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_page('1')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-09-03 07:07:09 --> Undefined variable $current_page
+in APPPATH\Views\Home\sub-pages\view-research-page.php on line 19.
+ 1 APPPATH\Views\Home\sub-pages\view-research-page.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_page', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research-page.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\sub-pages\\view-research-page.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/sub-pages/view-research-page', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/sub-pages/view-research-page')
+ 6 APPPATH\Controllers\Home\ViewsController.php(930): App\Controllers\Home\ViewsController->renderView('Home/sub-pages/view-research-page', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->research_page('1')
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-09-03 12:24:45 --> mysqli_sql_exception: Unknown column 'lites_research.id' in 'order clause' in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(955): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->testimonial()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+CRITICAL - 2023-09-03 12:24:45 --> Unknown column 'lites_research.id' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lites_testimonials`
+ORDER BY `lites_research`.`id` DESC', [], false)
+ 2 APPPATH\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home\ViewsController.php(955): App\Models\CustomModel->get_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->testimonial()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-09-03 13:25:17 --> Undefined variable $key
+in APPPATH\Views\Home\testimonial.php on line 15.
+ 1 APPPATH\Views\Home\testimonial.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\testimonial.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\PROJECTS\\system\\latest_auabclites\\app\\Views\\Home\\testimonial.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/testimonial', [], true)
+ 5 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/testimonial')
+ 6 APPPATH\Controllers\Home\ViewsController.php(966): App\Controllers\Home\ViewsController->renderView('Home/testimonial', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->testimonial()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')

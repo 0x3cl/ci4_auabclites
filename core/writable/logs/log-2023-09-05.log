@@ -1,0 +1,63 @@
+CRITICAL - 2023-09-05 03:19:49 --> syntax error, unexpected single-quoted string "" alt="alumni">", expecting "," or ";"
+in APPPATH\Views\Home\home.php on line 250.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Home/home', [], true)
+ 3 APPPATH\Controllers\Home\ViewsController.php(44): view('Home/home')
+ 4 APPPATH\Controllers\Home\ViewsController.php(106): App\Controllers\Home\ViewsController->renderView('Home/home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+CRITICAL - 2023-09-05 03:28:56 --> syntax error, unexpected identifier "site_images", expecting ")"
+in APPPATH\Views\Home\templates\header.php on line 55.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home/templates/header', [], true)
+ 3 APPPATH\Controllers\Home\ViewsController.php(43): view('home/templates/header', [...])
+ 4 APPPATH\Controllers\Home\ViewsController.php(1001): App\Controllers\Home\ViewsController->renderView('Home/testimonial', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->testimonial()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
+ERROR - 2023-09-05 08:57:32 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'auabclites', 3306, '', 0)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(66): App\Models\CustomModel->get_data(Array)
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#8 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\PROJECTS\system\latest_auabclites\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\PROJECTS\system\latest_auabclites\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\PROJECTS\system\latest_auabclites\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\PROJECTS\system\latest_auabclites\app\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\PROJECTS\system\latest_auabclites\app\Controllers\Home\ViewsController.php(66): App\Models\CustomModel->get_data(Array)
+#5 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+#6 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+#7 D:\PROJECTS\system\latest_auabclites\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\PROJECTS\system\latest_auabclites\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\PROJECTS\system\latest_auabclites\system\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\sys...')
+#10 {main}
+CRITICAL - 2023-09-05 08:57:32 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lites_images`', [], false)
+ 3 APPPATH\Models\CustomModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home\ViewsController.php(66): App\Models\CustomModel->get_data([...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home\ViewsController->home()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home\ViewsController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PROJECTS\\system\\latest_auabclites\\public\\index.php')
