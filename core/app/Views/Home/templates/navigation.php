@@ -3,22 +3,22 @@
         <div class="container d-sm-flex align-items-center">
             <ul class="list-inline mb-0 d-flex justify-content-center">
                 <li class="list-inline-item">
-                    <a href="<?= $data['site_contacts'][0]->value ?>" class="nav-link">
+                    <a href="<?= $data['site_contacts'][0]->value ?>" target="_blank" class="nav-link">
                         <i class='bx bxl-facebook'></i>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="<?= $data['site_contacts'][1]->value ?>" class="nav-link">
+                    <a href="<?= $data['site_contacts'][1]->value ?>" target="_blank" class="nav-link">
                         <i class='bx bxl-instagram'></i>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="<?= $data['site_contacts'][2]->value ?>" class="nav-link">
+                    <a href="<?= $data['site_contacts'][2]->value ?>" target="_blank" class="nav-link">
                         <i class='bx bxl-twitter'></i>
                     </a>
                 </li>
                 <li class="list-inline-item d-none d-md-inline-block">
-                    <a href="#" class="nav-link">
+                    <a href="#" target="_blank" class="nav-link">
                         <div class="d-flex justify-content-center align-items-center gap-2">
                             <i class='bx bxs-envelope'></i>
                             <span><?= $data['site_contacts'][3]->value ?></span>
@@ -28,7 +28,7 @@
             </ul>
             <ul class="list-inline mb-0 d-flex justify-content-center d-md-inline-block ms-auto mt-2 mt-md-0">
                 <li class="list-inline-item">   
-                    <a href="https://www.topservelms.com/" class="text-link">
+                    <a href="https://www.topservelms.com/" target="_blank" class="text-link">
                         <div class="d-flex justify-content-center align-items-center gap-2">
                             <i class='bx bxs-left-arrow-square bx-rotate-180' ></i>
                             <span>Learning Management System</span>
@@ -41,7 +41,7 @@
     <nav class="navbar header navbar-expand-lg">
         <div class="container">
             <div class="logo solo">
-                <img src="<?= base_url('/assets/home/images/logo/' .$data['site_images'][3]->image .'') ?>" alt="" srcset="">
+                <a href="https://www.facebook.com/AU.SITePasig" target="_blank" rel="noopener noreferrer"><img src="<?= base_url('/assets/home/images/logo/' .$data['site_images'][3]->image .'') ?>" alt="" srcset=""></a>
             </div>
             <a href="<?= base_url('/home') ?>" class="navbar-brand d-none d-lg-block">
                 <div>School of Information</div> 
@@ -53,7 +53,7 @@
             <div class="logo group">
                 <img src="<?= base_url('/assets/home/images/logo/' .$data['site_images'][5]->image .'') ?>" alt="" srcset="">
                 <img src="<?= base_url('/assets/home/images/logo/' .$data['site_images'][6]->image .'') ?>" alt="" srcset="">
-                <img src="<?= base_url('/assets/home/images/logo/' .$data['site_images'][4]->image .'') ?>" alt="" srcset="">
+                <a href="https://www.facebook.com/LITESofficial" target="_blank" rel="noopener noreferrer"><img src="<?= base_url('/assets/home/images/logo/' .$data['site_images'][4]->image .'') ?>" alt="" srcset=""></a>
             </div>
         </div>
     </nav>

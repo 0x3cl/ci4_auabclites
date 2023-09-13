@@ -46,6 +46,13 @@ class TestimonialsController extends BaseController {
                     'errors' => [
                         'required' => '{field} is required',
                     ]
+                ],
+                'testimonial-label' => [
+                    'label' => 'Testimonial Label',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} is required',
+                    ]
                 ]
             ],
             'update_image' => [
@@ -80,6 +87,13 @@ class TestimonialsController extends BaseController {
                     'errors' => [
                         'required' => '{field} is required',
                     ]
+                ],
+                'testimonial-label' => [
+                    'label' => 'Testimonial Label',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} is required',
+                    ]
                 ]
             ]
         ];
@@ -102,7 +116,8 @@ class TestimonialsController extends BaseController {
                     'image' => $filename,
                     'first_name' => $this->request->getPost('firstname'),
                     'last_name' => $this->request->getPost('lastname'),
-                    'testimonial' => $this->request->getPost('testimonial')
+                    'testimonial' => $this->request->getPost('testimonial'),
+                    'testimonial_label' => $this->request->getPost('testimonial-label')
                 ];
 
                 $model = new CustomModel();
@@ -213,7 +228,8 @@ class TestimonialsController extends BaseController {
                 $data = [
                     'first_name' => $this->request->getPost('firstname'),
                     'last_name' => $this->request->getPost('lastname'),
-                    'testimonial' => $this->request->getPost('testimonial')
+                    'testimonial' => $this->request->getPost('testimonial'),
+                    'testimonial_label' => $this->request->getPost('testimonial-label')
                 ];
 
                 $model = new CustomModel;

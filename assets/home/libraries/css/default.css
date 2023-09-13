@@ -22,8 +22,8 @@
 
 
 * {
-    user-select: none;
-    user-zoom: none;
+    /* user-select: none;
+    user-zoom: none; */
 }
 
 :root {
@@ -234,13 +234,21 @@ body.modal-open {
 }
 .text-clamp.clamp-1 {
     -webkit-line-clamp: 1;
+    line-clamp: 1;
 }
 .text-clamp.clamp-2 {
     -webkit-line-clamp: 2;
+    line-clamp: 2;
 }
 
 .text-clamp.clamp-3 {
     -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+
+.text-clamp.clamp-10 {
+    -webkit-line-clamp: 10;
+    line-clamp: 10;
 }
 
 .text-clamp h4 {
@@ -401,6 +409,11 @@ em {
     font-weight: 600;
 }
 
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
     width: 10px !important;
     height: 10px !important;
@@ -523,6 +536,7 @@ em {
     border-radius: 10px;
     aspect-ratio: 16/12;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px -1px rgba(0,0,0,.1);
+    border: 2px solid var(--secondary-background-color);
 }
 .card.card-design-2 .card-date {
     font-size: 12px;
@@ -647,7 +661,7 @@ em {
     }
 
     .breadcrumb li {
-        font-size: 12px;
+        font-size: 18px;
         font-weight: 700;
     }
 }

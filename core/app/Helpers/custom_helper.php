@@ -160,4 +160,5 @@ function removeImage($path) {
     if(file_exists($path) && unlink($path)) {
         return true;
     }
+    return false;
 }

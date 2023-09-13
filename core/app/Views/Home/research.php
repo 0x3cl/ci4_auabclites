@@ -3,12 +3,13 @@
         <?php
             if(!empty($data['site_research'])) {
                 echo '
-                <div class="section-title-left" data-aos="fade-up">
+                <div class="section-title-left mb-3" data-aos="fade-up">
                     <div class="section-main">
                         <h1>Capstone Research</h1>
                         <p>The culmination of a student&apos;s academic journey and showcasing their expertise and innovative solutions in a comprehensive project.</p>
                     </div>
                 </div>
+                <hr>
                 ';
             }
         ?>

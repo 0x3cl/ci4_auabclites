@@ -29,7 +29,7 @@
                                         '. format_timestamp_to_date($data['bulletin_data'][0]->date_updated).'
                                     </div>
                                     <div class="bulletin-content mt-4">
-                                        <p id="text-overlap">'. $data['bulletin_data'][0]->content .'
+                                        <p class="text-overlap">'. $data['bulletin_data'][0]->content .'
                                     </div>
                                     ';
     
@@ -185,7 +185,7 @@
                                         '. format_timestamp_to_date($data['bulletin_data'][0]->date_updated).'
                                     </div>
                                     <div class="bulletin-content mt-4">
-                                        <p id="text-overlap">'. $data['bulletin_data'][0]->content .'
+                                        <p class="text-overlap">'. $data['bulletin_data'][0]->content .'
                                     </div>
                                     ';
     

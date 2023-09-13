@@ -2,15 +2,37 @@
         <div class="container py-4">
             <?php 
                 if(!(empty($data['site_officers']))) {
-                    echo '
-                    <div class="section-title-left" data-aos="fade-up">
+            ?>
+                <div class="section-title-left" data-aos="fade-up">
                         <div class="section-main">
                             <h1>LITES Officers</h1>
                             <p>Heads up to league of information technology newly elected officers.</p>
                         </div>
                     </div>
-                    <hr>
-                    ';
+                </div>
+                <div class="container">
+                <hr>
+                </div>
+                <div id="light-gallery" class="mb-5 pb-5">
+                    <div class="row" data-aos="fade-up">
+                    <?php
+                        foreach($data['site_officers'] as $value)  {
+                            echo '
+                                <div class="col-12 col-md-4 col-xl-3 overlay-parent item" data-src="'.base_url('/assets/home/images/officers/'.$value->image).'" data-sub-html="'.ucwords($value->first_name.' ' .$value->last_name).' as '.strtoupper($value->position).'">
+                                    <img src="'.base_url('/assets/home/images/officers/'.$value->image).'">
+                                    <div class="overlay">
+                                        <div class="d-block text-center">
+                                            <div class="name">'.$value->first_name.' ' .$value->last_name.'</div>
+                                            <div class="position">'.$value->position.'</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ';
+                        }
+                    ?>
+                    </div>
+                </div>
+            <?php
                 } else {
                     echo '
                     <div class="col-12">
@@ -36,4 +58,3 @@
                 }
             ?>
         </div>
-    </div>

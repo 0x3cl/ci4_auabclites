@@ -43,6 +43,12 @@
                                             <label for="testimonial">Testimonial</label>
                                         </div>
                                     </div>
+                                    <div class="col-12 mb-4">
+                                        <div class="form-group">
+                                            <input type="text" name="testimonial-label" id="testimonial-label" class="form-control" autocomplete="disabled" required>
+                                            <label for="testimonial-label">Testimonial Label</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="action d-flex justify-content-end mt-3 w-100">
                                     <button class="btn btn-primary py-3 px-4">Proceed <i class='bx bx-right-arrow-alt bx-tada' ></i></button>

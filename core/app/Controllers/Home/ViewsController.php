@@ -85,7 +85,7 @@ class ViewsController extends BaseController {
                 'column' => 'lites_bulletin_image.is_banner',
                 'value' => '1'
             ],
-            'limit' => '6',
+            'limit' => '10',
             'order' => 'lites_bulletin.id DESC'
         ]);
 
@@ -141,6 +141,37 @@ class ViewsController extends BaseController {
     }
 
     public function privacy($page = 'privacy') {
+
+        $view = [
+            'page' => $page,
+            'isSubPage' => 'false',
+        ];
+
+        if($this->isPageNotExists($view)) {
+            throw PageNotFoundException::forPageNotFound();    
+        }
+
+        $model = new CustomModel;
+
+        $data['site_images'] = $model->get_data([
+            'table' => 'lites_images'
+        ]);
+
+        $data['site_contacts'] = $model->get_data([
+            'table' => 'lites_contacts',
+        ]);
+
+        $render = [
+            'title' => 'SITES | LITES | Arellano University - Andres Bonifacio Campus',
+            'active' => '',
+            'data' => $data
+        ];
+
+        return $this->renderView('Home/'.$page.'', $render);
+        
+    }
+
+    public function developers($page = 'developers') {
 
         $view = [
             'page' => $page,

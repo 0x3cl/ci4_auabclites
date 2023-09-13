@@ -47,13 +47,13 @@
                         </div>
                         <div class="card-body p-4">
                             <div class="d-flex item justify-content-start align-items-start gap-3 mb-3">
-                                <div>Posted:</div>
+                                <div class="fw-bold">Posted:</div>
                                 <div>
                                     <span><?= format_timestamp_to_date($data['site_research_data'][0]->date_updated) ?></span>
                                 </div>
                             </div>
                             <div class="d-flex item justify-content-start align-items-start gap-3 mb-3">
-                                <div>Authors:</div>
+                                <div class="fw-bold">Authors:</div>
                                 <div>
                                     <?php
                                         if(!empty($data['site_research_authors'][0])) {
@@ -67,13 +67,13 @@
                                 </div>
                             </div>
                             <div class="d-flex item justify-content-start align-items-start gap-3 mb-3">
-                                <div>Platform:</div>
+                                <div class="fw-bold">Platform:</div>
                                 <div>
                                     <span><?= ucwords($data['site_research_data'][0]->platform) ?></span>
                                 </div>
                             </div>
                             <div class="d-flex item justify-content-start align-items-start gap-3 mb-3">
-                                <div>Technologies:</div>
+                                <div class="fw-bold">Technologies:</div>
                                 <div>
                                     <?php
                                         $technologies = [];
@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                             <div class="d-flex item justify-content-start align-items-start gap-3 mb-3">
-                                <div>Features:</div>
+                                <div class="fw-bold">Features:</div>
                                 <div>
                                     <?php
                                          $description = explode("\n", $data['site_research_data'][0]->features);
@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                             <div class="d-flex item justify-content-start align-items-start gap-3 mb-3">
-                                <div>Repositories:</div>
+                                <div class="fw-bold">Repositories:</div>
                                 <div>
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
@@ -126,7 +126,7 @@
                             <h4 class="card-title mb-0">Abstract</h4>
                         </div>
                         <div class="card-body text-justify p-4">
-                            <p class=>
+                            <p class="text-overlap">
                                 <?= $data['site_research_data'][0]->abstract ?>
                             </p>
                         </div>
@@ -135,13 +135,16 @@
             </div>
             <hr>
             <div class="developer-profiles" data-aos="fade-up">
-                <h2 class="sub-section-title">Author Profiles</h2>
                 <div class="row">
                     <?php
                         if(!empty($data['site_research_authors'])) {
+                            echo '
+                                <h2 class="sub-section-title">Author Profiles</h2>
+                            ';
                             foreach($data['site_research_authors'] as $key => $value) {
                                 $about = explode("\n", $value->about);
                                 echo '
+                                
                                 <div class="col-12 col-md-4 mb-3">
                                     <div class="card border-0 shadow">
                                         <div class="card-header">
@@ -175,15 +178,12 @@
                         } else {
                             echo '
                             <div class="col-12 mb-3">
-                                div class="bulletin-info mt-4">
+                                <div class="bulletin-info mt-4">
+                                    <div class="bulletin-title">
+                                        No Authors Found
+                                    </div>
                                     <div class="bulletin-date">
                                         As of Now  • '.date('F d, Y').'
-                                    </div>
-                                    <div class="bulletin-title">
-                                        No Research Found
-                                    </div>
-                                    <div class="bulletin-posted-by">
-                                        Posted by: System
                                     </div>
                                     <hr>
                                     <div class="bulletin-content">

@@ -43,3 +43,8 @@
     border-left: none;
     border-radius: 0px;
 }
+
+.form-group input:hover,
+.form-group input:focus {
+    border-color: var(--secondary-background-color) !important;
+}

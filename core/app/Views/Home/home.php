@@ -95,7 +95,7 @@
                 <?php 
                     if(!empty($data['site_bulletin'])) {
                         echo '
-                        <div class="section-title-left" data-aos="fade-up">
+                        <div class="section-title-left mb-3" data-aos="fade-up">
                             <div class="section-main">
                                 <h1>Bulletin</h1>
                                 <p>Read about the latest news and announcements.</p>
@@ -167,7 +167,7 @@
                 <div class="d-sm-flex justify-content-center align-items-center gap-3 my-3">
                     <div class="input-group mb-2">
                         <span class="input-group-text"><i class='bx bx-envelope-open'></i></span>
-                        <input type="text" name="newsletter-email" id="newsletter-email" class="form-control" placeholder="Your Email Address">
+                        <input type="text" name="newsletter-email" id="newsletter-email" class="form-control" placeholder="Your Email Address" autocomplete="disabled">
                     </div>
                     <button class="btn-custom btn-custom-light mb-2" id="btn-subscribe">Subscribe</button>
                 </div>
@@ -247,21 +247,21 @@
                                         <div class="alumni-date">
                                             <small>'.format_timestamp_to_date($value->date_updated).'</small>
                                         </div>
-                                        <div class="alumni-name">
+                                        <div class="alumni-name text-clamp clamp-2">
                                             <h4>'.ucwords($value->first_name . ' ' . $value->last_name).'</h4>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="d-flex justify-content-center mt-5">
-                            <a href="'.base_url('/testimonial').'" class="btn-custom btn-custom-outline text-link">See More</a>
-                        </div>
                         ';
                     }
                     echo '
                             </div>
                         </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <a href="'.base_url('/testimonial').'" class="btn-custom btn-custom-outline text-link">See More</a>
                     </div>
                     ';
                 } else {

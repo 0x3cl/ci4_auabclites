@@ -139,19 +139,21 @@ class ApiController extends BaseController {
             $email = $this->request->getPost('email');
 
             $model = new CustomModel();
-
             if($model->insertData('lites_newsletter', [
                 'email' => $email
             ])) {
                 $response = [
-                    'status' => 200,
-                    'message' => 'email successfully subscribed',
+                    'status' => 'success',
+                    'message' => 'Email successfully subscribed',
                 ];   
             }
         } else {
+            $errors = $this->validator->getErrors();
+            $firstError = reset($errors); 
+
             $response = [
-                'status' => 200,
-                'message' => $this->validator->getErrors(),
+                'status' => 'error',
+                'message' => $firstError
             ];
         }   
 

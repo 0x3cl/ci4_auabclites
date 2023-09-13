@@ -51,6 +51,7 @@ $routes->group('', ['namespace' => 'App\Controllers\Home'], function($routes) {
     $routes->get('home', 'ViewsController::home');
     $routes->get('about', 'ViewsController::about');
     $routes->get('sites-privacy-notice', 'ViewsController::privacy');
+    $routes->get('developers', 'ViewsController::developers');
 
     $routes->group('form', function($routes) {
         $routes->get('enroll', 'ViewsController::form_enroll');

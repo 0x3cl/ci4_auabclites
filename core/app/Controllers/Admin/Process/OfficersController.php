@@ -261,9 +261,17 @@ class OfficersController extends BaseController {
         if($this->request->getMethod() === 'post') {
             
             $id = $this->request->getPost('id');
+            $path = './assets/home/images/officers/';
             $model = new CustomModel;
 
             try {
+                $previous_image = $model->get_data([
+                    'table' => 'lites_officers',
+                    'condition' => [
+                        'column' => 'lites_officers.id',
+                        'value' => $id
+                    ]
+                ])[0]->image;
                 $name = $model->get_data([
                     'table' => 'lites_officers',
                     'condition' => [
@@ -271,7 +279,8 @@ class OfficersController extends BaseController {
                         'value' => $id
                     ]
                 ])[0];
-                if($model->deleteData('lites_officers', ['id' => $id])) {
+                if($model->deleteData('lites_officers', ['id' => $id]) 
+                    && removeImage($path . $previous_image)) {
                     $flashdata = [
                         'status' => 'success',
                         'message' => 'officer successfully deleted'

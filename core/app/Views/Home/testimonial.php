@@ -15,46 +15,51 @@
                         $testimonials = $data['site_testimonials'];
                         echo '
                         <div class="testimonial-content">
-                            <div class="items-control">
-                                    <div class="control-prev">
-                                        <i class="bx bxs-chevrons-left"></i>
-                                    </div>
-                                    <div class="control-next">
-                                        <i class="bx bxs-chevrons-right"></i>
-                                    </div>
-                                </div>
                         ';
+                        if(count($testimonials) > 1) {
+                            echo '
+                            <div class="items-control">
+                                <div class="control-prev">
+                                    <i class="bx bxs-chevrons-left"></i>
+                                </div>
+                                <div class="control-next">
+                                    <i class="bx bxs-chevrons-right"></i>
+                                </div>
+                            </div>
+                            ';
+                        }
                         echo '
-                        <div class="item-content active" data-id="1">
-                            <div class="items">
-                                <div class="row justify-content-center">
-                                    <div class="col-12 col-md-5 d-sm-flex justify-content-center align-items-center">
-                                        <div class="testimonial-image d-none d-md-flex">
-                                            <img src="'.base_url('/assets/home/images/testimonials/'.$testimonials[0]->image.'').'" alt="" srcset="">
-                                            <div class="overlay-bg">
-                                                <div class="inner-overlay-bg"></div>
+                        <div class="inner-content">
+                            <div class="item-content active" data-id="1">
+                                <div class="items">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 d-flex justify-content-center align-items-center">
+                                            <div class="testimonial-image d-md-flex">
+                                                <img src="'.base_url('/assets/home/images/testimonials/'.$testimonials[0]->image.'').'" alt="" srcset="">
+                                                <div class="overlay-bg">
+                                                    <div class="inner-overlay-bg"></div>
+                                                </div>
+                                                <div class="overlay-circles-1"></div>
+                                                <div class="overlay-circles-2"></div>
+                                                <div class="overlay-circles-3"></div>
                                             </div>
-                                            <div class="overlay-circles-1"></div>
-                                            <div class="overlay-circles-2"></div>
-                                            <div class="overlay-circles-3"></div>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-5">
-                                        <div class="testimonial-details">
-                                            <div class="testimonial-description">
-                                                <p>'.$testimonials[0]->testimonial.'</p>
-                                            </div>
-                                            <div class="testimonial-author mt-4">
-                                                <h1>'.ucwords($testimonials[0]->first_name . ' ' . $testimonials[0]->last_name).'</h1>
-                                            </div>
-                                            <div class="testimonial-pos mt-1">
-                                                <p>Batch 2023 Graduate</p>
+                                        <div class="col-12 col-md-10 mt-5">
+                                            <div class="testimonial-details">
+                                                <div class="text-overlap testimonial-description text-justify">
+                                                    <p class="text-clamp">'.$testimonials[0]->testimonial.'</p>
+                                                </div>
+                                                <div class="testimonial-author mt-5 pt-4">
+                                                    <h1>'.ucwords($testimonials[0]->last_name . ', ' . $testimonials[0]->first_name).'</h1>
+                                                </div>
+                                                <div class="testimonial-pos mt-1">
+                                                    <p>'.ucwords($testimonials[0]->testimonial_label).'</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         ';
 
                         array_shift($testimonials);
@@ -66,8 +71,8 @@
                                 <div class="item-content" data-id="'.$key.'">
                                     <div class="items">
                                         <div class="row justify-content-center">
-                                            <div class="col-12 col-md-5 d-sm-flex justify-content-center align-items-center">
-                                                <div class="testimonial-image d-none d-md-flex">
+                                            <div class="col-12 d-flex justify-content-center align-items-center">
+                                                <div class="testimonial-image d-md-flex">
                                                     <img src="'.base_url('/assets/home/images/testimonials/'.$value->image.'').'" alt="" srcset="">
                                                     <div class="overlay-bg">
                                                         <div class="inner-overlay-bg"></div>
@@ -77,23 +82,23 @@
                                                     <div class="overlay-circles-3"></div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-5">
+                                            <div class="col-12 col-md-10 mt-5">
                                                 <div class="testimonial-details">
-                                                    <div class="testimonial-description">
-                                                        <p class="text-clamp clamp-3">'.$value->testimonial.'</p>
+                                                    <div class="text-overlap testimonial-description text-justify">
+                                                        <p class="text-clamp">'.$value->testimonial.'</p>
                                                     </div>
-                                                    <div class="testimonial-author mt-4">
-                                                        <h1>'.ucwords($value->first_name . ' ' . $value->last_name).'</h1>
+                                                    <div class="testimonial-author mt-5 pt-4">
+                                                        <h1>'.ucwords($value->last_name . ', ' . $value->first_name).'</h1>
                                                     </div>
                                                     <div class="testimonial-pos mt-1">
-                                                        <p>Batch 2023 Graduate</p>
+                                                        <p>'.$value->testimonial_label.'</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                </div>
+                            </div>
                             ';
                           
                         }
