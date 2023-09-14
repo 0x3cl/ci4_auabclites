@@ -16,7 +16,7 @@
                         </div>
                         <div class="card-body">
                             <form action="<?= base_url('/admin/manage/page/bulletin/update/banner/') ?>" method="post" enctype="multipart/form-data" id="form-banner">
-                                <table class="table nowrap">
+                                <table id="table" class="display">
                                     <thead>
                                         <tr>
                                             <th>ID</th>
@@ -32,7 +32,7 @@
                                                 foreach($logo_data as $value) {
                                                     echo '
                                                     <tr>
-                                                        <td>#'.$value->id.'</td>
+                                                        <td>'.$value->id.'</td>
                                                         <td>
                                                             <img src="'.base_url('/assets/home/images/logo/'.$value->image.'').'">
                                                         </td>

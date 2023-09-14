@@ -19,7 +19,7 @@
                                     $flashdata = session()->getFlashData('flashdata');
                                     readFlashData($flashdata);
                                 ?>
-                                <table class="table display responsive nowrap">
+                                <table id="table" class="display">
                                     <thead>
                                         <tr>
                                             <th>ID</th>
@@ -28,7 +28,7 @@
                                             <th>First Name</th>
                                             <th>Last Name</th>
                                             <th>Position</th>
-                                            <th>Action</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -37,7 +37,7 @@
                                                 foreach($data['get_other_users'] as $value) {
                                                     echo '
                                                     <tr>
-                                                        <td>#'.$value->id.'</td>
+                                                        <td>'.$value->id.'</td>
                                                         <td>
                                                             <img class="avatar-image" src="'.base_url('/assets/admin/uploads/avatar/'.$value->image.'').'">
                                                         </td>
@@ -46,10 +46,8 @@
                                                         <td>'.$value->last_name.'</td>
                                                         <td>'.$value->position_name.'</td>
                                                         <td>
-                                                            <div class="d-flex gap-2">
-                                                                <a href="'.base_url('/admin/manage/users/update/'.$value->id.'').'" class="btn btn-success"><i class="bx bxs-edit" ></i> Update</a>
-                                                                <a href="'.base_url('/admin/manage/users/delete/'.$value->id.'').'" class="btn btn-danger"><i class="bx bxs-trash bx-tada"></i>Delete</a>
-                                                            </div>
+                                                            <a href="'.base_url('/admin/manage/users/update/'.$value->id.'').'" class="btn my-2 btn-success"><i class="bx bxs-edit" ></i> Update</a>
+                                                            <a href="'.base_url('/admin/manage/users/delete/'.$value->id.'').'" class="btn my-2 btn-danger"><i class="bx bxs-trash bx-tada"></i>Delete</a>
                                                         </td>
                                                     </tr>
                                                     ';

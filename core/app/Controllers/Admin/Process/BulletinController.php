@@ -188,16 +188,17 @@ class BulletinController extends BaseController {
                     'fields' => $this->request->getPost(),
                     'isNews' => $this->request->getPost('category') == 'news' ? 'true' : 'false'
                 ];
-
-                session()->setFlashData('flashdata', $flashdata);
-                return redirect()->back();
             }
+
+            session()->setFlashData('flashdata', $flashdata);
+            return redirect()->back();
         }
     }
 
     public function upload_announcements($data, $file) {
         $filename = $file->getRandomName();
         $path = './assets/home/images/bulletin/announcements/';
+        $model = new CustomModel();
 
         $data_content = [
             'category' => '1',
@@ -205,37 +206,35 @@ class BulletinController extends BaseController {
             'content' => $data['content'],
         ];
 
-        $model = new CustomModel();
-        $insert_id = $model->insertData('lites_bulletin', $data_content);
-    
-        if ($insert_id) {
-            $data = [
-                'bulletin_id' => $insert_id,
-                'image' => $filename,
-                'is_banner' => 1
-            ];
-            try {
+        try {
+            $inserted_id = $model->insertData('lites_bulletin', $data_content);
+            if ($inserted_id) {
+                $data = [
+                    'bulletin_id' => $inserted_id,
+                    'image' => $filename,
+                    'is_banner' => 1
+                ];
                 if($model->insertData('lites_bulletin_image', $data) 
                     && optimizeImageUpload($path, $file, $filename)) {
                     $flashdata = [
                         'status' => 'success',
                         'message' => 'bulletin for announcement created successfully',
                     ];   
+                    $this->logs->init('[announcement bulletin] ~ '.$data_content['title'].' added successfully');
                 }
-                $this->logs->init('[announcement bulletin] ~ '.$data_content['title'].' added successfully');
-            } catch (\Exception $e) {
+            } else {
                 $flashdata = [
                     'status' => 'error',
-                    'message' => 'error: ' . $e->getMessage(),
+                    'message' => 'an error occurred during insertion process'
                 ];
             }
-        } else {
+        } catch (\Exception $e) {
             $flashdata = [
                 'status' => 'error',
-                'message' => 'an error occurred during insertion process'
+                'message' => 'error: ' . $e->getMessage(),
             ];
         }
-    
+
         session()->setFlashData('flashdata', $flashdata);
         return redirect()->back(); 
     }
@@ -245,6 +244,7 @@ class BulletinController extends BaseController {
         $content_file = $files["content-image"];
         $banner_filename = $banner_file->getRandomName();
         $path = './assets/home/images/bulletin/news/';
+        $model = new CustomModel();
 
         $data_content = [
             'category' => '2',
@@ -252,42 +252,33 @@ class BulletinController extends BaseController {
             'content' => $data['content']
         ];
     
-        $model = new CustomModel();
-    
         try {
             $insert_id = $model->insertData('lites_bulletin', $data_content);
             if ($insert_id && optimizeImageUpload($path, $banner_file, $banner_filename)) {
-                try {
-                    $images[] = [
-                        'bulletin_id' => $insert_id,
-                        'image' => $banner_filename,
-                        'is_banner' => 1,
-                    ];
-        
-                    if(!empty($content_file[0]->getName())) {
-                        foreach($content_file as $files) {
-                            $filename = $files->getRandomName();
-                            $images[] = [
-                                'bulletin_id' => $insert_id,
-                                'image' => $filename,
-                                'is_banner' => 0
-                            ];
-                            optimizeImageUpload($path, $files, $filename);
-                        }
+                $images[] = [
+                    'bulletin_id' => $insert_id,
+                    'image' => $banner_filename,
+                    'is_banner' => 1,
+                ];
+    
+                if(!empty($content_file[0]->getName())) {
+                    foreach($content_file as $files) {
+                        $filename = $files->getRandomName();
+                        $images[] = [
+                            'bulletin_id' => $insert_id,
+                            'image' => $filename,
+                            'is_banner' => 0
+                        ];
+                        optimizeImageUpload($path, $files, $filename);
                     }
-                    $model->insertDataBatch('lites_bulletin_image', $images);
+                }
+                if($model->insertDataBatch('lites_bulletin_image', $images)) {
                     $flashdata = [
                         'status' => 'success',
                         'message' => 'Bulletin for news created successfully',
                     ];
                     $this->logs->init('[news bulletin] ~ '.$data_content['title'].' added successfully');
-                } catch (\Execption $e) {
-                    $flashdata = [
-                        'status' => 'error',
-                        'message' => 'error: ' . $e->getMessage(),
-                    ];
-                }        
-               
+                }
             }
         } catch (\Exception $e) {
             $flashdata = [
@@ -304,24 +295,54 @@ class BulletinController extends BaseController {
         if($this->request->getMethod() === 'post') {
             if($this->validation('update_announcements')) {
                 $data = $this->request->getPost();
-                $cat_id = ($data['category'] == 'announcements' ?  1 : ($data['category']  == 'news' ? 2 : ''));
+                $category_id = ($data['category'] == 'announcements' ?  1 : ($data['category']  == 'news' ? 2 : ''));
+                $model = new CustomModel;
+
+
+                $previous_data = $model->get_data([
+                    'table' => 'lites_bulletin',
+                    'join' => [
+                        'table' => 'lites_bulletin_image',
+                        'on' => 'lites_bulletin.id = lites_bulletin_image.bulletin_id',
+                        'type' => 'inner'
+                    ],
+                    'condition' => [
+                        [
+                            'column' => 'lites_bulletin.id',
+                            'value' => $data['id']
+                        ],
+                        [
+                            'column' => 'lites_bulletin_image.is_banner',
+                            'value' => 1
+                        ]
+                    ]
+                ])[0];
+
+
+                if($previous_data->category != $category_id) {
+                    $image = $previous_data->image;
+                    $previous_path = './assets/home/images/bulletin/'.format_bulletin_category($previous_data->category) . '/' . $image;
+                    $new_path = './assets/home/images/bulletin/'.format_bulletin_category($category_id) . '/' . $image;
+                    rename($previous_path , $new_path);
+                }
+
                 $prepared_data = [
-                    'category' => $cat_id,
+                    'category' => $category_id,
                     'title' => $data['title'],
                     'content' => $data['content']
                 ];
 
                 try {
-                    $model = new CustomModel;
-                    $model->updateData('lites_bulletin', 'lites_bulletin.id', $data['id'], $prepared_data);
-                    $flashdata = [
-                        'status' => 'success',
-                        'message' => $data['category'] . ' successfully updated',
-                        'fields' => $this->request->getPost(),
-                        'isNews' => $this->request->getPost('category') == 'news' ? 'true' : 'false',
-                        'scrollTo' => 'form-details'
-                    ];
-                    $this->logs->init('[bulletin] ~ '.$prepared_data['title'].' updated successfully');
+                    if($model->updateData('lites_bulletin', 'lites_bulletin.id', $data['id'], $prepared_data)) {
+                        $flashdata = [
+                            'status' => 'success',
+                            'message' => $data['category'] . ' successfully updated',
+                            'fields' => $this->request->getPost(),
+                            'isNews' => $this->request->getPost('category') == 'news' ? 'true' : 'false',
+                            'scrollTo' => 'form-details'
+                        ];
+                        $this->logs->init('[bulletin] ~ '.$prepared_data['title'].' updated successfully');
+                    }
                 } catch (\Exception $e) {
                     $flashdata = [
                         'status' => 'error',
@@ -331,9 +352,7 @@ class BulletinController extends BaseController {
                         'scrollTo' => 'form-details'
                     ];
                 }
-
             } else {
-
                 $message = array_values($this->validator->getErrors());
                 $flashdata = [
                     'status' => 'error',
@@ -342,7 +361,6 @@ class BulletinController extends BaseController {
                     'isNews' => $this->request->getPost('category') == 'news' ? 'true' : 'false',
                     'scrollTo' => 'form-details'
                 ];
-
             }
 
             session()->setFlashdata('flashdata', $flashdata);
@@ -378,28 +396,21 @@ class BulletinController extends BaseController {
                             ]
                         ],
                     ]);
+
                     $previous_id = $temp_data[0]->id;
                     $previous_image = $temp_data[0]->image;
-                } catch (\Exception $e) {
-                    $flashdata = [
-                        'status' => 'error',
-                        'message' => 'error ' . $e->getMessage(),
-                        'scrollTo' => 'form-banner'
-                    ];
-                }
 
-                $path = format_bulletin_category($temp_data[0]->category);
-                $path = './assets/home/images/bulletin/'.$path.'/';
+                    $path = format_bulletin_category($temp_data[0]->category);
+                    $path = './assets/home/images/bulletin/'.$path.'/';
 
-                if(removeImage($path . $previous_image)) {
-                    $filename = $file->getRandomName();
-                    $prepared_data = [
-                        'image' => $filename
-                    ];
+                    if(removeImage($path . $previous_image)) {
+                        $filename = $file->getRandomName();
+                        $prepared_data = [
+                            'image' => $filename
+                        ];
 
-                    try {
-                        $model->updateData('lites_bulletin_image', 'lites_bulletin_image.id', $previous_id, $prepared_data);
-                        if(optimizeImageUpload($path, $file, $filename)) {
+                        if($model->updateData('lites_bulletin_image', 'lites_bulletin_image.id', $previous_id, $prepared_data)
+                            && (optimizeImageUpload($path, $file, $filename))) {
                             $flashdata = [
                                 'status' => 'success',
                                 'message' => 'image banner updated successfully',
@@ -420,15 +431,15 @@ class BulletinController extends BaseController {
                                 'scrollTo' => 'form-banner'
                             ];
                         }
-                    } catch (\Exception $e) {
-                        $flashdata = [
-                            'status' => 'error',
-                            'message' => 'error: ' . $e->getMessage(),
-                            'scrollTo' => 'form-banner'
-                        ];
                     }
-                }
 
+                } catch (\Exception $e) {
+                    $flashdata = [
+                        'status' => 'error',
+                        'message' => 'error ' . $e->getMessage(),
+                        'scrollTo' => 'form-banner'
+                    ];
+                }
             } else {
                 $message = array_values($this->validator->getErrors());
                 $flashdata = [
@@ -466,18 +477,10 @@ class BulletinController extends BaseController {
                 ]);
                 $previous_id = $temp_data[0]->id;
                 $previous_image = $temp_data[0]->image;
-            } catch (\Exception $e) {
-                $flashdata = [
-                    'status' => 'error',
-                    'message' => 'error: ' . $e->getMessage(),
-                    'scrollTo' => 'form-image'
-                ];
-            }
 
-            $path = format_bulletin_category($temp_data[0]->category);
-            $path = './assets/home/images/bulletin/'.$path.'/';
+                $path = format_bulletin_category($temp_data[0]->category);
+                $path = './assets/home/images/bulletin/'.$path.'/';
 
-            try {   
                 if($model->deleteData('lites_bulletin_image', ['id' => $id])
                     && removeImage($path . $previous_image)) {
                     $flashdata = [
@@ -487,6 +490,7 @@ class BulletinController extends BaseController {
                     ];
                     $this->logs->init('[bulletin] ~ image deleted successfully');
                 }
+
             } catch (\Exception $e) {
                 $flashdata = [
                     'status' => 'error',
@@ -502,13 +506,10 @@ class BulletinController extends BaseController {
 
     public function add_image() {
         if($this->request->getMethod() === 'post') {
-
             if($this->validation('add_image')) {
-                
                 $id = $this->request->getPost('id');
                 $files = $this->request->getFileMultiple('content-image');
                 $path = './assets/home/images/bulletin/news/';
-
                 $model = new CustomModel;
 
                 foreach($files as $file) {
@@ -522,13 +523,14 @@ class BulletinController extends BaseController {
                 }
 
                 try {
-                    $model->insertDataBatch('lites_bulletin_image', $images);
-                    $flashdata = [
-                        'status' => 'success',
-                        'message' => 'Bulletin images for news added successfully',
-                        'scrollTo' => 'form-add-image'
-                    ];
-                    $this->logs->init('[bulletin] ~ image added successfully');
+                    if($model->insertDataBatch('lites_bulletin_image', $images)) {
+                        $flashdata = [
+                            'status' => 'success',
+                            'message' => 'Bulletin images for news added successfully',
+                            'scrollTo' => 'form-add-image'
+                        ];
+                        $this->logs->init('[bulletin] ~ image added successfully');
+                    }
                 } catch (\Exception $e) {
                     $flashdata = [
                         'status' => 'error',
@@ -536,9 +538,7 @@ class BulletinController extends BaseController {
                         'scrollTo' => 'form-add-image'
                     ];
                 }
-
             } else {
-
                 $message = array_values($this->validator->getErrors());
                 $flashdata = [
                     'status' => 'error',

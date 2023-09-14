@@ -121,7 +121,5 @@ $('#btn-subscribe').on('click', function() {
          $('#btn-subscribe').attr('disabled', false);
      });
  });
- 
-
 
 

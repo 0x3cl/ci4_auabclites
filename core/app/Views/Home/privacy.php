@@ -4,8 +4,10 @@
             <div class="section-title-left" data-aos="fade-up">
                 <div class="section-main">
                     <h1>Data Privacy Policy</h1>
+                    <p>We value your privacy.</p>
                 </div>
             </div>
+            <hr>
             <div class="text-content mt-5 text-justify" data-aos="fade-up">
                 <p>At the League of Information Technology Education Students (LITES) and the School of Information Technology Education (SITe), we are deeply committed to safeguarding your personal information and ensuring the utmost respect for your privacy rights. This Data Privacy Notice outlines how we collect, use, and protect your data in accordance with our organization's collaborative efforts in organizing and supporting events, activities, and initiatives for Information Technology (IT) and Computer Science (CS) students.</p>
                 <section>

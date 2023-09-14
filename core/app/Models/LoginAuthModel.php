@@ -11,7 +11,7 @@ class LoginAuthModel extends Model {
         $this->db = \Config\Database::connect();
     }
 
-    public function fetchData($field, $value) {
+    public function login($field, $value) {
         $builder = $this->db->table('lites_users');
         $builder->where($field, $value);
         $result = $builder->get()->getResult();

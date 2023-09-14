@@ -20,7 +20,7 @@
                                     <a href="<?= base_url('/admin/manage/page/testimonials/add') ?>" class="btn btn-primary"><i class='bx bx-user-voice'></i> Add Testimonial</a>
                                 </div>
                                 <div class="mt-4">
-                                    <table class="table no-wrap">
+                                    <table id="table" class="display">
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
@@ -38,17 +38,15 @@
                                                     {
                                                         echo '
                                                         <tr>
-                                                            <td>#' . $value->id . '</td>
+                                                            <td>' . $value->id . '</td>
                                                             <td>
                                                                 <img src="'.base_url('/assets/home/images/testimonials/'.$value->image.'').'">
                                                             </td>
                                                             <td>' . $value->first_name .'</td>
                                                             <td>'. $value->last_name.'</td>
                                                             <td>
-                                                                <div class="d-flex gap-2">
-                                                                    <a href="'.base_url('/admin/manage/page/testimonials/update/'.$value->id.'') .'" class="btn btn-success"><i class="bx bx-edit" ></i> Update</a>
-                                                                    <a href="'.base_url('/admin/manage/page/testimonials/delete/'.$value->id.'') .'" class="btn btn-danger"><i class="bx bxs-trash bx-tada" ></i> Delete</a>
-                                                                </di>
+                                                                <a href="'.base_url('/admin/manage/page/testimonials/update/'.$value->id.'') .'" class="btn d-flex justify-content-center my-2 btn-success"><i class="bx bx-edit" ></i> Update</a>
+                                                                <a href="'.base_url('/admin/manage/page/testimonials/delete/'.$value->id.'') .'" class="btn d-flex justify-content-center my-2 btn-danger"><i class="bx bxs-trash bx-tada" ></i> Delete</a>
                                                             </td>
                                                         </tr>
                                                         ';

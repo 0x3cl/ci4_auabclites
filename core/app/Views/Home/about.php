@@ -4,8 +4,10 @@
             <div class="section-title-left" data-aos="fade-up">
                 <div class="section-main">
                     <h1>ABOUT LITES</h1>
+                    <p>Know us more</p>
                 </div>
             </div>
+            <hr>
             <div class="image-content mt-5" data-aos="fade-up">
                 <img src="<?= base_url('/assets/home/images/bg/banner.png') ?>" alt="" srcset="" class="w-100">
             </div>

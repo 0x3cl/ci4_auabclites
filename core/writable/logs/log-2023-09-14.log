@@ -1,0 +1,56 @@
+CRITICAL - 2023-09-14 08:50:37 --> Undefined constant "fields_data"
+in APPPATH\Views\Admin\sub-pages\update-bulletin.php on line 35.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/sub-pages/update-bulletin', [], true)
+ 4 APPPATH\Controllers\Admin\ViewsController.php(53): view('Admin/sub-pages/update-bulletin')
+ 5 APPPATH\Controllers\Admin\ViewsController.php(545): App\Controllers\Admin\ViewsController->renderView('Admin/sub-pages/update-bulletin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->update_bulletin('149')
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 10:49:26 --> Undefined variable $prepared_data
+in APPPATH\Controllers\Admin\Process\BulletinController.php on line 322.
+ 1 APPPATH\Controllers\Admin\Process\BulletinController.php(322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prepared_data', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\BulletinController.php', 322)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->update('149')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 10:49:47 --> rename() expects at least 2 arguments, 1 given
+in APPPATH\Controllers\Admin\Process\BulletinController.php on line 326.
+ 1 APPPATH\Controllers\Admin\Process\BulletinController.php(326): rename('./assets/home/images/bulletin/news1694651673_13757e46bbf0c7db4636.png')
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->update('149')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 10:53:10 --> Undefined variable $prepared_data
+in APPPATH\Controllers\Admin\Process\BulletinController.php on line 324.
+ 1 APPPATH\Controllers\Admin\Process\BulletinController.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prepared_data', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\BulletinController.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->update('149')
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 10:53:24 --> rename(./assets/home/images/bulletin/announcements,./assets/home/images/bulletin/news): Access is denied (code: 5)
+in APPPATH\Controllers\Admin\Process\BulletinController.php on line 326.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(./assets/home/images/bulletin/announcements,./assets/home/images/bulletin/news): Access is denied (code: 5)', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\BulletinController.php', 326)
+ 2 APPPATH\Controllers\Admin\Process\BulletinController.php(326): rename('./assets/home/images/bulletin/announcements', './assets/home/images/bulletin/news')
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->update('149')
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 10:53:43 --> rename(./assets/home/images/bulletin/announcements/,./assets/home/images/bulletin/news/): Access is denied (code: 5)
+in APPPATH\Controllers\Admin\Process\BulletinController.php on line 326.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(./assets/home/images/bulletin/announcements/,./assets/home/images/bulletin/news/): Access is denied (code: 5)', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\BulletinController.php', 326)
+ 2 APPPATH\Controllers\Admin\Process\BulletinController.php(326): rename('./assets/home/images/bulletin/announcements/', './assets/home/images/bulletin/news/')
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->update('149')
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-14 10:56:41 --> rename(): http wrapper does not support renaming
+in APPPATH\Controllers\Admin\Process\BulletinController.php on line 326.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(): http wrapper does not support renaming', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\BulletinController.php', 326)
+ 2 APPPATH\Controllers\Admin\Process\BulletinController.php(326): rename('http://localhost/auabclites/assets/home/images/bulletin/announcements/', 'http://localhost/auabclites/assets/home/images/bulletin/news/')
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->update('149')
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

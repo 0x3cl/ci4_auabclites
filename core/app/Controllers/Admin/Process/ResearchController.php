@@ -222,79 +222,72 @@ class ResearchController extends BaseController {
         if($this->request->getMethod() === 'post') {
             if($this->validation('add_data')) {
                 $path = './assets/home/images/research/';
+                $model = new CustomModel;
+
                 $research_data = [
                     'title' => $this->request->getPost('title'),
                     'features' => $this->request->getPost('features'),
                     'abstract' => $this->request->getPost('abstract'),
                 ];
 
-                $model = new CustomModel;
-
-                try {
-                    $inserted_id = $model->insertData('lites_research', $research_data);
-                } catch (\Exception $e) {
-                    $flashdata = [
-                        'status' => 'error',
-                        'message' => 'error: ' . $e->getMessage()
-                    ];
-                }
-
-                $research_platform = [
-                    'research_id' => $inserted_id,
-                    'platform_id' => $this->request->getPost('platform')
-                ];
-
-                $research_repository = [
-                    'research_id' => $inserted_id,
-                    'repositories_id' => $this->request->getPost('repo'),
-                    'link' => $this->request->getPost('repo-link')
-                ];
-
-                $banner_image = $this->request->getFile('banner-image');
-                $content_image = $this->request->getFileMultiple('content-image');
-
-                $filename = [];
-
-                $banner_filename = $banner_image->getRandomName();
-
-                $research_image[] = [
-                    'research_id' => $inserted_id,
-                    'filename' => $banner_filename,
-                    'is_banner' => 1,
-                ];
-
-                $filename_array[] = [
-                    'inst' => $banner_image,
-                    'name' => $banner_filename
-                ];
-
-                foreach($content_image as $image) {
-                    $filename = $image->getRandomName();
-                    $research_image[] = [
-                        'research_id' => $inserted_id,
-                        'filename' => $filename,
-                        'is_banner' => 0
-                    ];
-
-                    $filename_array[] = [
-                        'inst' => $image,
-                        'name' => $filename
-                    ];
-                }
-
-                $research_technologies = [];
-
-                if(is_array($this->request->getPost('technology'))) {
-                    foreach($this->request->getPost('technology') as $technology) {
-                        $research_technologies[] = [
-                            'research_id' => $inserted_id,
-                            'technologies_id' => $technology
-                        ];
-                    }
-                }
-
                 try {
                     
+                    $inserted_id = $model->insertData('lites_research', $research_data);
+
+                    $research_platform = [
+                        'research_id' => $inserted_id,
+                        'platform_id' => $this->request->getPost('platform')
+                    ];
+    
+                    $research_repository = [
+                        'research_id' => $inserted_id,
+                        'repositories_id' => $this->request->getPost('repo'),
+                        'link' => $this->request->getPost('repo-link')
+                    ];
+    
+                    $banner_image = $this->request->getFile('banner-image');
+                    $content_image = $this->request->getFileMultiple('content-image');
+    
+                    $filename = [];
+    
+                    $banner_filename = $banner_image->getRandomName();
+    
+                    $research_image[] = [
+                        'research_id' => $inserted_id,
+                        'filename' => $banner_filename,
+                        'is_banner' => 1,
+                    ];
+    
+                    $filename_array[] = [
+                        'inst' => $banner_image,
+                        'name' => $banner_filename
+                    ];
+    
+                    foreach($content_image as $image) {
+                        $filename = $image->getRandomName();
+                        $research_image[] = [
+                            'research_id' => $inserted_id,
+                            'filename' => $filename,
+                            'is_banner' => 0
+                        ];
+    
+                        $filename_array[] = [
+                            'inst' => $image,
+                            'name' => $filename
+                        ];
+                    }
+    
+                    $research_technologies = [];
+    
+                    if(is_array($this->request->getPost('technology'))) {
+                        foreach($this->request->getPost('technology') as $technology) {
+                            $research_technologies[] = [
+                                'research_id' => $inserted_id,
+                                'technologies_id' => $technology
+                            ];
+                        }
+                    }
+
                     if($model->insertData('lites_research_platforms', $research_platform)
                         && $model->insertData('lites_research_repositories', $research_repository)
                         && $model->insertDataBatch('lites_research_image', $research_image)
@@ -310,17 +303,13 @@ class ResearchController extends BaseController {
                         ];
 
                         $this->logs->init('[research] ~ '.$research_data['title']. ' added successfully');
-
                     }
-
                 } catch (\Exception $e) {
                     $flashdata = [
                         'status' => 'error',
                         'message' => 'error: ' . $e->getMessage()
                     ];
                 }
-
-
             } else {
                 $message = array_values($this->validator->getErrors());
                 $flashdata = [
@@ -338,9 +327,9 @@ class ResearchController extends BaseController {
     public function update_data() {
         if($this->request->getMethod() === 'post') {
             if($this->validation('update_data')) {
-            
                 $id = $this->request->getPost('id');
                 $path = './assets/home/images/research/';
+                $model = new CustomModel;
 
                 $research_data = [
                     'title' => $this->request->getPost('title'),
@@ -348,7 +337,6 @@ class ResearchController extends BaseController {
                     'abstract' => $this->request->getPost('abstract'),
                 ];
 
-                $model = new CustomModel;
                 $research_platform = [
                     'platform_id' => $this->request->getPost('platform')
                 ];
@@ -445,49 +433,51 @@ class ResearchController extends BaseController {
                 $banner_filename = $banner_image->getRandomName();
                 $model = new CustomModel;
 
-                $previous_obj = $model->get_data([
-                    'table' => 'lites_research_image',
-                    'condition' => [
-                        [
-                            'column' => 'research_id',
-                            'value' => $id
-                        ],
-                        [
-                            'column' => 'is_banner',
-                            'value' => '1'
-                        ]
-                    ]
-                ]);
-                $previous_image = $previous_obj[0]->filename;
-                $previous_id = $previous_obj[0]->id;
+                try {
 
-                if(removeImage($path . $previous_image)) {
-                    $data = [
-                        'filename' => $banner_filename
-                    ];
+                    $previous_obj = $model->get_data([
+                        'table' => 'lites_research_image',
+                        'condition' => [
+                            [
+                                'column' => 'research_id',
+                                'value' => $id
+                            ],
+                            [
+                                'column' => 'is_banner',
+                                'value' => '1'
+                            ]
+                        ]
+                    ]);
+
+                    $previous_image = $previous_obj[0]->filename;
+                    $previous_id = $previous_obj[0]->id;
     
-                    try {
+                    if(removeImage($path . $previous_image)) {
+                        $data = [
+                            'filename' => $banner_filename
+                        ];
+        
                         if($model->updateData('lites_research_image', 'id', $previous_id, $data)
                             && optimizeImageUpload($path, $banner_image, $banner_filename)) {
                             $flashdata = [
                                 'status' => 'success',
                                 'message' => 'research banner updated successfully'
-                             ];
-                             $info = $model->get_data([
-                                 'table' => 'lites_research',
-                                 'condition' => [
-                                     'column' => 'id',
-                                     'value' => $id
-                                 ]
-                             ])[0];
-                             $this->logs->init('[research] ~ '.$info->title. ' banner updated successfully');
+                                ];
+                                $info = $model->get_data([
+                                    'table' => 'lites_research',
+                                    'condition' => [
+                                        'column' => 'id',
+                                        'value' => $id
+                                    ]
+                                ])[0];
+                                $this->logs->init('[research] ~ '.$info->title. ' banner updated successfully');
                         }
-                    } catch (\Exception $e) {
-                        $flashdata = [
-                          'status' => 'error',
-                          'message' => 'error: '. $e->getMessage()
-                        ];
                     }
+                } catch (\Exception $e) {
+                    $flashdata = [
+                        'status' => 'error',
+                        'message' => 'error: '. $e->getMessage()
+                     ];
                 }
 
                 
@@ -512,7 +502,8 @@ class ResearchController extends BaseController {
                 $id = $this->request->getPost('id');
                 $path = './assets/home/images/research/';
                 $content_image = $this->request->getFileMultiple('content-image');
-                
+                $model = new CustomModel;
+
                 foreach($content_image as $image) {
                     $filename = $image->getRandomName();
                     $data[] = [
@@ -521,8 +512,6 @@ class ResearchController extends BaseController {
                     ];
                     optimizeImageUpload($path, $image, $filename);
                 }
-
-                $model = new CustomModel;
 
                 try {
                     if($model->insertDataBatch('lites_research_image', $data)) {
@@ -568,6 +557,8 @@ class ResearchController extends BaseController {
                 $path = './assets/home/images/authors/';
                 $file = $this->request->getFile('author-image');
                 $filename = $file->getRandomName();
+                $model = new CustomModel;
+
                 $data = [
                     'research_id' => $id,
                     'image' => $filename, 
@@ -576,7 +567,6 @@ class ResearchController extends BaseController {
                     'about' => $this->request->getPost('about'),
                 ];
 
-                $model = new CustomModel;
                 try {
                     if($model->insertData('lites_research_authors', $data)
                         && optimizeImageUpload($path, $file, $filename)) {
@@ -617,8 +607,9 @@ class ResearchController extends BaseController {
         if($this->request->getMethod() === 'post') {
             $id = $this->request->getPost('id');
             if(is_numeric($id)) {
-                $model = new CustomModel;
                 $path = './assets/home/images/research/';
+                $model = new CustomModel;
+
                 try {
                     $previous_images = $model->get_data([
                         'table' => 'lites_research_image',
@@ -629,15 +620,8 @@ class ResearchController extends BaseController {
                     ]);
                     foreach($previous_images as $image) {
                         removeImage($path . $image->filename);
-                    }                    
-                } catch (\Exception $e) {
-                    $flashdata = [
-                        'status' => 'error',
-                        'message' => 'Error: ' . $e->getMessage()
-                    ];
-                }
-
-                try {
+                    }                   
+                    
                     $tables = [
                         'lites_research' => 'id',
                         'lites_research_image' => 'research_id',
@@ -662,6 +646,7 @@ class ResearchController extends BaseController {
                         'message' => $success ? 'research deleted successfully' : 'error deleting research'
                     ];
                     $this->logs->init('[research] ~ '.$info->title. ' deleted successfully');
+
                 } catch (\Exception $e) {
                     $flashdata = [
                         'status' => 'error',
@@ -679,8 +664,8 @@ class ResearchController extends BaseController {
         if($this->request->getMethod() === 'post') {
             $id = $this->request->getPost('id');
             if(is_numeric($id)) {
-                $model = new CustomModel;
                 $path = './assets/home/images/research/';
+                $model = new CustomModel;
 
                 try {
                     $previous_image = $model->get_data([
@@ -690,15 +675,9 @@ class ResearchController extends BaseController {
                             'value' => $id
                         ]
                     ])[0]->filename;
-                    removeImage($path . $previous_image);
-                } catch (\Exception $e) {
-                    $flashdata = [
-                        'status' => 'error',
-                        'message' => 'error: ' . $e->getMessage()
-                    ];
-                }
 
-                try {
+                    removeImage($path . $previous_image);
+
                     $info = $model->get_data([
                         'table' => 'lites_research_image',
                         'join' => [
@@ -711,6 +690,7 @@ class ResearchController extends BaseController {
                             'value' => $id
                         ]
                     ])[0];
+
                     if($model->deleteData('lites_research_image', ['id' => $id])) {
                         $flashdata = [
                            'status' =>'success',
@@ -718,13 +698,14 @@ class ResearchController extends BaseController {
                         ];
                         $this->logs->init('[research] ~ '.$info->title. ' image deleted successfully');
                     }
+
+
                 } catch (\Exception $e) {
                     $flashdata = [
                         'status' => 'error',
                         'message' => 'error: ' . $e->getMessage()
                     ];
                 }
-
             }
 
             session()->setFlashdata('flashdata', $flashdata);
@@ -736,8 +717,8 @@ class ResearchController extends BaseController {
         if($this->request->getMethod() === 'post') {
             $id = $this->request->getPost('id');
             if(is_numeric($id)) {
-                $model = new CustomModel;
                 $path = './assets/home/images/authors/';
+                $model = new CustomModel;
 
                 try {
                     $previous_image = $model->get_data([
@@ -747,15 +728,9 @@ class ResearchController extends BaseController {
                             'value' => $id
                         ]
                     ])[0]->image;
+                    
                     removeImage($path . $previous_image);
-                } catch (\Exception $e) {
-                    $flashdata = [
-                        'status' => 'error',
-                        'message' => 'error: ' . $e->getMessage()
-                    ];
-                }
 
-                try {
                     $info = $model->get_data([
                         'table' => 'lites_research_authors',
                         'join' => [
@@ -775,13 +750,13 @@ class ResearchController extends BaseController {
                         ];
                         $this->logs->init('[research] ~ '.$info->title. ' author deleted successfully');
                     }
+
                 } catch (\Exception $e) {
                     $flashdata = [
                         'status' => 'error',
                         'message' => 'error: ' . $e->getMessage()
                     ];
                 }
-
             }
 
             session()->setFlashdata('flashdata', $flashdata);

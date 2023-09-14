@@ -20,7 +20,7 @@
                                     <a href="<?= base_url('/admin/manage/page/faculty/add') ?>" class="btn btn-primary"><i class="bx bx-user-plus"></i> Add Faculty</a>
                                 </div>
                                 <div class="mt-4">
-                                    <table class="table no-wrap">
+                                    <table id="table" class="display">
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
@@ -36,17 +36,15 @@
                                                     foreach($data['get_faculty'] as $value) {
                                                         echo '
                                                         <tr>
-                                                            <td>#' . $value->id . '</td>
+                                                            <td>' . $value->id . '</td>
                                                             <td>
                                                                 <img src="'.base_url('/assets/home/images/faculty/'.$value->image.'').'">
                                                             </td>
                                                             <td>' . $value->first_name . ' ' . $value->last_name . '</td>
                                                             <td>' . $value->position . '</td>
                                                             <td>
-                                                                <div class="d-flex gap-2">
-                                                                    <a href="'.base_url('/admin/manage/page/faculty/update/'.$value->id.'').'" class="btn btn-success"><i class="bx bx-edit" ></i> Update</a>
-                                                                    <a href="'.base_url('/admin/manage/page/faculty/delete/'.$value->id.'').'" class="btn btn-danger"><i class="bx bxs-trash bx-tada" ></i> Delete</a>
-                                                                </di>
+                                                                <a href="'.base_url('/admin/manage/page/faculty/update/'.$value->id.'').'" class="btn my-2 d-flex justify-content-center btn-success"><i class="bx bx-edit" ></i> Update</a>
+                                                                <a href="'.base_url('/admin/manage/page/faculty/delete/'.$value->id.'').'" class="btn my-2 d-flex justify-content-center btn-danger"><i class="bx bxs-trash bx-tada" ></i> Delete</a>
                                                             </td>
                                                         </tr>
                                                         ';

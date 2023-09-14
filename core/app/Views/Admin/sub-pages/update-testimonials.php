@@ -69,7 +69,7 @@
                                         </div>
                                         <div class="col-12 mb-4">
                                             <div class="form-group">
-                                                <input type="text" name="testimonial-label" id="testimonial-label" class="form-control" autocomplete="disabled" required>
+                                                <input type="text" name="testimonial-label" id="testimonial-label" class="form-control" autocomplete="disabled" value="<?= $data['get_testimonial'][0]->testimonial_label ?>" required>
                                                 <label for="testimonial-label">Testimonial Label</label>
                                             </div>
                                         </div>

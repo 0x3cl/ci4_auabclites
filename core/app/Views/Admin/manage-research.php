@@ -18,7 +18,7 @@
                             <div class="actions d-flex mb-4 justify-content-end">
                                 <a href="research/add" class="btn btn-primary"><i class='bx bx-briefcase'></i> Add Research</a>
                             </div>
-                            <table class="table no-wrap">
+                            <table id="table" class="display">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
@@ -34,18 +34,16 @@
                                             foreach($data['get_research_data'] as $value) {
                                                 echo ' 
                                                 <tr>
-                                                    <td>#'.$value->id.'</td>
+                                                    <td>'.$value->id.'</td>
                                                     <td>
                                                         <img src="'.base_url('/assets/home/images/research/'.$value->image.'').'">
                                                     </td>
                                                     <td>'.$value->title.'</td>
                                                     <td>'.format_timestamp_to_date($value->date_updated).'</td>
                                                     <td>
-                                                        <div class="d-flex gap-2">
-                                                            <a href="'.base_url('/admin/manage/page/research/view/'.$value->id.'') .'" class="btn btn-primary"><i class="bx bx-show" ></i> View</a>
-                                                            <a href="'.base_url('/admin/manage/page/research/update/'.$value->id.'') .'" class="btn btn-success"><i class="bx bxs-edit" ></i> Update</a>
-                                                            <a href="'.base_url('/admin/manage/page/research/delete/'.$value->id.'') .'" class="btn btn-danger"><i class="bx bxs-trash bx-tada" ></i> Delete</a>
-                                                        </div>
+                                                        <a href="'.base_url('/admin/manage/page/research/view/'.$value->id.'') .'" class="btn my-2 d-flex justify-content-center btn-primary"><i class="bx bx-show" ></i> View</a>
+                                                        <a href="'.base_url('/admin/manage/page/research/update/'.$value->id.'') .'" class="btn my-2 d-flex justify-content-center btn-success"><i class="bx bxs-edit" ></i> Update</a>
+                                                        <a href="'.base_url('/admin/manage/page/research/delete/'.$value->id.'') .'" class="btn my-2 d-flex justify-content-center btn-danger"><i class="bx bxs-trash bx-tada" ></i> Delete</a>
                                                     </td>
                                                 </tr>
                                                 ';

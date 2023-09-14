@@ -18,7 +18,7 @@
                     </a>
                 </li>
                 <li class="list-inline-item d-none d-md-inline-block">
-                    <a href="#" target="_blank" class="nav-link">
+                    <a href="mailto:contact@auabclites.com" target="_blank" class="nav-link">
                         <div class="d-flex justify-content-center align-items-center gap-2">
                             <i class='bx bxs-envelope'></i>
                             <span><?= $data['site_contacts'][3]->value ?></span>

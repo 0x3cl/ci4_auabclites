@@ -62,45 +62,39 @@ class HomeController extends BaseController {
                         ]
                     ])[0]->image;
                     $this->logs->init('[home] ~ banner updated successfully');
+
+
+                    if($target == 'banner') {
+                        $path = './assets/home/images/banner/';
+                    } else if ($target == 'logo') {
+                        $path = './assets/home/images/logo/';
+                    }
+    
+                    $data = [
+                        'image' => $filename
+                    ];
+
+                    if(removeImage($path . $previous_image) 
+                        && $model->updateData('lites_images', 'lites_images.id', $id, $data)
+                        && optimizeImageUpload($path, $file, $filename)) {
+                        $flashdata = [
+                            'status' => 'success',
+                            'message' => 'image banner updated successfully',
+                        ];
+                    } else {
+                        $flashdata = [
+                            'status' => 'error',
+                            'message' => 'error: failed to move image banner',
+                        ];
+                    }
+
                 } catch (\Exception $e) {
                     $flashdata = [
                         'status' => 'error',
                         'message' => 'error: ' . $e->getMessage(),
                     ];
                 }
-
-                if($target == 'banner') {
-                    $path = './assets/home/images/banner/';
-                } else if ($target == 'logo') {
-                    $path = './assets/home/images/logo/';
-                }
-
-                $data = [
-                    'image' => $filename
-                ];
-
-                if(removeImage($path . $previous_image)) {
-                    try {
-                        $model->updateData('lites_images', 'lites_images.id', $id, $data);
-                        if(optimizeImageUpload($path, $file, $filename)) {
-                            $flashdata = [
-                                'status' => 'success',
-                                'message' => 'image banner updated successfully',
-                            ];
-                        } else {
-                            $flashdata = [
-                                'status' => 'error',
-                                'message' => 'error: failed to move image banner',
-                            ];
-                        }
-                    } catch (\Exception $e) {
-                        $flashdata = [
-                            'status' => 'error',
-                            'message' => 'error: ' . $e->getMessage(),
-                            'scrollTo' => ''
-                        ];
-                    }
-                }
+                
             } else {
                 $message = array_values($this->validator->getErrors());
                 $flashdata = [

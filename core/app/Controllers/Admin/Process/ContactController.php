@@ -82,7 +82,7 @@ class ContactController extends BaseController {
     public function update() {
         if($this->request->getMethod() === 'post') {
             if($this->validation()) {
-                
+                $model = new CustomModel();
                 $data = [
                     [   
                         'id' => 1,
@@ -112,10 +112,7 @@ class ContactController extends BaseController {
                         'id' => 7,
                         'value' => $this->request->getPost('address'),
                     ]
-                    
                 ];
-
-                $model = new CustomModel();
 
                 try {
                     if($model->updateDataBatch('lites_contacts', $data, 'id') > 0) {
@@ -136,8 +133,6 @@ class ContactController extends BaseController {
                         'message' => 'error: ' . $e->getMessage(),
                     ];
                 }
-
-
             } else {
                 $message = array_values($this->validator->getErrors());
                 $flashdata = [

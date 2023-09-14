@@ -25,7 +25,7 @@ class LoginAuthController extends BaseController {
                 ];                
             } else {
                 $model = new LoginAuthModel;
-                $data = $model->fetchData('username', $username);
+                $data = $model->login('username', $username);
                 if(count($data) > 0 && !empty($data)) {
                     $db_password = $data[0]->password;
                     $is_matched = password_verify($password, $db_password);

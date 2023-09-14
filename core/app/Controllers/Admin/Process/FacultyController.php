@@ -114,6 +114,8 @@ class FacultyController extends BaseController {
                 $file = $this->request->getFile('image');
                 $filename = $file->getRandomName();
                 $path = './assets/home/images/faculty/';
+                $model = new CustomModel();
+
                 $data = [
                     'image' => $filename,
                     'first_name' => $this->request->getPost('firstname'),
@@ -121,8 +123,6 @@ class FacultyController extends BaseController {
                     'position_id' => $this->request->getPost('position'),
                     'description' => $this->request->getPost('description'),
                 ];
-
-                $model = new CustomModel();
 
                 try {
                     if($model->insertData('lites_faculty', $data)
@@ -163,27 +163,26 @@ class FacultyController extends BaseController {
                 $file = $this->request->getFile('image');
                 $filename = $file->getRandomName();
                 $path = './assets/home/images/faculty/';
-
                 $model = new CustomModel;
 
-                $condition = [
-                    [
-                        'column' => 'lites_faculty.id',
-                        'isNot' => 'false',
-                        'value' => $id
-                    ]
-                ];
 
-                $previous_image = $model->getData('lites_faculty', NULL, $condition)[0]->image;
+                try {
 
-                if(removeImage($path . $previous_image)) {
+                    $previous_image = $model->get_data([
+                        'table' => 'lites_users',
+                        'condition' => [
+                            'column' => 'id',
+                            'value' => $id
+                        ]
+                    ])[0]->image;
+
                     $data = [
                         'image' => $filename
                     ];
-    
-                    try  {
-                        if($model->updateData('lites_faculty', 'lites_faculty.id', $id, $data)
-                            && optimizeImageUpload($path, $file, $filename)) {
+
+                    if(removeImage($path . $previous_image) 
+                        && $model->updateData('lites_faculty', 'lites_faculty.id', $id, $data)
+                        && optimizeImageUpload($path, $file, $filename)) {
                             $flashdata = [
                                 'status' => 'success',
                                 'message' => 'image successfully updated'
@@ -196,13 +195,12 @@ class FacultyController extends BaseController {
                                 ]
                             ])[0];
                             $this->logs->init('[faculty] ~ '.$name->first_name. ' '. $name->last_name . ' image updated successfully');
-                        }
-                    } catch (Exception $e) {
-                        $flashdata = [
-                            'status' => 'error',
-                            'message' => 'error: ' . $e->getMessage()
-                        ];
                     }
+                } catch (\Exception $e) {
+                    $flashdata = [
+                        'status' => 'error',
+                        'message' => 'error: ' . $e->getMessage()
+                    ];
                 }
             } else {
                 $message = array_values($this->validator->getErrors());
@@ -216,23 +214,21 @@ class FacultyController extends BaseController {
 
             session()->setFlashdata('flashdata', $flashdata);
             return redirect()->back();
-
         }
     }
 
     public function update_data() {
         if($this->request->getMethod() === 'post') {
             if($this->validation('update_data')) {
-            
-                $id = $this->request->getPost('id');                
+                $id = $this->request->getPost('id');               
+                $model = new CustomModel;
+
                 $data = [
                     'first_name' => $this->request->getPost('firstname'),
                     'last_name' => $this->request->getPost('lastname'),
                     'position_id' => $this->request->getPost('position'),
                     'description' => $this->request->getPost('description'),
                 ];
-
-                $model = new CustomModel;
 
                 try {
                     if($model->updateData('lites_faculty', 'lites_faculty.id', $id, $data)) {
@@ -274,7 +270,6 @@ class FacultyController extends BaseController {
 
     public function delete_data() {
         if($this->request->getMethod() === 'post') {
-            
             $id = $this->request->getPost('id');
             $model = new CustomModel;
 
@@ -286,6 +281,7 @@ class FacultyController extends BaseController {
                         'value' => $id
                     ],
                 ])[0]->image;
+
                 $name = $model->get_data([
                     'table' => 'lites_faculty',
                     'condition' => [
@@ -293,12 +289,14 @@ class FacultyController extends BaseController {
                         'value' => $id
                     ]
                 ])[0];
-                if($model->deleteData('lites_faculty', ['id' => $id]) && removeImage('./assets/home/images/faculty/'. $previous_image)) {
-                    $flashdata = [
-                        'status' => 'success',
-                        'message' => 'faculty member successfully deleted'
-                    ];
-                    $this->logs->init('[faculty] ~ '.$name->first_name. ' '. $name->last_name . ' deleted successfully');
+
+                if($model->deleteData('lites_faculty', ['id' => $id]) 
+                    && removeImage('./assets/home/images/faculty/'. $previous_image)) {
+                        $flashdata = [
+                            'status' => 'success',
+                            'message' => 'faculty member successfully deleted'
+                        ];
+                        $this->logs->init('[faculty] ~ '.$name->first_name. ' '. $name->last_name . ' deleted successfully');
                 }
             } catch (\Exception $e) {
                 $flashdata = [

@@ -65,6 +65,7 @@
                         array_shift($testimonials);
 
                         foreach($testimonials as $key => $value) { 
+                            
                             $key = $key + 2;
 
                             echo '
@@ -98,11 +99,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             ';
                           
                         }
-
+                        echo '
+                        </div>
+                        ';
                     } else {
                         echo '
                         <div class="bulletin-info">

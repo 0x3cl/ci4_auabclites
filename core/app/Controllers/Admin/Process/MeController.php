@@ -76,41 +76,40 @@ class MeController extends BaseController {
                 $file = $this->request->getFile('image');
                 $filename = $file->getRandomName();
                 $path = './assets/admin/uploads/avatar/';
-
                 $model = new CustomModel;
 
-                $previous_image = $model->get_data([
-                    'table' => 'lites_users',
-                    'condition' => [
-                        'column' => 'lites_users.id',
-                        'value' => $id
-                    ],
-                ])[0]->image;
 
-                if(removeImage($path . $previous_image)) {
+                try {
+                    $previous_image = $model->get_data([
+                        'table' => 'lites_users',
+                        'condition' => [
+                            'column' => 'lites_users.id',
+                            'value' => $id
+                        ],
+                    ])[0]->image;
+
                     $data = [
                         'image' => $filename
                     ];
-                    try  {
-                        if($model->updateData('lites_users', 'lites_users.id', $id, $data)
-                            && $file->move($path, $filename))
-                        {
-                            $flashdata = [
-                                'status' => 'success',
-                                'message' => 'your profile image successfully updated'
-                            ];
-    
-                            $session_token = session()->get('session_token');
-                            $session_token['image'] = $filename;
-                            session()->set('session_token', $session_token);
-                        }
-                    } catch (Exception $e) {
+
+                    if(removeImage($path . $previous_image) 
+                        && $model->updateData('lites_users', 'lites_users.id', $id, $data)
+                        && $file->move($path, $filename)) {
                         $flashdata = [
-                            'status' => 'error',
-                            'message' => 'error: ' . $e->getMessage()
+                            'status' => 'success',
+                            'message' => 'your profile image successfully updated'
                         ];
-                    }
-                }                
+
+                        $session_token = session()->get('session_token');
+                        $session_token['image'] = $filename;
+                        session()->set('session_token', $session_token);
+                    }   
+                } catch (\Exception $e) {
+                    $flashdata = [
+                        'status' => 'error',
+                        'message' => 'error: ' . $e->getMessage()
+                    ];
+                }
             } else {
                 $message = array_values($this->validator->getErrors());
                 $flashdata = [
@@ -130,14 +129,13 @@ class MeController extends BaseController {
     public function update_data() {
         if($this->request->getMethod() === 'post') {
             if($this->validation('update_data')) {
-            
                 $id = $this->request->getPost('id');                
+                $model = new CustomModel;
+
                 $data = [
                     'first_name' => $this->request->getPost('firstname'),
                     'last_name' => $this->request->getPost('lastname'),
                 ];
-
-                $model = new CustomModel;
 
                 try {
                     if($model->updateData('lites_users', 'lites_users.id', $id, $data)) {
@@ -172,7 +170,6 @@ class MeController extends BaseController {
     public function update_password() {
         if($this->request->getMethod() === 'post') {
             if($this->validation('update_password')) {
-            
                 $id = $this->request->getPost('id'); 
                 $old_password = $this->request->getPost('old-password');               
                 $new_password = $this->request->getPost('new-password');
@@ -188,47 +185,35 @@ class MeController extends BaseController {
                         ]  
                     ]);
                    
-
-                } catch (\Exception $e) {
-                    $flashdata = [
-                        'status' => 'error',
-                        'message' => 'error: ' . $e->getMessage()
-                    ];
-                }
-
-                if(password_verify($old_password, $result[0]->password)) {
-                    if($new_password === $confirm_password) {
-                        $data = [
-                            'password' => password_hash($new_password, PASSWORD_BCRYPT)
-                        ];
-
-                        try {
+                    if(password_verify($old_password, $result[0]->password)) {
+                        if($new_password === $confirm_password) {
+                            $data = [
+                                'password' => password_hash($new_password, PASSWORD_BCRYPT)
+                            ];
                             if($model->updateData('lites_users', 'lites_users.id', $id, $data)) {
                                 $flashdata = [
                                     'status' => 'success',
                                     'message' => 'your password updated successfully'
                                 ];
                             }
-                        } catch (Exception $e) {
+                        } else {
                             $flashdata = [
                                 'status' => 'error',
-                                'message' => 'error: ' . $e->getMessage()
+                                'message' => 'passwords do not match'
                             ];
                         }
-
                     } else {
                         $flashdata = [
                             'status' => 'error',
-                            'message' => 'passwords do not match'
+                            'message' => 'old password is incorrect'
                         ];
                     }
-                } else {
+                } catch (\Exception $e) {
                     $flashdata = [
                         'status' => 'error',
-                        'message' => 'old password is incorrect'
+                        'message' => 'error: ' . $e->getMessage()
                     ];
                 }
-
             } else {
                 $message = array_values($this->validator->getErrors());
                 $flashdata = [

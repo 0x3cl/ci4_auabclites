@@ -1373,7 +1373,7 @@ class ViewsController extends BaseController {
                 'on' => 'lites_logs.user_id = lites_users.id',
                 'type' => 'inner'
             ],
-            'order' => 'lites_logs.id desc'
+            'order' => 'lites_logs.id DESC'
         ]);
 
         $render = [

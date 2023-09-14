@@ -112,6 +112,8 @@ class TestimonialsController extends BaseController {
                 $file = $this->request->getFile('image');
                 $filename = $file->getRandomName();
                 $path = './assets/home/images/testimonials/';
+                $model = new CustomModel();
+
                 $data = [
                     'image' => $filename,
                     'first_name' => $this->request->getPost('firstname'),
@@ -120,7 +122,6 @@ class TestimonialsController extends BaseController {
                     'testimonial_label' => $this->request->getPost('testimonial-label')
                 ];
 
-                $model = new CustomModel();
 
                 try {
                     if($model->insertData('lites_testimonials', $data)
@@ -163,44 +164,45 @@ class TestimonialsController extends BaseController {
                 $path = './assets/home/images/testimonials/';
                 $model = new CustomModel;
 
-                $previous_image = $model->get_data([
-                    'table' => 'lites_testimonials',
-                    'condition' => [
-                        'column' => 'lites_testimonials.id',
-                        'value' => $id
-                    ],
-                ])[0]->image;
-
-                
-                if(removeImage($path . $previous_image)) {
+                try {
+                    
+                    $previous_image = $model->get_data([
+                        'table' => 'lites_testimonials',
+                        'condition' => [
+                            'column' => 'lites_testimonials.id',
+                            'value' => $id
+                        ],
+                    ])[0]->image;
+    
+                    
                     $data = [
                         'image' => $filename
                     ];
     
-                    try  {
-                        if($model->updateData('lites_testimonials', 'lites_testimonials.id', $id, $data)
-                            && optimizeImageUpload($path, $file, $filename))
-                        {
-                            $flashdata = [
-                                'status' => 'success',
-                                'message' => 'image successfully updated'
-                            ];
     
-                            $info = $model->get_data([
-                                'table' => 'lites_testimonials',
-                                'condition' => [
-                                    'column' => 'id',
-                                    'value' => $id
-                                ]
-                            ])[0];
-                            $this->logs->init('[testimonial] ~ ' . $info->first_name . ' ' . $info->last_name . ' image updated successfully');
-                        }
-                    } catch (Exception $e) {
+                    if(removeImage($path . $previous_image)
+                        && $model->updateData('lites_testimonials', 'lites_testimonials.id', $id, $data)
+                        && optimizeImageUpload($path, $file, $filename)) {
                         $flashdata = [
-                            'status' => 'error',
-                            'message' => 'error: ' . $e->getMessage()
+                            'status' => 'success',
+                            'message' => 'image successfully updated'
                         ];
+
+                        $info = $model->get_data([
+                            'table' => 'lites_testimonials',
+                            'condition' => [
+                                'column' => 'id',
+                                'value' => $id
+                            ]
+                        ])[0];
+                        
+                        $this->logs->init('[testimonial] ~ ' . $info->first_name . ' ' . $info->last_name . ' image updated successfully');
                     }
+                } catch (\Exception $e) {
+                    $flashdata = [
+                        'status' => 'error',
+                        'message' => 'error: ' . $e->getMessage()
+                    ];
                 }
 
                 
@@ -223,16 +225,15 @@ class TestimonialsController extends BaseController {
     public function update_data() {
         if($this->request->getMethod() === 'post') {
             if($this->validation('update_data')) {
-            
                 $id = $this->request->getPost('id');                
+                $model = new CustomModel;
+
                 $data = [
                     'first_name' => $this->request->getPost('firstname'),
                     'last_name' => $this->request->getPost('lastname'),
                     'testimonial' => $this->request->getPost('testimonial'),
                     'testimonial_label' => $this->request->getPost('testimonial-label')
                 ];
-
-                $model = new CustomModel;
 
                 try {
                     if($model->updateData('lites_testimonials', 'lites_testimonials.id', $id, $data)) {
@@ -292,6 +293,7 @@ class TestimonialsController extends BaseController {
                         'value' => $id
                     ],
                 ])[0]->image;
+                
                 if($model->deleteData('lites_testimonials', ['id' => $id]) && removeImage('./assets/home/images/testimonials/'. $previous_image)) {
                     $flashdata = [
                         'status' => 'success',

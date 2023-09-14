@@ -44,7 +44,7 @@
                                                 foreach($data['carousel_images'] as $value) {
                                                     echo ' 
                                                     <tr>
-                                                        <td>#'.$value->id.'</td>
+                                                        <td>'.$value->id.'</td>
                                                         <td>
                                                             <img src="'.base_url('/assets/home/images/carousel/'.$value->image.'').'">
                                                         </td>

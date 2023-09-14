@@ -168,7 +168,7 @@
                                                         foreach($data['get_logs'] as $value) {
                                                             echo '
                                                                 <tr>
-                                                                    <td>#'.$value->id.'</td>
+                                                                    <td>'.$value->id.'</td>
                                                                     <td>'.$value->first_name . ' ' . $value->last_name .'</td>
                                                                     <td>'.$value->activity.'</td>
                                                                     <td>'.format_position($value->position).'</td>

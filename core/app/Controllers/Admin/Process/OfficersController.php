@@ -100,6 +100,8 @@ class OfficersController extends BaseController {
                 $file = $this->request->getFile('image');
                 $filename = $file->getRandomName();
                 $path = './assets/home/images/officers/';
+                $model = new CustomModel();
+
                 $data = [
                     'image' => $filename,
                     'first_name' => $this->request->getPost('firstname'),
@@ -107,7 +109,6 @@ class OfficersController extends BaseController {
                     'position_id' => $this->request->getPost('position')
                 ];
 
-                $model = new CustomModel();
 
                 try {
                     if($model->insertData('lites_officers', $data)
@@ -150,44 +151,42 @@ class OfficersController extends BaseController {
                 $path = './assets/home/images/officers/';
                 $model = new CustomModel;
 
-                $previous_image = $model->get_data([
-                    'table' => 'lites_officers',
-                    'condition' => [
-                        'column' => 'lites_officers.id',
-                        'value' => $id
-                    ]
-                ])[0]->image;
-
-                if(removeImage($path . $previous_image)) {
+                try {
+                    $previous_image = $model->get_data([
+                        'table' => 'lites_officers',
+                        'condition' => [
+                            'column' => 'lites_officers.id',
+                            'value' => $id
+                        ]
+                    ])[0]->image;
+                    
                     $data = [
                         'image' => $filename
                     ];
-    
-                    try  {
-                        if($model->updateData('lites_officers', 'lites_officers.id', $id, $data)
-                            && optimizeImageUpload($path, $file, $filename))
-                        {
-                            $flashdata = [
-                                'status' => 'success',
-                                'message' => 'image successfully updated'
-                            ];
-                            
-                            $name = $model->get_data([
-                                'table' => 'lites_officers',
-                                'condition' => [
-                                    'column' => 'id',
-                                    'value' => $id
-                                ]
-                            ])[0];
-    
-                            $this->logs->init('[officer] ~ '.$name->first_name. ' ' . $name->last_name . ' image updated successfully');
-                        }
-                    } catch (Exception $e) {
+                    
+                    if(removeImage($path . $previous_image)
+                        && $model->updateData('lites_officers', 'lites_officers.id', $id, $data)
+                        && optimizeImageUpload($path, $file, $filename)) {
                         $flashdata = [
-                            'status' => 'error',
-                            'message' => 'error: ' . $e->getMessage()
+                            'status' => 'success',
+                            'message' => 'image successfully updated'
                         ];
+                        
+                        $name = $model->get_data([
+                            'table' => 'lites_officers',
+                            'condition' => [
+                                'column' => 'id',
+                                'value' => $id
+                            ]
+                        ])[0];
+                        $this->logs->init('[officer] ~ '.$name->first_name. ' ' . $name->last_name . ' image updated successfully');
                     }
+
+                } catch (\Exception $e) {
+                     $flashdata = [
+                        'status' => 'error',
+                        'message' => 'error: ' . $e->getMessage()
+                    ];
                 }
             } else {
                 $message = array_values($this->validator->getErrors());
@@ -208,15 +207,14 @@ class OfficersController extends BaseController {
     public function update_data() {
         if($this->request->getMethod() === 'post') {
             if($this->validation('update_data')) {
-            
                 $id = $this->request->getPost('id');                
+                $model = new CustomModel;
+
                 $data = [
                     'first_name' => $this->request->getPost('firstname'),
                     'last_name' => $this->request->getPost('lastname'),
                     'position_id' => $this->request->getPost('position')
                 ];
-
-                $model = new CustomModel;
 
                 try {
                     if($model->updateData('lites_officers', 'lites_officers.id', $id, $data)) {
@@ -259,7 +257,6 @@ class OfficersController extends BaseController {
 
     public function delete_data() {
         if($this->request->getMethod() === 'post') {
-            
             $id = $this->request->getPost('id');
             $path = './assets/home/images/officers/';
             $model = new CustomModel;

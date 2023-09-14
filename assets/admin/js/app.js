@@ -63,13 +63,14 @@ $(document).ready(function() {
 
     // INITIALIZE DATATABLES CONFIGURATION
     $('table').DataTable({
+        // stateSave: true,
         responsive: true,
         scrollX: true,
         autoWidth: true,
-        stateSave: true,
-        scrollY: '',
-        scrollCollapse: true,
-        paging: true,
+        // scrollY: '',
+        // scrollCollapse: true,
+        // paging: true,
+        // order: [[0, 'desc']]
     });
 
     // EVENT HANDLER FOR BULLETIN PAGE WHEN OPTION WAS CHANGED

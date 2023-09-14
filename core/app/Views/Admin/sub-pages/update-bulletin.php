@@ -30,10 +30,10 @@
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-12 mb-3">
-                                            <select name="category" id="category" class="form-control" disabled>
+                                            <select name="category" id="category" class="form-control">
                                                 <option value="" selected>Choose Category</option>
-                                                <option value="announcements" <?= (format_field_value($fields_data, 'category')) === '1' ? 'selected' : ''  ?>>Announcement</option>
-                                                <option value="news" <?= (format_field_value($fields_data, 'category')) === '2' ? 'selected' : ''  ?>>News</option>
+                                                <option value="announcements" <?= ($fields_data->category) === '1' ? 'selected' : ''  ?>>Announcement</option>
+                                                <option value="news" <?= ($fields_data->category) === '2' ? 'selected' : ''  ?>>News</option>
                                             </select>
                                         </div>
                                         <div class="col-12 col-md-12 mb-3">

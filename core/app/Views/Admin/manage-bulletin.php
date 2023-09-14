@@ -18,10 +18,11 @@
                             <div class="actions d-flex mb-4 justify-content-end">
                                 <a href="<?= base_url('/admin/manage/page/bulletin/add') ?>" class="btn btn-primary"><i class='bx bxs-news' ></i> Add Bulletin</a>
                             </div>
-                            <table class="table">
+                            <table id="table" class="display">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
+                                        <th>Type</th>
                                         <th>Banner</th>
                                         <th>Title</th>
                                         <th>Actions</th>
@@ -34,17 +35,16 @@
                                                 $image_path = ($value->category == 1) ? 'announcements' : (($value->category == 2) ? 'news' : '');
                                                 echo ' 
                                                 <tr>
-                                                    <td>#'.$value->id.'</td>
+                                                    <td>'.$value->id.'</td>
+                                                    <td>'.format_bulletin_category($value->category).'</td>
                                                     <td>
                                                         <img src="'.base_url('/assets/home/images/bulletin/'.$image_path.'/'.$value->image.'').'">
                                                     </td>
                                                     <td>'.$value->title.'</td>
                                                     <td>
-                                                        <div class="d-flex gap-2">
-                                                            <a href="'. base_url('/admin/manage/page/bulletin/view/'.$value->id.'').'" class="btn btn-primary"><i class="bx bx-show" ></i> View</a>
-                                                            <a href="'. base_url('/admin/manage/page/bulletin/update/'.$value->id.'').'" class="btn btn-success"><i class="bx bxs-edit" ></i> Update</a>
-                                                            <a href="'. base_url('/admin/manage/page/bulletin/delete/'.$value->id.'').'" class="btn btn-danger"><i class="bx bxs-trash bx-tada" ></i> Delete</a>
-                                                        </div>
+                                                        <a href="'. base_url('/admin/manage/page/bulletin/view/'.$value->id.'').'" class="btn my-2 btn-primary"><i class="bx bx-show" ></i> View</a>
+                                                        <a href="'. base_url('/admin/manage/page/bulletin/update/'.$value->id.'').'" class="btn my-2 btn-success"><i class="bx bxs-edit" ></i> Update</a>
+                                                        <a href="'. base_url('/admin/manage/page/bulletin/delete/'.$value->id.'').'" class="btn my-2 btn-danger"><i class="bx bxs-trash bx-tada" ></i> Delete</a>
                                                     </td>
                                                 </tr>
                                                 ';

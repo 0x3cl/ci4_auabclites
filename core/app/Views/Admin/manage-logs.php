@@ -19,7 +19,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="mt-5">
-                                    <table class="table">
+                                    <table id="table" class="display">
                                         <thead>
                                             <tr>
                                                 <th>Log ID</th>

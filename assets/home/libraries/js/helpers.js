@@ -123,8 +123,6 @@ export function activeFaculty() {
 
 export function seeMore() {
     const maxChars = 800;
-
-    // Select all elements with the 'text-overlap' class
     const textElements = $('.text-overlap');
     
     textElements.each(function() {
@@ -137,8 +135,6 @@ export function seeMore() {
         }
     
         let isOpen = false;
-    
-        // Use event delegation to handle click events on 'See More'/'See Less' links
         textElement.on('click', '.see-more-option', function() {
             if (!isOpen) {
                 isOpen = true;

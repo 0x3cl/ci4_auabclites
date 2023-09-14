@@ -137,7 +137,7 @@ class ReportsController extends BaseController {
 
     }
     
-    public function parseToText($type, $data,) {
+    public function parseToText($type, $data) {
         $text = '';
         foreach ($data as $row) {
             foreach ((array) $row as $key => $value) {
