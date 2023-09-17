@@ -14,5 +14,4 @@ $(document).ready(function() {
         site_visitor_graph();
         site_referrer_graph();
     }
-    
 });

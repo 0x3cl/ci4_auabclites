@@ -1331,6 +1331,29 @@ class ViewsController extends BaseController {
         return $this->renderView('Admin/'.$page.'', $render);
     }
 
+    public function manage_newsletter($page = 'manage-newsletter') {
+        $view = [
+            'page' => $page,
+            'isSubPage' => 'false',
+        ];
+
+        if($this->isPageNotExists($view)) {
+            throw PageNotFoundException::forPageNotFound();    
+        }
+        
+        $data['emails'] = $this->model->get_data([
+            'table' => 'lites_newsletter'
+        ]);
+
+        $render = [
+            'title' => 'Manage Reports | LITES',
+            'active' => 'newsletter',
+            'data' => $data,
+        ];
+
+        return $this->renderView('Admin/'.$page.'', $render);
+    }
+
     public function manage_reports($page = 'manage-reports') {
         $view = [
             'page' => $page,
@@ -1384,5 +1407,4 @@ class ViewsController extends BaseController {
 
         return $this->renderView('Admin/'.$page.'', $render);
     }
-
 }

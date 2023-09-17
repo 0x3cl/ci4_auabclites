@@ -1,5 +1,6 @@
-$(document).ready(function() {
+import {quillEditor} from './components/quill.js';
 
+$(document).ready(function() {
     // HAMBURGER
     let isActive = false;
     $('.hamburger-wrapper').on('click', () => {
@@ -63,14 +64,14 @@ $(document).ready(function() {
 
     // INITIALIZE DATATABLES CONFIGURATION
     $('table').DataTable({
-        // stateSave: true,
+        stateSave: true,
         responsive: true,
         scrollX: true,
         autoWidth: true,
-        // scrollY: '',
-        // scrollCollapse: true,
-        // paging: true,
-        // order: [[0, 'desc']]
+        scrollY: '',
+        scrollCollapse: true,
+        paging: true,
+        order: [[0, 'desc']]
     });
 
     // EVENT HANDLER FOR BULLETIN PAGE WHEN OPTION WAS CHANGED
@@ -79,6 +80,8 @@ $(document).ready(function() {
             $('#news-form .other').html(`
             <div class="col-12 col-md-12 mb-3">
                 <label class="fw-bold">Content Images</label>
+                <p class="mt-2 text-muted m-0"><em>Note: Only accepts [ .jpeg .jpg .png ] image files.</em></p>
+                <p class="text-muted">Maximum of 5MB</p>
                 <div class="d-flex gap-3 mt-2">
                     <div class="dropbox d-flex justify-content-center align-items-center">
                         <input type="file" name="content-image[]" id="content-image" multiple>
@@ -90,5 +93,17 @@ $(document).ready(function() {
             $('#news-form .other').empty();
         }
     });
+
+    tinymce.init({
+        selector: 'textarea', // Use a class or ID that targets your textarea
+        height: 300, // Set the initial height
+        plugins: 'autolink lists link image charmap print preview',
+        toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        placeholder: 'Write Something ...',
+        height: 400
+    });
+
+  
+
 });
 

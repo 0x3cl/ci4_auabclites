@@ -90,17 +90,7 @@
                                 <div class="fw-bold">Features:</div>
                                 <div>
                                     <?php
-                                         $description = explode("\n", $data['site_research_data'][0]->features);
-                                         echo '
-                                             <ul>
-                                         ';
-                                         
-                                         foreach($description as $value) {
-                                             echo '<li>'.$value.'</li>';
-                                         }
-                                         echo'
-                                             </ul>
-                                         ';
+                                       echo $data['site_research_data'][0]->features;
                                     ?>
                                 </div>
                             </div>

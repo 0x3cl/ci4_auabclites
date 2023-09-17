@@ -95,7 +95,6 @@ function format_position($id) {
     return isset($positions[$id]) ? $positions[$id] : '';
 }
 
-
 function format_field_value($array, $field) {
      if(is_array($array)) {
         return ($array != null) ? $array[$field] : '';

@@ -76,18 +76,20 @@
                                     foreach($data['site_news'] as $key => $value) {
                                         $title = strtolower(str_replace(' ', '-', preg_replace('/[^a-zA-Z0-9\s]+/', '', trim($value->title))));
                                         echo '
-                                        <a href="'.base_url('/bulletin/news/'.$value->id.'/'.$title.'').'" class="text-link">
-                                            <div class="d-flex align-items-start gap-3 mb-2 news-content" data-aos="fade-up">
-                                                <div class="news-image">
+                                        <div class="redirect-page" data-src="'.base_url('/bulletin/news/'.$value->id.'/'.$title.'').'">
+                                            <div class="d-flex align-items-center gap-0 gap-md-3 mb-2 news-content" data-aos="fade-up">
+                                                <div class="news-image pe-3 pe-md-0 ">
                                                     <img src="'.base_url('/assets/home/images/bulletin/news/'.$value->image.'').'" alt="news">
                                                 </div>
                                                 <div class="news-title">
                                                     <h5 class="text-clamp clamp-1 m-0">'.$value->title.'</h5>
                                                     <p class="tiny-date">'.format_timestamp_to_date($value->date_updated).'</p>
-                                                    <small class="text-clamp clamp-3">'.$value->content.'</small>
+                                                    <div class="description">
+                                                        <small class="text-clamp clamp-3">'.$value->content.'</small>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </div>
                                         ';
                                     }
 

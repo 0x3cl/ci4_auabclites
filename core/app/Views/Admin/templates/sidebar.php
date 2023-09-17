@@ -7,7 +7,7 @@
     </div>
     <hr class="mx-3">
     <div class="mx-3">
-        <small class="fw-bold">Menu</small>
+    <small class="fw-bold">Menu</small>
     </div>
     <div class="menu-content">
         <div class="menu-content-inner mb-5">
@@ -25,14 +25,6 @@
                         <div class="icon mob-icon">
                             <i class='bx bxs-widget'></i>
                             <span>Widgets</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="list-unstyled-item  <?= $active === 'messages' ? 'active' : '' ?>">
-                    <a href="<?= base_url('/admin/messages') ?>" class="text-link">
-                        <div class="icon mob-icon">
-                            <i class='bx bxs-message-detail'></i>
-                            <span>Messages</span>
                         </div>
                     </a>
                 </li>
@@ -83,6 +75,14 @@
                             </li>
                         </ul>
                     </div>
+                </li>
+                <li class="list-unstyled-item  <?= $active === 'newsletter' ? 'active' : '' ?>">
+                    <a href="<?= base_url('/admin/manage/newsletter') ?>" class="text-link">
+                        <div class="icon mob-icon">
+                            <i class='bx bx-envelope-open'></i>
+                            <span>News Letter</span>
+                        </div>
+                    </a>
                 </li>
                 <li class="list-unstyled-item  <?= $active === 'reports' ? 'active' : '' ?>">
                     <a href="<?= base_url('/admin/manage/reports') ?>" class="text-link">

@@ -1,0 +1,6 @@
+
+
+
+<a href="'.base_url('/bulletin/news/'.$value->id.'/'.$title.'').'" class="text-link">
+    
+</a>

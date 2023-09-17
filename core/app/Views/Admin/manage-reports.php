@@ -14,7 +14,7 @@
                             <div class="card-header border-0 py-4">
                                 <small>MANAGE REPORTS</small>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body px-4">
                                 <form action="<?= base_url('/admin/manage/reports') ?>" method="post">
                                     <div class="card mb-4">
                                         <div class="card-body">

@@ -39,7 +39,7 @@
         </div>
     </div>
     <nav class="navbar header navbar-expand-lg">
-        <div class="container">
+        <div class="container pt-3 pb-4">
             <div class="logo solo">
                 <a href="https://www.facebook.com/AU.SITePasig" target="_blank" rel="noopener noreferrer"><img src="<?= base_url('/assets/home/images/logo/' .$data['site_images'][3]->image .'') ?>" alt="" srcset=""></a>
             </div>

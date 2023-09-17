@@ -15,6 +15,7 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="first-tab">
                             <div class="d-sm-flex align-items-center gap-4">
+                                <hr>
                                 <div class="d-flex justify-content-center mb-3">
                                     <img src="<?= base_url('/assets/home/images/defaults/students.png') ?>" alt="" srcset="">
                                 </div>
@@ -32,6 +33,7 @@
                         </div>
                         <div class="tab-pane fade show" id="second-tab">
                             <div class="d-sm-flex align-items-center gap-4">
+                                <hr>
                                 <div class="d-flex justify-content-center mb-3">
                                     <img src="<?= base_url('/assets/home/images/defaults/foreign.png') ?>" alt="" srcset="">
                                 </div>
@@ -47,6 +49,7 @@
                         </div>
                         <div class="tab-pane fade show" id="third-tab">
                             <div class="d-sm-flex align-items-center gap-4">
+                                <hr>
                                 <div class="d-flex justify-content-center mb-3">
                                     <img src="<?= base_url('/assets/home/images/defaults/transferee.png') ?>" alt="" srcset="">
                                 </div>
@@ -64,6 +67,7 @@
                         </div>
                         <div class="tab-pane fade show" id="fourth-tab">
                             <div class="d-sm-flex gap-4 align-items-top">
+                                <hr>
                                 <div>
                                     <h4>For Incoming Freshmen</h4>
                                     <ul class="mt-3">
@@ -72,6 +76,7 @@
                                         <li>For those achieving 6th to 10th honorable mentions, there is a 50% discount available for both tuition fees and miscellaneous fees.</li>
                                     </ul>
                                 </div>
+                                <hr>
                                 <div>
                                     <h4>Academic Scholarship</h4>
                                     <ul class="mt-3">

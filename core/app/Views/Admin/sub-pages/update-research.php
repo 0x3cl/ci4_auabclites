@@ -42,28 +42,27 @@
                     <div class="mt-4">
                         <form action="<?= base_url('/admin/manage/page/research/update/data') ?>" enctype="multipart/form-data" method="post" id="form-details">
                             <div class="card mb-5">
-                                <div class="card-header border-0 py-4">
+                                <div class="card-header border-0 py-4 mb-4">
                                     <small class="tle">RESEARCH INFORMATION</small>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-bodypx-4">
                                     <div class="row" id="news-form">
                                         <input type="hidden" name="id" value="<?= $data['get_research_data'][0]->id ?>">
                                         <div class="col-12 col-md-12 mb-4">
                                             <div class="form-group">
                                                 <input type="text" name="title" id="title" class="form-control" value="<?= $data['get_research_data'][0]->title?>" autocomplete="disabled" required>
-                                                <label for="title">Title</label>
+                                                <label for="title">Title <span class="text-danger fw-bold">*</span></label>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-12 mb-4">
                                             <div class="form-group">
-                                                <textarea name="abstract" id="abstract" cols="30" rows="10" class="form-control" autocomplete="disabled" required><?= $data['get_research_data'][0]->abstract?></textarea>
-                                                <label for="abstract">Abstract</label>
+                                                <textarea name="abstract" id="abstract" cols="30" rows="10" class="form-control pt-4" autocomplete="disabled" required><?= $data['get_research_data'][0]->abstract?></textarea>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-12 mb-4">
-                                            <div class="form-group">
-                                                <textarea name="features" id="features" cols="30" rows="10" class="form-control" autocomplete="disabled" required><?= $data['get_research_data'][0]->features?></textarea>
-                                                <label for="features">Features</label>
+                                            <p class="mt-2 text-muted m-0"><em>Note: Features are presented in the form of lists, with each list item appearing on its own line.</em></p>
+                                            <div class="form-group mt-4">
+                                                <textarea name="features" id="features" cols="30" rows="10" class="form-control pt-4" autocomplete="disabled" required><?= $data['get_research_data'][0]->features?></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -71,9 +70,9 @@
                             </div>                          
                             <div class="card mb-5">
                                 <div class="card-header border-0 py-4">
-                                    <small class="tle">RESEARCH PLATFORM</small>
+                                    <small class="tle">RESEARCH PLATFORM <span class="text-danger fw-bold">*</span></small>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body px-4">
                                     <div class="col-12 col-md-12 mb-4">
                                         <select name="platform" id="platform" class="form-control">
                                             <option value="">Choose Platform</option>
@@ -92,9 +91,9 @@
                             </div>
                             <div class="card mb-5">
                                 <div class="card-header border-0 py-4">
-                                    <small class="tle">RESEARCH TECHNOLOGIES</small>
+                                    <small class="tle">RESEARCH TECHNOLOGIES <span class="text-danger fw-bold">*</span></small>
                                 </div>
-                                <div class="card-body technologies">
+                                <div class="card-body px-4  technologies">
                                     <div class="col-12 col-md-12 mt-4 mb-4">
                                         <div class="d-block d-md-flex gap-5">
                                             <div class="mb-3">
@@ -193,7 +192,7 @@
                                 <div class="card-header border-0 py-4">
                                     <small class="tle">RESEARCH REPOSITORY OR STORAGE</small>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body px-4">
                                     <div class="col-12 col-md-12 mb-4">
                                         <select name="repo" id="repo" class="form-control mb-4">
                                             <option value="">Choose Repository or Storage</option>
@@ -215,10 +214,12 @@
                         </form>
                         <div class="card mb-5">
                             <div class="card-header border-0 py-4">
-                                <small class="tle">UPDATE RESEARCH BANNER</small>
+                                <small class="tle">UPDATE RESEARCH BANNER <span class="text-danger fw-bold">*</span></small>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body px-4">
                                 <form action="<?= base_url('/admin/manage/page/research/update/banner') ?>" method="post" enctype="multipart/form-data">
+                                    <p class="mt-2 text-muted m-0"><em>Note: Only accepts [ .jpeg .jpg .png ] image files.</em></p>
+                                    <p class="text-muted">Maximum of 5MB</p>
                                     <div class="d-block d-md-flex gap-3 mt-3">
                                         <div class="user-content">
                                             <div class="avatar-image">
@@ -240,8 +241,10 @@
                             <div class="card-header border-0 py-4">
                                 <small class="tle">UPDATE RESEARCH IMAGES</small>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body px-4">
                                 <form action="<?= base_url('/admin/manage/page/research/add/images') ?>" method="post" enctype="multipart/form-data">
+                                    <p class="mt-2 text-muted m-0"><em>Note: Only accepts [ .jpeg .jpg .png ] image files.</em></p>
+                                    <p class="text-muted">Maximum of 5MB</p>
                                     <div class="d-flex gap-3 mt-3">
                                         <div class="dropbox d-flex justify-content-center align-items-center">
                                             <input type="hidden" name="id" value="<?= $data['get_research_data'][0]->id ?>">
@@ -291,8 +294,10 @@
                             <div class="card-header border-0 py-4">
                                 <small class="tle">UPDATE AUTHORS</small>
                             </div>
-                            <div class="card-body">
+                            <div class="card-bodypx-4">
                                 <form action="<?= base_url('/admin/manage/page/research/add/author') ?>" method="post" enctype="multipart/form-data">
+                                    <p class="mt-2 text-muted m-0"><em>Note: Only accepts [ .jpeg .jpg .png ] image files.</em></p>
+                                    <p class="text-muted">Maximum of 5MB</p>
                                     <div class="d-flex gap-3 mt-3 mb-4">
                                         <div class="dropbox d-flex justify-content-center align-items-center">
                                             <input type="hidden" name="id" value="<?= $data['get_research_data'][0]->id ?>">
@@ -303,19 +308,19 @@
                                         <div class="col-12 col-md-6 mb-4">
                                             <div class="form-group">
                                                 <input type="text" name="firstname" id="firstname" class="form-control" autocomplete="disabled" required>
-                                                <label for="firstname">First Name</label>
+                                                <label for="firstname">First Name <span class="text-danger fw-bold">*</span></label>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-6 mb-4">
                                             <div class="form-group">
                                                 <input type="text" name="lastname" id="lastname" class="form-control" autocomplete="disabled" required>
-                                                <label for="lastname">Last Name</label>
+                                                <label for="lastname">Last Name <span class="text-danger fw-bold">*</span></label>
                                             </div>
                                         </div>
                                         <div class="col-12 mb-4">
                                             <div class="form-group">
-                                                <textarea name="about" id="about" cols="30" rows="10" class="form-control" autocomplete="disabled" required></textarea>
-                                                <label for="about">About</label>
+                                                <textarea name="about" id="about" cols="30" rows="10" class="form-control pt-4" autocomplete="disabled" required></textarea>
+                                                <label for="about">About <span class="text-danger fw-bold">*</span></label>
                                             </div>
                                         </div>
                                     </div>

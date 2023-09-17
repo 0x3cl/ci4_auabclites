@@ -18,34 +18,33 @@
                     ?>
                     <div class="mt-4">
                         <div class="card mb-5">
-                            <div class="card-header border-0 py-4">
+                            <div class="card-header border-0 py-4 mb-4">
                                 <small class="tle">UPDATE BULLETIN</small>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body px-4">
                                 <form action="<?= base_url('/admin/manage/page/bulletin/update/' .$fields_data->id .'') ?>" enctype="multipart/form-data" method="post" id="form-details">
                                     <div class="row" id="news-form">
-                                        <div class="col-12 col-md-12 mb-3">
+                                        <div class="col-12 col-md-12 mb-4">
                                             <div class="form-group">
                                                 <input type="text" name="title" id="title" class="form-control" value="<?= format_timestamp_to_date($fields_data->date_created)  ?>" autocomplete="disabled" disabled>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-12 mb-3">
+                                        <div class="col-12 col-md-12 mb-4">
                                             <select name="category" id="category" class="form-control">
-                                                <option value="" selected>Choose Category</option>
+                                                <option value="" selected>Choose Category <span class="text-danger fw-bold">*</span></option>
                                                 <option value="announcements" <?= ($fields_data->category) === '1' ? 'selected' : ''  ?>>Announcement</option>
                                                 <option value="news" <?= ($fields_data->category) === '2' ? 'selected' : ''  ?>>News</option>
                                             </select>
                                         </div>
-                                        <div class="col-12 col-md-12 mb-3">
+                                        <div class="col-12 col-md-12 mb-4">
                                             <div class="form-group">
                                                 <input type="text" name="title" id="title" class="form-control" value="<?= format_field_value($fields_data, 'title')  ?>" autocomplete="disabled" required>
-                                                <label for="title">Title</label>
+                                                <label for="title">Title <span class="text-danger fw-bold">*</span></label>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-12 mb-3">
+                                        <div class="col-12 col-md-12 mb-4">
                                             <div class="form-group">
-                                                <textarea name="content" id="content" cols="30" rows="10" class="form-control" autocomplete="disabled" required><?= format_field_value($fields_data, 'content')  ?></textarea>
-                                                <label for="content">Content</label>
+                                                <textarea name="content" id="content" cols="30" rows="10" class="form-control pt-4" autocomplete="disabled" required><?= format_field_value($fields_data, 'content')  ?></textarea>
                                             </div>
                                         </div>
                                         <div class="action d-flex justify-content-end mt-5 w-100">
@@ -58,11 +57,13 @@
                         </div>
                         <div class="card mb-5">
                             <div class="card-header border-0 py-4">
-                                <small class="tle">UPDATE BANNER IMAGE</small>
+                                <small class="tle">UPDATE BANNER IMAGE <span class="text-danger fw-bold">*</span></small>
                             </div>
-                            <div class="card-body">
-                                <div class="col-12 col-md-12 mb-3">
+                            <div class="card-body px-4">
+                                <div class="col-12 col-md-12 mb-4">
                                     <form action="<?= base_url('/admin/manage/page/bulletin/update/banner/'.$fields_data->id .'') ?>" method="post" enctype="multipart/form-data" id="form-banner">
+                                        <p class="mt-2 text-muted m-0"><em>Note: Only accepts [ .jpeg .jpg .png ] image files.</em></p>
+                                        <p class="text-muted">Maximum of 5MB</p>
                                         <div class="d-block d-md-flex gap-3">
                                             <div class="user-content">
                                                 <div class="avatar-image w-100">
@@ -88,9 +89,11 @@
                                     <div class="card-header border-0 py-4">
                                         <small class="tle">UPDATE CONTENT IMAGES</small>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body px-4">
                                         <form action="'.base_url('/admin/manage/page/bulletin/image/add').'" method="post" enctype="multipart/form-data" id="form-add-image">
-                                            <div class="col-12 col-md-12 mb-3">
+                                            <div class="col-12 col-md-12 mb-4">
+                                                <p class="mt-2 text-muted m-0"><em>Note: Only accepts [ .jpeg .jpg .png ] image files.</em></p>
+                                                <p class="text-muted">Maximum of 5MB</p>
                                                 <div class="d-flex gap-3 mt-3">
                                                     <div class="dropbox d-flex justify-content-center align-items-center">
                                                         <input type="hidden" name="id" value="'.$fields_data->id.'">

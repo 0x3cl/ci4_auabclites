@@ -3,7 +3,7 @@
     <div class="content">
         <?= view('admin/templates/navbar') ?>
         <div class="inner-content mx-3 pb-5">
-            <div class="container">
+            <div class="container-fluid">
                 <hr class="mt-2">
                 <div class="d-block d-md-flex justify-content-between align-items-center mt-5 mb-5">
                     <div class="greetings mb-3 mb-lg-0">
@@ -34,7 +34,7 @@
                                     <small>Overview</small>
                                     <div id="overview-dom">
                                         <div class="row mt-4 skeleton-container">
-                                            <div class="col-6 col-md-4 mb-2 mb-md-3">
+                                            <div class="col-6 col-md-4  mb-2 mb-md-3">
                                                 <div class="card skeleton-card">
                                                     <div class="card-header bg-transparent border-0">
                                                         <div class="skeleton-text skeleton-w-100"></div>
@@ -46,7 +46,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6 col-md-4 mb-2 mb-md-3">
+                                            <div class="col-6 col-md-4  mb-2 mb-md-3">
                                                 <div class="card skeleton-card">
                                                     <div class="card-header bg-transparent border-0">
                                                         <div class="skeleton-text skeleton-w-100"></div>
@@ -58,7 +58,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6 col-md-4 mb-2 mb-md-3">
+                                            <div class="col-6 col-md-4  mb-2 mb-md-3">
                                                 <div class="card skeleton-card">
                                                     <div class="card-header bg-transparent border-0">
                                                         <div class="skeleton-text skeleton-w-100"></div>
@@ -70,7 +70,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6 col-md-4 mb-2 mb-md-3">
+                                            <div class="col-6 col-md-4  mb-2 mb-md-3">
                                                 <div class="card skeleton-card">
                                                     <div class="card-header bg-transparent border-0">
                                                         <div class="skeleton-text skeleton-w-100"></div>
@@ -82,7 +82,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6 col-md-4 mb-2 mb-md-3">
+                                            <div class="col-6 col-md-4  mb-2 mb-md-3">
                                                 <div class="card skeleton-card">
                                                     <div class="card-header bg-transparent border-0">
                                                         <div class="skeleton-text skeleton-w-100"></div>
@@ -94,7 +94,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6 col-md-4 mb-2 mb-md-3">
+                                            <div class="col-6 col-md-4  mb-2 mb-md-3">
                                                 <div class="card skeleton-card">
                                                     <div class="card-header bg-transparent border-0">
                                                         <div class="skeleton-text skeleton-w-100"></div>

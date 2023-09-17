@@ -122,4 +122,9 @@ $('#btn-subscribe').on('click', function() {
      });
  });
 
+//  REDIRECT PAGE
+ $('.redirect-page').on('click', function() {
+    const src = $(this).data('src');
+    window.location.href = src;
+});
 

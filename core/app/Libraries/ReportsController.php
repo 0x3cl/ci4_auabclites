@@ -102,7 +102,7 @@ class ReportsController extends BaseController {
         header('Content-Type: text/csv');
         header('Content-Disposition: attachment; filename="'.$filename.'"');
         echo $csv;
-        exit;
+        exit();
     }
 
     public function parseToExcel($type, $data) {
@@ -129,11 +129,13 @@ class ReportsController extends BaseController {
         $writer = new Xlsx($spreadsheet);
         $filename = strtolower(date('F_d_Y') . '_' . $type . '.xlsx');
 
-        $writer->save('php://output');
+        $writer->save($filename);
 
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
         header('Content-Disposition: attachment;filename="'.$filename.'"');
         header('Cache-Control: max-age=0');
+
+        exit();
 
     }
     
@@ -149,7 +151,7 @@ class ReportsController extends BaseController {
         header('Content-Type: text/plain');
         header('Content-Disposition: attachment; filename="'.$filename.'"');
         echo $text;
-        exit;
+        exit();
     }
 
 

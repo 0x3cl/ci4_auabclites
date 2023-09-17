@@ -16,13 +16,15 @@
                         </div>
                         <div class="card mb-5">
                             <div class="card-header border-0 py-4">
-                                <small>UPDATE FACULTY MEMBER'S IMAGE</small>
+                                <small>UPDATE FACULTY MEMBER'S IMAGE <span class="text-danger fw-bold">*</span></small>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body px-4">
                                 <form action="<?= base_url('/admin/manage/page/faculty/update/image') ?>" method="post" enctype="multipart/form-data">
                                     <div class="row">
                                         <input type="hidden" name="id" value="<?= $data["get_faculty"][0]->id ?>">
                                         <div class="col-12 col-md-12 mb-4">
+                                            <p class="mt-2 text-muted m-0"><em>Note: Only accepts [ .jpeg .jpg .png ] image files.</em></p>
+                                            <p class="text-muted">Maximum of 5MB</p>
                                             <div class="d-block d-md-flex gap-3">
                                                 <div class="user-content">
                                                     <div class="avatar-image">
@@ -45,26 +47,26 @@
                             <div class="card-header border-0 py-4">
                                 <small>UPDATE FACULTY MEMBER'S INFORMATION</small>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body px-4">
                                 <form action="<?= base_url('/admin/manage/page/faculty/update/data') ?>" method="post">
                                     <div class="row">
                                         <input type="hidden" name="id" value="<?= $data["get_faculty"][0]->id ?>">
                                         <div class="col-12 col-md-6 mb-3">
                                             <div class="form-group">
                                                 <input type="text" name="firstname" id="firstname" class="form-control" autocomplete="disabled" value="<?= $data["get_faculty"][0]->first_name ?>" required>
-                                                <label for="firstname">First Name</label>
+                                                <label for="firstname">First Name <span class="text-danger fw-bold">*</span></label>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-6 mb-3">
                                             <div class="form-group">
                                                 <input type="text" name="lastname" id="lastname" class="form-control" autocomplete="disabled" value="<?= $data["get_faculty"][0]->last_name ?>" required>
-                                                <label for="lastname">Last Name</label>
+                                                <label for="lastname">Last Name <span class="text-danger fw-bold">*</span></label>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-12 mb-4">
                                             <div class="form-group">
                                                 <select name="position" id="position" class="form-control">
-                                                    <option value="">Select Position</option>
+                                                    <option value="">Select Position <span class="text-danger fw-bold">*</span></option>
                                                     <?php
                                                         foreach($data['get_faculty_positions'] as $value) {
                                                             echo '<option value="'.$value->id.'" '.($value->id === $data["get_faculty"][0]->position_id ? 'selected' : '') .'>'.ucwords($value->position).'</option>';
@@ -74,9 +76,9 @@
                                             </div>
                                         </div>
                                         <div class="col-12 mb-4">
-                                            <div class="form-group">
-                                                <textarea name="description" id="description" cols="30" rows="10" class="form-control" autocomplete="disabled" required><?= $data['get_faculty'][0]->description ?></textarea>
-                                                <label for="description">Description</label>
+                                            <p class="mt-2 text-muted m-0"><em>Note: Descriptions are presented in the form of lists, with each list item appearing on its own line.</em></p>
+                                            <div class="form-group mt-4">
+                                                <textarea name="description" id="description" cols="30" rows="10" class="form-control pt-4" autocomplete="disabled" required><?= $data['get_faculty'][0]->description ?></textarea>
                                             </div>
                                         </div>
                                     </div>

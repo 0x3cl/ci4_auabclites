@@ -45,6 +45,8 @@ class AuthAdminFilter implements FilterInterface {
                 '/auabclites/admin/widgets',
                 '/auabclites/admin/manage/users',
                 '/auabclites/admin/manage/page',
+                '/auabclites/admin/manage/newsletter',
+                '/auabclites/admin/manage/email',
                 '/auabclites/admin/manage/report',
                 '/auabclites/admin/manage/me',
                 '/auabclites/admin/manage/logs',

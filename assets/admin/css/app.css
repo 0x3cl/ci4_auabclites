@@ -439,6 +439,11 @@
     height: 10px;
 }
 
+.widgets .card {
+    height: 350px;
+}
+
+
 @media (min-width: 0px) and (max-width: 765px) {
     .sidebar {
         position: fixed;
@@ -488,6 +493,15 @@
     }
     .dropbox {
         padding: 20px;
+    }
+}
+
+@media (min-width: 1140px) {
+    .sidebar {
+        width: 350px;
+    }
+    .content {
+        width: calc(100% - 350px)
     }
 }
 

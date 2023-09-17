@@ -178,6 +178,8 @@ $routes->group('admin', ['namespace' => 'App\Controllers\Admin'], function($rout
 
         });
 
+        $routes->get('email', 'ViewsController::send_email');
+
         $routes->group('page/research', function($routes) {
             $routes->get('/', 'ViewsController::manage_research');
             $routes->get('add', 'ViewsController::add_research');
@@ -213,6 +215,11 @@ $routes->group('admin', ['namespace' => 'App\Controllers\Admin'], function($rout
         $routes->group('page/contacts', function($routes) {
             $routes->get('/', 'ViewsController::manage_contact');
             $routes->post('/', 'Process\ContactController::update');
+        });
+
+        $routes->group('newsletter', function($routes) {
+            $routes->get('/', 'ViewsController::manage_newsletter');
+            $routes->get('delete/(:num)', 'Process\NewsLetterController::delete_data/$1');
         });
 
         $routes->group('reports', function($routes) {

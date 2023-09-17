@@ -29,7 +29,7 @@
                                         '. format_timestamp_to_date($data['bulletin_data'][0]->date_updated).'
                                     </div>
                                     <div class="bulletin-content mt-4">
-                                        <p class="text-overlap">'. $data['bulletin_data'][0]->content .'
+                                        '. $data['bulletin_data'][0]->content .'
                                     </div>
                                     ';
     
@@ -116,18 +116,20 @@
                             foreach($data['bulletin_other'] as $value) {
                                 $title = strtolower(preg_replace('/-+/', '-', str_replace(' ', '-', preg_replace('/[^a-zA-Z0-9\s]+/', '', trim($value->title)))));
                                 echo '
-                                <a href="'.base_url('/bulletin/announcement/'.$value->id.'/'.$title.'').'" class="text-link">
-                                    <div class="d-flex align-items-start gap-3 mb-2 news-content" data-aos="fade-up">
-                                        <div class="news-image">
+                                <div class="redirect-page" data-src="'.base_url('/bulletin/news/'.$value->id.'/'.$title.'').'">
+                                    <div class="d-flex align-items-center gap-0 gap-md-3 mb-2 news-content" data-aos="fade-up">
+                                        <div class="news-image pe-3 pe-md-0 ">
                                             <img src="'.base_url('/assets/home/images/bulletin/announcements/'.$value->image.'').'" alt="news">
                                         </div>
                                         <div class="news-title">
                                             <h5 class="text-clamp clamp-1 m-0">'.$value->title.'</h5>
                                             <p class="tiny-date">'.format_timestamp_to_date($value->date_updated).'</p>
-                                            <small class="text-clamp clamp-3">'.$value->content.'</small>
+                                            <div class="description">
+                                                <small class="text-clamp clamp-3">'.$value->content.'</small>
+                                            </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                                 ';
                             }
                               
@@ -185,7 +187,7 @@
                                         '. format_timestamp_to_date($data['bulletin_data'][0]->date_updated).'
                                     </div>
                                     <div class="bulletin-content mt-4">
-                                        <p class="text-overlap">'. $data['bulletin_data'][0]->content .'
+                                        '. $data['bulletin_data'][0]->content .'
                                     </div>
                                     ';
     
@@ -272,18 +274,20 @@
                             foreach($data['bulletin_other'] as $value) {
                                 $title = strtolower(preg_replace('/-+/', '-', str_replace(' ', '-', preg_replace('/[^a-zA-Z0-9\s]+/', '', trim($value->title)))));
                                 echo '
-                                <a href="'.base_url('/bulletin/news/'.$value->id.'/'.$title.'').'" class="text-link">
-                                    <div class="d-flex align-items-start gap-3 mb-2 news-content" data-aos="fade-up">
-                                        <div class="news-image">
+                                <div class="redirect-page" data-src="'.base_url('/bulletin/news/'.$value->id.'/'.$title.'').'">
+                                    <div class="d-flex align-items-center gap-0 gap-md-3 mb-2 news-content" data-aos="fade-up">
+                                        <div class="news-image pe-3 pe-md-0 ">
                                             <img src="'.base_url('/assets/home/images/bulletin/news/'.$value->image.'').'" alt="news">
                                         </div>
                                         <div class="news-title">
                                             <h5 class="text-clamp clamp-1 m-0">'.$value->title.'</h5>
                                             <p class="tiny-date">'.format_timestamp_to_date($value->date_updated).'</p>
-                                            <small class="text-clamp clamp-3">'.$value->content.'</small>
+                                            <div class="description">
+                                                <small class="text-clamp clamp-3">'.$value->content.'</small>
+                                            </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                                 ';
                             }
                             

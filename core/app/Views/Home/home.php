@@ -115,14 +115,16 @@
                             echo '
                            <div class="col-12 col-md-6 mb-3">
                                 <a href="'.base_url('/bulletin/'.$link_path.'/'.$value->id.'/'.$title.'').'" class="text-link">
-                                    <div class="d-flex align-items-start gap-3 mb-2 news-content" data-aos="fade-up">
+                                    <div class="d-flex align-items-center gap-3 news-content" data-aos="fade-up">
                                         <div class="news-image">
                                             <img src="'.base_url('/assets/home/images/bulletin/'.$path.'/'.$value->image.'').'" alt="news">
                                         </div>
                                         <div class="news-title">
                                             <h5 class="text-clamp clamp-1 m-0">'.$value->title.'</h5>
                                             <p class="tiny-date">'.format_timestamp_to_date($value->date_updated).'</p>
-                                            <small class="text-clamp clamp-3">'.$value->content.'</small>
+                                            <div class="description">
+                                                <small class="text-clamp clamp-3">'.$value->content.'</small>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -244,11 +246,11 @@
                                 <div class="card card-design">
                                     <img src="'.base_url('/assets/home/images/testimonials/'.$value->image.'').'" alt="alumni">
                                     <div class="card-body">
-                                        <div class="alumni-date">
-                                            <small>'.format_timestamp_to_date($value->date_updated).'</small>
+                                        <div class="alumni-name text-clamp clamp-1">
+                                            <h5 class="mb-1">'.ucwords($value->first_name . ' ' . $value->last_name).'</h5>
                                         </div>
-                                        <div class="alumni-name text-clamp clamp-2">
-                                            <h4>'.ucwords($value->first_name . ' ' . $value->last_name).'</h4>
+                                        <div class="alumni-date text-clamp clamp-1">
+                                            <p class="m-0">'.$value->testimonial_label.'</p>
                                         </div>
                                     </div>
                                 </div>

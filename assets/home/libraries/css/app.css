@@ -95,7 +95,7 @@
 }
 
 .navbar .logo.group {
-    top: -50px;
+    top: -30px;
     right: 0px;
 }
 
@@ -250,7 +250,7 @@
 }
 
 #news .news-letter .inner-wrapper {
-    width: 75%;
+    width: 800px;
     background-color: var(--secondary-background-color);
     border-radius: 8px;
     padding: 20px 50px 20px 50px;
@@ -555,7 +555,7 @@
 
 #news .news-image {
     width: calc(100% - 50%);
-    height: 100px;
+    height: 120px !important;
     overflow: hidden;
 }
 
@@ -576,8 +576,8 @@
     transform: scale(1.1);
 }
 
-.news-title {
-    width: 100%;
+.news-title a {
+    color: var(--secondary-text-color) !important;
 }
 
 .news-title h5 {
@@ -587,14 +587,20 @@
 .news-title .tiny-date {
     font-size: 11px;
     font-weight: 700;
-    margin: 1px 0 10px 0;
+    margin: 1px 0 5px 0;
     color: #626262;
+}
+
+.news-title .description {
+    background-color: var(--secondary-background-color);
+    padding: 10px;
 }
 
 .news-title small {
     font-size: 13px;
     line-height: 14px;
     font-weight: 500;
+    color: #fff;
 }
 
 /* FACULTY  */
@@ -732,9 +738,14 @@
     transition: all ease 0.8s;
 }
 
+#officers .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 #officers .row > * {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
 }
 
 #officers .overlay-parent {
@@ -756,24 +767,35 @@
     align-items: center;
     transition: all ease 0.4s;
     cursor: pointer;
+    border-radius: inherit;
+
+}
+
+#officers .card {
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 #officers .overlay-parent:hover img {
     transform: scale(1.1);
     transition: all ease 0.4s;
+    border-radius: inherit;
 }
 
 #officers .overlay-parent:hover .overlay {
     opacity: 0;
+    
 }
 
 #officers img {
+    border-radius: 10px;
     width: 100%;
 }
 
 #officers .overlay .name {
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 14px;
 }
 
 #officers .overlay .position {
@@ -781,7 +803,7 @@
     font-size: 14px;
     font-weight: 600;
     text-decoration: overline;
-    margin-top: 3px;
+    margin-top: 8px;
     color: var(--quinary-text-color);
 }
 
@@ -1060,7 +1082,7 @@
     font-weight: 700;
     margin-top: 10px;
     margin-bottom: 10px;
-    line-height: 35px;
+    line-height: 45px;
 }
 
 .bulletin-title .announce {
@@ -1081,6 +1103,11 @@
     font-weight: 500;
     margin-top: 20px;
 }
+
+.bulletin-content a {
+    color: inherit !important;
+}
+
 .bulletin-content ul li {
     font-size: 14px;
 }
@@ -1123,6 +1150,14 @@
 .footer-outer ul a {
     font-weight: 600;
 }
+
+
+@media (min-width: 0px) and (max-width: 575px) {
+    #news .news-letter button {
+        width: 100% !important;
+    }
+}
+
 
 /* MEDIA QUERY FOR SCREEN UPTO 991PX */
 
@@ -1217,7 +1252,7 @@
         height: 120px;
     }
     .navbar .logo.group {
-        top: -70px;
+        top: -50px;
         right: 0px;
     }
     .navbar .logo.group img {
@@ -1382,12 +1417,7 @@
         width: 90%;
         padding: 20px 20px 20px 20px
     }
-
-    #news .news-letter button {
-        width: 100%;
-    }
     
-
     /* FACULTY */
 
     #faculty .carousel-content {
@@ -1425,35 +1455,14 @@
         left: 15px;
     }
 
-    /* OFFICER SECTION */
-
-    .officers-content .officer-names {
-        height: 300px;
+    #officers .overlay .name {
+        font-size: 10px;
     }
 
-    .officers-content .officer-names ul li a {
-        font-size: 4rem !important;
-        line-height: 4rem !important;
+    #officers .overlay .position {
+        font-size: 12px;
     }
-
-    .officers-content .officer-names a span.overlay-count {
-        top: 0px;
-        left: -30px
-    }
-
-    .officers-content .officer-image {
-        margin-left: 15px;
-    }
-
-    .officers-content .officer-image img {
-        width: 100%;
-        height: auto;
-    }
-
-    .officer-image .name-overlay {
-        display: none;
-    }
-
+    
     #testimonial .testimonial-content {
         box-shadow: 5px 5px 2px 2px rgba(100,15,15,0.21);
         padding: 0 0 0 0 !important;
@@ -1559,5 +1568,11 @@
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 600;
+    }
+}
+
+@media (min-width: 700px) {
+    #home .text-banner h2 {
+        width: max-content !important;
     }
 }

@@ -17,7 +17,7 @@
                                     <small>USERS ACTIVITY LOGS</small>
                                 </div>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body px-4">
                                 <div class="mt-5">
                                     <table id="table" class="display">
                                         <thead>

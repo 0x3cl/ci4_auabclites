@@ -383,9 +383,18 @@ table .avatar-image {
 textarea {
     resize: none;
     padding-top: 15px !important;
-    height: 250px;
+    height: 550px !important;
 }
 
 .widgets .card {
     height: max-content;
+}
+
+.alert-heading i {
+    font-size: 18px !important;
+    margin-bottom: 3px;
+}
+
+.tox-statusbar {
+    display: none !important;
 }

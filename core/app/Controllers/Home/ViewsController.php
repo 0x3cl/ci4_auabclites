@@ -782,7 +782,7 @@ class ViewsController extends BaseController {
         $data['site_officers'] = $model->get_data([
             'table' => 'lites_officers',
             'select' => 'lites_officers.first_name, lites_officers.last_name,
-                        lites_officers.image, lites_positions.name as position',
+                        lites_officers.image, lites_positions.name as position, lites_positions.id as position_id',
             'join' => [
                 'table' => 'lites_positions',
                 'on' => 'lites_officers.position_id = lites_positions.id',
@@ -1128,5 +1128,4 @@ class ViewsController extends BaseController {
 
         return $this->renderView('Home/sub-pages/'.$page.'', $render);
     }
-
 }

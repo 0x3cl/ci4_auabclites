@@ -85,7 +85,7 @@ class CustomModel extends Model {
         return $builder->insertBatch($data);
     }
 
-    public function deleteData($table, $condition) {
+    public function delete_data($table, $condition) {
         $builder = $this->db->table($table);
         if(is_array($condition)) {
             foreach($condition as $key => $value) {

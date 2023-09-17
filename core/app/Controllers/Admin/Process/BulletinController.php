@@ -5,6 +5,7 @@ namespace App\Controllers\Admin\Process;
 use App\Controllers\BaseController;
 use App\Models\CustomModel;
 use App\Libraries\LogsController;
+use App\Libraries\SendEmailController;
 
 class BulletinController extends BaseController {
 
@@ -206,6 +207,8 @@ class BulletinController extends BaseController {
             'content' => $data['content'],
         ];
 
+        $newsletter = $data['send_newsletter'];
+
         try {
             $inserted_id = $model->insertData('lites_bulletin', $data_content);
             if ($inserted_id) {
@@ -214,14 +217,20 @@ class BulletinController extends BaseController {
                     'image' => $filename,
                     'is_banner' => 1
                 ];
-                if($model->insertData('lites_bulletin_image', $data) 
+                if ($model->insertData('lites_bulletin_image', $data) 
                     && optimizeImageUpload($path, $file, $filename)) {
+
+                    if ($newsletter == 1) {
+                        $this->sendEmailBulletin('announcement');
+                    }
+
                     $flashdata = [
                         'status' => 'success',
                         'message' => 'bulletin for announcement created successfully',
-                    ];   
+                    ];
                     $this->logs->init('[announcement bulletin] ~ '.$data_content['title'].' added successfully');
                 }
+                
             } else {
                 $flashdata = [
                     'status' => 'error',
@@ -235,8 +244,10 @@ class BulletinController extends BaseController {
             ];
         }
 
+        
         session()->setFlashData('flashdata', $flashdata);
         return redirect()->back(); 
+    
     }
     
     public function upload_news($data, $files) {
@@ -481,7 +492,7 @@ class BulletinController extends BaseController {
                 $path = format_bulletin_category($temp_data[0]->category);
                 $path = './assets/home/images/bulletin/'.$path.'/';
 
-                if($model->deleteData('lites_bulletin_image', ['id' => $id])
+                if($model->delete_data('lites_bulletin_image', ['id' => $id])
                     && removeImage($path . $previous_image)) {
                     $flashdata = [
                         'status' => 'success',
@@ -586,8 +597,8 @@ class BulletinController extends BaseController {
                     ]
                 ])[0]->title;
 
-                if($model->deleteData('lites_bulletin', ['id' => $id])
-                    && $model->deleteData('lites_bulletin_image', ['bulletin_id' => $id])) {
+                if($model->delete_data('lites_bulletin', ['id' => $id])
+                    && $model->delete_data('lites_bulletin_image', ['bulletin_id' => $id])) {
                     foreach($previous_image as $value) {
                         removeImage($path . $value->image);
                     }
@@ -607,6 +618,41 @@ class BulletinController extends BaseController {
             session()->setFlashData('flashdata', $flashdata);
             return redirect()->to('/admin/manage/page/bulletin'); 
 
+        }
+    }
+
+    public function sendEmailBulletin($type) {
+        
+        $mail_lists = $this->getSubscribedEmails();
+        
+        if($type === 'announcement') {
+            $subject = 'New Announcement Posted';
+        } else if($subject === 'news') {
+            $subject = 'New News Posted';
+        }
+
+        $config = [
+            'to' => $mail_lists,
+            'subject' => $subject,
+            'message' => 'test email from carl'
+        ];
+
+        $email = new SendEmailController;
+
+        return $email->sendEmail($config);
+    }
+
+    public function getSubscribedEmails() {
+        $model = new CustomModel;
+        try {
+            $data = $model->get_data([
+                'select' => 'email',
+                'table' => 'lites_newsletter'
+            ]);
+
+            return $data;
+        } catch (\Exception $e) {
+            echo 'error: ' . $e->getMessage();
         }
     }
 

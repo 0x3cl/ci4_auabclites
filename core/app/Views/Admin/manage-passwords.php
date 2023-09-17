@@ -15,7 +15,7 @@
                             <div class="card-header border-0 py-4">
                                 <small>CHANGE PASSWORD</small>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body px-4">
                                 <form action="<?= base_url('/admin/manage/me/update/password') ?>" method="post">
                                     <div class="row">
                                         <input type="hidden" name="id" value="<?= $data["get_user_data"][0]->id ?>">

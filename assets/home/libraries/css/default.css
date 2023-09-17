@@ -22,8 +22,8 @@
 
 
 * {
-    /* user-select: none;
-    user-zoom: none; */
+    user-select: none !important;
+    user-zoom: zoom !important; 
 }
 
 :root {
