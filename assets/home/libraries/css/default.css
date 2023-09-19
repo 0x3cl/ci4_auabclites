@@ -38,9 +38,7 @@
     --secondary-text-color: #fff;
     --tertiary-text-color: #000;
     --quinary-text-color: #801313;
-
 }
-
 
 body {
     overflow-x: hidden !important;
@@ -591,7 +589,6 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
     height: initial;
     width: 200px;
 }
-
 
 #light-gallery.image-grid img {
     width: 100%; 

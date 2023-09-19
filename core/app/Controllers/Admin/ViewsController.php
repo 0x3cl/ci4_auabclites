@@ -74,6 +74,25 @@ class ViewsController extends BaseController {
         return $this->renderView('Admin/'.$page.'', $render);
     }
 
+    public function recover($page = 'recover') {
+
+        $view = [
+            'page' => $page,
+            'isSubPage' => 'false',
+        ];
+
+        if($this->isPageNotExists($view)) {
+            throw PageNotFoundException::forPageNotFound();    
+        }
+
+        $render = [
+            'title' => 'Recover Admin Login',
+            'active' => '',
+        ];
+
+        return $this->renderView('Admin/'.$page.'', $render);
+    }
+
     public function signout() {
         $this->logs->init('logged out');
         session()->remove('session_token');
@@ -181,7 +200,7 @@ class ViewsController extends BaseController {
         $data['get_other_users'] = $this->model->get_data(
             [
                 'table' => 'lites_users',
-                'select' => 'lites_users.id, lites_users.username, lites_users.first_name, 
+                'select' => 'lites_users.id, lites_users.email, lites_users.username, lites_users.first_name, 
                             lites_users.last_name, lites_users.image, lites_positions.name as position_name, 
                             lites_positions.id as position_id, lites_users.password',
                 'condition' => [
@@ -1275,6 +1294,34 @@ class ViewsController extends BaseController {
         return $this->renderView('Admin/sub-pages/'.$page.'', $render);
     }
 
+    public function manage_smtp($page = 'manage-smtp') {
+        $view = [
+            'page' => $page,
+            'isSubPage' => 'false',
+        ];
+
+        if($this->isPageNotExists($view)) {
+            throw PageNotFoundException::forPageNotFound();    
+        }
+
+        $data['get_smtp'] = $this->model->get_data([
+            'table' => 'lites_smtp',
+            'condition' => [
+                'column' => 'lites_smtp.id',
+                'value' => 1
+            ]
+        ]);
+
+        
+        $render = [
+            'title' => 'Manage Account | LITES',
+            'active' => 'settings',
+            'data' => $data,
+        ];
+
+        return $this->renderView('Admin/'.$page.'', $render);
+    }
+
     public function manage_me($page = 'manage-me') {
         $view = [
             'page' => $page,
@@ -1287,6 +1334,12 @@ class ViewsController extends BaseController {
 
         $data['get_user_data'] = $this->model->get_data([
             'table' => 'lites_users',
+            'select' => 'lites_users.*, lites_positions.description as position_description',
+            'join' => [
+                'table' => 'lites_positions',
+                'on' => 'lites_positions.id = lites_users.position',
+                'type' => 'inner'
+            ],
             'condition' => [
                 'column' => 'lites_users.id',
                 'value' => session()->get('session_token')['id']

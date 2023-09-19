@@ -207,7 +207,7 @@ class BulletinController extends BaseController {
             'content' => $data['content'],
         ];
 
-        $newsletter = $data['send_newsletter'];
+        $send_enail = $data['send_enail'] ?? '';
 
         try {
             $inserted_id = $model->insertData('lites_bulletin', $data_content);
@@ -219,16 +219,19 @@ class BulletinController extends BaseController {
                 ];
                 if ($model->insertData('lites_bulletin_image', $data) 
                     && optimizeImageUpload($path, $file, $filename)) {
-
-                    if ($newsletter == 1) {
-                        $this->sendEmailBulletin('announcement');
+                    if ($send_enail == 1 && $this->sendEmail('announcement')) {
+                        $flashdata = [
+                            'status' => 'success',
+                            'message' => 'announcement bulletin was successfully created and the newsletter has been sent.',
+                        ];
+                        $this->logs->init('[announcement bulletin] ~ '.$data_content['title'].' successfully created and the newsletter has been sent');
+                    } else {
+                        $flashdata = [
+                            'status' => 'success',
+                            'message' => 'announcement bulletin was successfully created.',
+                        ];
+                        $this->logs->init('[announcement bulletin] ~ '.$data_content['title'].' successfully created');
                     }
-
-                    $flashdata = [
-                        'status' => 'success',
-                        'message' => 'bulletin for announcement created successfully',
-                    ];
-                    $this->logs->init('[announcement bulletin] ~ '.$data_content['title'].' added successfully');
                 }
                 
             } else {
@@ -263,6 +266,8 @@ class BulletinController extends BaseController {
             'content' => $data['content']
         ];
     
+        $send_enail = $data['send_enail'] ?? '';
+        
         try {
             $insert_id = $model->insertData('lites_bulletin', $data_content);
             if ($insert_id && optimizeImageUpload($path, $banner_file, $banner_filename)) {
@@ -284,11 +289,19 @@ class BulletinController extends BaseController {
                     }
                 }
                 if($model->insertDataBatch('lites_bulletin_image', $images)) {
-                    $flashdata = [
-                        'status' => 'success',
-                        'message' => 'Bulletin for news created successfully',
-                    ];
-                    $this->logs->init('[news bulletin] ~ '.$data_content['title'].' added successfully');
+                    if ($send_enail == 1 && $this->sendEmail('announcement')) {
+                        $flashdata = [
+                            'status' => 'success',
+                            'message' => 'news bulletin was successfully created and the newsletter has been sent.',
+                        ];
+                        $this->logs->init('[news bulletin] ~ '.$data_content['title'].' successfully created and the newsletter has been sent');
+                    } else {
+                        $flashdata = [
+                            'status' => 'success',
+                            'message' => 'news bulletin was successfully created.',
+                        ];
+                        $this->logs->init('[news bulletin] ~ '.$data_content['title'].' successfully created');
+                    }
                 }
             }
         } catch (\Exception $e) {
@@ -621,7 +634,7 @@ class BulletinController extends BaseController {
         }
     }
 
-    public function sendEmailBulletin($type) {
+    public function sendEmail($type) {
         
         $mail_lists = $this->getSubscribedEmails();
         

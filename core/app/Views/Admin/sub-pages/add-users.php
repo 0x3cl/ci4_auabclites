@@ -70,6 +70,12 @@
                                         </div>
                                         <div class="col-12 col-md-12 mb-4">
                                             <div class="form-group">
+                                                <input type="text" name="email" id="email" class="form-control" autocomplete="disabled" required>
+                                                <label for="email">Email <span class="text-danger fw-bold">*</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 mb-4">
+                                            <div class="form-group">
                                                 <input type="text" name="username" id="username" class="form-control" autocomplete="disabled" required>
                                                 <label for="username">Username <span class="text-danger fw-bold">*</span></label>
                                             </div>
@@ -80,10 +86,21 @@
                                                 <label for="password">Password <span class="text-danger fw-bold">*</span></label>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-12 mb-4">
+                                        <div class="col-12 col-md-12 mb-2">
                                             <div class="form-group">
                                                 <input type="password" name="confirm-password" id="confirm-password" class="form-control" autocomplete="disabled" required>
                                                 <label for="confirm-password">Confirm Password <span class="text-danger fw-bold">*</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <hr>
+                                            <div class="send_email mb-5">
+                                                <div class="form-check d-flex align-items-start gap-2">
+                                                    <input class="form-check-input" type="checkbox" value="1" name="send_email" id="send_email">
+                                                    <label class="form-check-label" for="send_email" style="margin-top: 1px">
+                                                        Notify user via email provided
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

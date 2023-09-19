@@ -33,7 +33,6 @@
                                                                 foreach($data["get_bulletin_data"] as $value) {
                                                                     echo '<li class="mb-2">CATEGORY: <span>'.strtoupper(format_bulletin_category($value->category)).'</span></li>';
                                                                     echo '<li class="mb-2">TITLE: <span>'.strtoupper($value->title).'</span></li>';
-                                                                    echo '<li class="mb-2">CONTENT: <span>'.strtoupper($value->content).'</span></li>';
                                                                     echo '<li class="mb-2">DATE POSTED: <span>'.strtoupper(format_timestamp_to_date($value->date_created)).'</span></li>';
                                                                 }
                                                             }

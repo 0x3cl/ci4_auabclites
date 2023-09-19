@@ -1,0 +1,547 @@
+ERROR - 2023-09-19 09:28:10 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(655): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:28:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:28:10 --> 
+ERROR - 2023-09-19 09:29:36 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(655): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:29:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:29:36 --> 
+ERROR - 2023-09-19 09:30:11 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(655): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:30:11 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:30:11 --> 
+CRITICAL - 2023-09-19 09:31:26 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\BulletinController.php on line 215.
+ 1 APPPATH\Controllers\Admin\Process\BulletinController.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\BulletinController.php', 215)
+ 2 APPPATH\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements([...], Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-19 09:33:02 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(655): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:33:02 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:33:02 --> 
+ERROR - 2023-09-19 09:35:57 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(655): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:35:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:35:57 --> 
+ERROR - 2023-09-19 09:41:18 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(655): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:41:18 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:41:18 --> 
+ERROR - 2023-09-19 09:42:42 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(655): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:42:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:42:42 --> 
+ERROR - 2023-09-19 09:45:01 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(655): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:45:01 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:45:01 --> 
+ERROR - 2023-09-19 09:47:00 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:47:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:47:00 --> 
+CRITICAL - 2023-09-19 09:47:00 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\BulletinController.php on line 252.
+ 1 APPPATH\Controllers\Admin\Process\BulletinController.php(252): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\BulletinController.php', 252)
+ 2 APPPATH\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements([...], Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-19 09:47:07 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:47:07 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:47:07 --> 
+ERROR - 2023-09-19 09:49:10 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', 587, NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:49:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:49:10 --> 
+ERROR - 2023-09-19 09:49:12 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', 587, NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:49:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:49:12 --> 
+ERROR - 2023-09-19 09:50:59 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:50:59 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:50:59 --> 
+ERROR - 2023-09-19 09:51:06 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:51:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:51:06 --> 
+ERROR - 2023-09-19 09:51:21 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(75): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:51:21 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:51:21 --> 
+ERROR - 2023-09-19 09:51:28 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(76): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:51:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:51:28 --> 
+ERROR - 2023-09-19 09:52:54 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:52:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:52:54 --> 
+ERROR - 2023-09-19 09:53:43 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:53:43 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:53:43 --> 
+ERROR - 2023-09-19 09:54:03 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', 587, NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:54:03 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:54:03 --> 
+ERROR - 2023-09-19 09:55:42 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('"smtp-relay.bre...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:55:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:55:42 --> 
+ERROR - 2023-09-19 09:56:46 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php:1882
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'D:\\DATABASE\\XAM...', 1882)
+#1 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1882): fsockopen('smtp-relay.brev...', '587', NULL, NULL, 7)
+#2 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1794): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1679): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\Email\Email.php(1573): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Libraries\SendEmailController.php(73): CodeIgniter\Email\Email->send()
+#6 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(656): App\Libraries\SendEmailController->sendEmail(Array)
+#7 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(222): App\Controllers\Admin\Process\BulletinController->sendEmailBulletin('announcement')
+#8 D:\DATABASE\XAMPP\htdocs\auabclites\core\app\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements(Array, Object(CodeIgniter\HTTP\Files\UploadedFile))
+#9 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+#10 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+#11 D:\DATABASE\XAMPP\htdocs\auabclites\core\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\DATABASE\XAMPP\htdocs\auabclites\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-09-19 09:56:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-19 09:56:46 --> 
+CRITICAL - 2023-09-19 11:42:29 --> Class "App\Controllers\Admin\Process\SendEmailController" not found
+in APPPATH\Controllers\Admin\Process\UserController.php on line 1261.
+ 1 APPPATH\Controllers\Admin\Process\UserController.php(157): App\Controllers\Admin\Process\UserController->sendEmail('llemoschloe3741@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\UserController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 11:42:59 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\Process\UserController.php(208): CodeIgniter\Model->__call('deleteData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\UserController->delete_data()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 12:48:49 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\UserController.php on line 169.
+ 1 APPPATH\Controllers\Admin\Process\UserController.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\UserController.php', 169)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\UserController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 12:53:06 --> syntax error, unexpected token ")", expecting variable or "{" or "$"
+in APPPATH\Controllers\Admin\Process\UserController.php on line 159.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\UserController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Process\\UserController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Process\\UserController')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Admin\\Process\\UserController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 12:54:12 --> Undefined variable $data
+in APPPATH\Controllers\Admin\Process\UserController.php on line 148.
+ 1 APPPATH\Controllers\Admin\Process\UserController.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\UserController.php', 148)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\UserController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 14:35:39 --> Undefined property: stdClass::$email
+in APPPATH\Views\Admin\manage-users.php on line 45.
+ 1 APPPATH\Views\Admin\manage-users.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$email', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-users.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-users.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/manage-users', [], true)
+ 5 APPPATH\Controllers\Admin\ViewsController.php(53): view('Admin/manage-users')
+ 6 APPPATH\Controllers\Admin\ViewsController.php(207): App\Controllers\Admin\ViewsController->renderView('Admin/manage-users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_users()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 14:53:42 --> syntax error, unexpected single-quoted string "/auabclites/admin/manage/me", expecting "]"
+in APPPATH\Filters\AuthAdminFilter.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Filters\\AuthAdminFilter.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthAdminFilter')
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthAdminFilter')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('admin/notify', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 14:54:16 --> Undefined array key "get_user_data"
+in APPPATH\Views\Admin\manage-smtp.php on line 21.
+ 1 APPPATH\Views\Admin\manage-smtp.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "get_user_data"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-smtp.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-smtp.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/manage-smtp', [], true)
+ 5 APPPATH\Controllers\Admin\ViewsController.php(53): view('Admin/manage-smtp')
+ 6 APPPATH\Controllers\Admin\ViewsController.php(1303): App\Controllers\Admin\ViewsController->renderView('Admin/manage-smtp', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_smtp()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 14:54:38 --> Undefined property: stdClass::$image
+in APPPATH\Views\Admin\manage-smtp.php on line 28.
+ 1 APPPATH\Views\Admin\manage-smtp.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-smtp.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-smtp.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/manage-smtp', [], true)
+ 5 APPPATH\Controllers\Admin\ViewsController.php(53): view('Admin/manage-smtp')
+ 6 APPPATH\Controllers\Admin\ViewsController.php(1303): App\Controllers\Admin\ViewsController->renderView('Admin/manage-smtp', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_smtp()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 14:58:37 --> Undefined property: stdClass::$image
+in APPPATH\Views\Admin\manage-smtp.php on line 28.
+ 1 APPPATH\Views\Admin\manage-smtp.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-smtp.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-smtp.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/manage-smtp', [], true)
+ 5 APPPATH\Controllers\Admin\ViewsController.php(53): view('Admin/manage-smtp')
+ 6 APPPATH\Controllers\Admin\ViewsController.php(1303): App\Controllers\Admin\ViewsController->renderView('Admin/manage-smtp', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_smtp()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 14:58:39 --> Undefined property: stdClass::$image
+in APPPATH\Views\Admin\manage-smtp.php on line 28.
+ 1 APPPATH\Views\Admin\manage-smtp.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$image', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-smtp.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-smtp.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/manage-smtp', [], true)
+ 5 APPPATH\Controllers\Admin\ViewsController.php(53): view('Admin/manage-smtp')
+ 6 APPPATH\Controllers\Admin\ViewsController.php(1303): App\Controllers\Admin\ViewsController->renderView('Admin/manage-smtp', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_smtp()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 15:26:53 --> Undefined property: stdClass::$role
+in APPPATH\Views\Admin\manage-me.php on line 21.
+ 1 APPPATH\Views\Admin\manage-me.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$role', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-me.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-me.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/manage-me', [], true)
+ 5 APPPATH\Controllers\Admin\ViewsController.php(53): view('Admin/manage-me')
+ 6 APPPATH\Controllers\Admin\ViewsController.php(1331): App\Controllers\Admin\ViewsController->renderView('Admin/manage-me', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_me()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 15:27:05 --> Undefined property: stdClass::$position_description
+in APPPATH\Views\Admin\manage-me.php on line 21.
+ 1 APPPATH\Views\Admin\manage-me.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$position_description', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-me.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Views\\Admin\\manage-me.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/manage-me', [], true)
+ 5 APPPATH\Controllers\Admin\ViewsController.php(53): view('Admin/manage-me')
+ 6 APPPATH\Controllers\Admin\ViewsController.php(1331): App\Controllers\Admin\ViewsController->renderView('Admin/manage-me', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->manage_me()
+ 8 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 15:51:19 --> Class "App\Controllers\Admin\Process\CustomModel" not found
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 15:51:33 --> Undefined array key "column"
+in APPPATH\Models\CustomModel.php on line 36.
+ 1 APPPATH\Models\CustomModel.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "column"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Models\\CustomModel.php', 36)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(78): App\Models\CustomModel->get_data([...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-19 15:54:53 --> Undefined array key "to"
+in APPPATH\Libraries\SendEmailController.php on line 36.
+ 1 APPPATH\Libraries\SendEmailController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "to"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 36)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(92): App\Libraries\SendEmailController->sendEmail([...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

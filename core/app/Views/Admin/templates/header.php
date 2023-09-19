@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="<?= base_url('/assets/admin/css/default.css') ?>">
     <!-- JAVASCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <?= (request()->uri->getPath() == '/auabclites/admin/login') ? '<link rel="stylesheet" href="'.base_url('/assets/admin/css/login.css').'">' : '<link rel="stylesheet" href="'.base_url('/assets/admin/css/app.css').'">'?>
+    <?= (request()->uri->getPath() == '/auabclites/admin/login' || request()->uri->getPath() == '/auabclites/admin/recover') ? '<link rel="stylesheet" href="'.base_url('/assets/admin/css/login.css').'">' : '<link rel="stylesheet" href="'.base_url('/assets/admin/css/app.css').'">'?>
     <title><?= $title ?></title>
 </head>
 <body>

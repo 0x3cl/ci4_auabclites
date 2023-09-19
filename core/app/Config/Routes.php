@@ -103,6 +103,12 @@ $routes->group('admin', ['namespace' => 'App\Controllers\Admin'], function($rout
         $routes->post('/', 'Process\LoginAuthController::login');
     });
 
+    $routes->group('recover', function($routes) {
+        $routes->get('/', 'ViewsController::recover');
+        $routes->post('/', 'Process\LoginAuthController::recover');
+    });
+
+
     $routes->group('widgets', function($routes) {
         $routes->get('/', 'ViewsController::widgets'); 
         $routes->post('toggle', 'Process\WidgetController::index'); 
@@ -236,6 +242,12 @@ $routes->group('admin', ['namespace' => 'App\Controllers\Admin'], function($rout
             $routes->post('update/image', 'Process\MeController::update_image');
             $routes->post('update/data', 'Process\MeController::update_data');
             $routes->post('update/password', 'Process\MeController::update_password');
+        });
+
+        $routes->group('smtp', function($routes) {
+            $routes->get('/', 'ViewsController::manage_smtp');
+
+            $routes->post('update/data', 'Process\SMTPController::update_data');
         });
 
         $routes->group('me', function($routes) {

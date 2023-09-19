@@ -8,7 +8,7 @@
                 <section class="mt-5 overview">
                     <div class="card">
                         <div class="card-header border-0 py-4">
-                            <small class="tle">ADD NEW BULLETIN</small>
+                            <small class="tle">ADD BULLETIN</small>
                         </div>
                         <div class="card-body px-4">
                             <div class="actions mt-5 mb-5 d-flex justify-content-end">
@@ -80,11 +80,11 @@
                                             ?>
                                         </div>
                                         <hr>
-                                        <div class="newsletter mb-5">
-                                            <div class="form-check d-flex align-items-center gap-2">
-                                                <input class="form-check-input" type="checkbox" value="1" name="send_newsletter" id="newsletter">
-                                                <label class="form-check-label mt-1" for="newsletter">
-                                                    Share this newsletter with the people who have opted to receive it via email.
+                                        <div class="send_email mb-5">
+                                            <div class="form-check d-flex align-items-start gap-2">
+                                                <input class="form-check-input" type="checkbox" value="1" name="send_enail" id="send_email">
+                                                <label class="form-check-label" for="send_email" style="margin-top: 1px">
+                                                    Share this bulletin as a newsletter with the people who have opted to receive it via email.                                              
                                                 </label>
                                             </div>
                                         </div>

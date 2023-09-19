@@ -80,7 +80,7 @@
                     <a href="<?= base_url('/admin/manage/newsletter') ?>" class="text-link">
                         <div class="icon mob-icon">
                             <i class='bx bx-envelope-open'></i>
-                            <span>News Letter</span>
+                            <span>Mail Lists</span>
                         </div>
                     </a>
                 </li>
@@ -109,6 +109,9 @@
                     </a>
                     <div class="collapse multi-collapse sub-menu" id="settings-collapse">
                         <ul class="list-unstyled">
+                            <li class="list-unstyled-item">
+                                <a href="<?= base_url('/admin/manage/smtp') ?>" class="text-link"><i class='bx bx-mail-send'></i> SMTP</a>
+                            </li>
                             <li class="list-unstyled-item">
                                 <a href="<?= base_url('/admin/manage/me') ?>" class="text-link"><i class='bx bxs-user-badge'></i> Profile</a>
                             </li>

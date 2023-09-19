@@ -48,18 +48,21 @@ class SendEmailController extends BaseController {
             'SMTPTimeout' => 7,
             'charset' => 'utf-8',
             'newline' => "\r\n",
-            'mailType' => 'text', 
+            'mailType' => 'html', 
             'validate' => true, 
         ];
 
         $this->email->initialize($config);
-        $this->email->setFrom($smtp[0]->username);
+        $this->email->setFrom($smtp[0]->sender);
 
          // LOOP TO HANDLE MULTIPLE RECEPIENT
-        $recepients = [];
-
-        foreach($to as $value) {
-            $recepients[] = $value->email;
+        if(is_array($to)) {
+            $recepients = [];
+            foreach($to as $value) {
+                $recepients[] = $value->email;
+            }
+        } else {
+            $recepients = $to;
         }
 
         $this->email->setTo($recepients);

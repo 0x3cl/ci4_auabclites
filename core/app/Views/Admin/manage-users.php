@@ -24,11 +24,12 @@
                                         <tr>
                                             <th>ID</th>
                                             <th>Image</th>
+                                            <th>Email</th>
                                             <th>Username</th>
                                             <th>First Name</th>
                                             <th>Last Name</th>
                                             <th>Position</th>
-                                            <th></th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -41,6 +42,7 @@
                                                         <td>
                                                             <img class="avatar-image" src="'.base_url('/assets/admin/uploads/avatar/'.$value->image.'').'">
                                                         </td>
+                                                        <td>'.$value->email.'</td>
                                                         <td>'.$value->username.'</td>
                                                         <td>'.$value->first_name.'</td>
                                                         <td>'.$value->last_name.'</td>

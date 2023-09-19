@@ -1,0 +1,8 @@
+CRITICAL - 2023-09-18 17:18:29 --> Undefined array key "send_newsletter"
+in APPPATH\Controllers\Admin\Process\BulletinController.php on line 210.
+ 1 APPPATH\Controllers\Admin\Process\BulletinController.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "send_newsletter"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\BulletinController.php', 210)
+ 2 APPPATH\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements([...], Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

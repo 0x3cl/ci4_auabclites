@@ -16,7 +16,7 @@ class AuthAdminFilter implements FilterInterface {
         
         $route = $request->uri->getPath();
 
-        if ($route === '/auabclites/admin/login') {
+        if ($route === '/auabclites/admin/login' || $route === '/auabclites/admin/recover') {
             if(isset($session_token)) {
                 return redirect()->to('/admin/dashboard');
             }
@@ -48,6 +48,7 @@ class AuthAdminFilter implements FilterInterface {
                 '/auabclites/admin/manage/newsletter',
                 '/auabclites/admin/manage/email',
                 '/auabclites/admin/manage/report',
+                '/auabclites/admin/manage/smtp',
                 '/auabclites/admin/manage/me',
                 '/auabclites/admin/manage/logs',
                 '/auabclites/admin/signout',

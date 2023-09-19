@@ -15,7 +15,7 @@
                             <div class="card-header border-0 py-4">
                                 <small class="tle">MANAGE CONTACTS</small>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body px-4">
                                 <div class="description mb-4">
                                     <div class="alert alert-info">
                                         <div class="alert-heading d-flex align-items-center gap-2">
@@ -67,7 +67,7 @@
                                         </div>
                                         <div class="col-12 col-md-12 mb-3">
                                             <div class="form-group">
-                                                <textarea name="address" id="address" class="form-control" autocomplete="disabled" required><?= $data['get_contacts'][6]->value; ?></textarea>
+                                                <input type="text" name="address" id="address" class="form-control" value="<?= $data['get_contacts'][6]->value ?>">
                                                 <label for="address">Address <span class="text-danger fw-bold">*</span></label>
                                             </div>
                                         </div>

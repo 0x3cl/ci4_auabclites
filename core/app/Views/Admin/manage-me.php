@@ -11,6 +11,17 @@
                             $flashdata = session()->getFlashData('flashdata');
                             readFlashData($flashdata);
                         ?>
+                        <div class="description mb-5">
+                            <div class="alert alert-info">
+                                <div class="alert-heading d-flex align-items-center gap-2">
+                                    <i class='bx bxs-info-circle'></i>
+                                    <h5 class="m-0">About my role or position</h5>
+                                </div>
+                                <hr>
+                                <p class="mt-3 mb-0 text-justify"><?= $data["get_user_data"][0]->position_description ?></p>
+                                <div class="mt-5"><b>Note: All <span class="text-danger fw-bold">*</span> are required</b></div>
+                            </div>
+                        </div>
                         <div class="card mb-5">
                             <div class="card-header border-0 py-4">
                                 <small>YOUR PROFILE IMAGE</small>
@@ -63,6 +74,11 @@
                                                 <input type="text" class="form-control" autocomplete="disabled" value="<?= strtoupper($data["get_user_data"][0]->username) ?>" disabled>
                                             </div>
                                         </div>
+                                        <div class="col-12 mb-4">
+                                            <div class="form-group">
+                                                <input type="text" name="email" id="email" class="form-control" autocomplete="disabled" value="<?= $data["get_user_data"][0]->email ?>" disabled>
+                                            </div>
+                                        </div>
                                         <div class="col-12 col-md-6 mb-4">
                                             <div class="form-group">
                                                 <input type="text" name="firstname" id="firstname" class="form-control" autocomplete="disabled" value="<?= $data["get_user_data"][0]->first_name ?>" required>
@@ -82,7 +98,6 @@
                                 </form>
                             </div>
                         </div>
-                       
                     </div>
                 </section>
             </div>
