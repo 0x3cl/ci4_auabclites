@@ -111,7 +111,7 @@ class OfficersController extends BaseController {
 
 
                 try {
-                    if($model->insertData('lites_officers', $data)
+                    if($model->insert_data('lites_officers', $data)
                     && optimizeImageUpload($path, $file, $filename)) {
                         $flashdata = [
                             'status' => 'success',
@@ -165,7 +165,7 @@ class OfficersController extends BaseController {
                     ];
                     
                     if(removeImage($path . $previous_image)
-                        && $model->updateData('lites_officers', 'lites_officers.id', $id, $data)
+                        && $model->update_data('lites_officers', 'lites_officers.id', $id, $data)
                         && optimizeImageUpload($path, $file, $filename)) {
                         $flashdata = [
                             'status' => 'success',
@@ -217,7 +217,7 @@ class OfficersController extends BaseController {
                 ];
 
                 try {
-                    if($model->updateData('lites_officers', 'lites_officers.id', $id, $data)) {
+                    if($model->update_data('lites_officers', 'lites_officers.id', $id, $data)) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'officer&apos;s information updated successfully'
@@ -276,7 +276,7 @@ class OfficersController extends BaseController {
                         'value' => $id
                     ]
                 ])[0];
-                if($model->deleteData('lites_officers', ['id' => $id]) 
+                if($model->delete_data('lites_officers', ['id' => $id]) 
                     && removeImage($path . $previous_image)) {
                     $flashdata = [
                         'status' => 'success',

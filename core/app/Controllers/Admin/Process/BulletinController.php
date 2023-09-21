@@ -37,6 +37,13 @@ class BulletinController extends BaseController {
                         'required' => '{field} cannot be blank',
                     ]
                 ],
+                'source' => [
+                    'label' => 'Source',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} cannot be blank',
+                    ]
+                ],
                 'title' => [
                     'label' => 'Title',
                     'rules' => 'required|min_length[4]',
@@ -71,6 +78,13 @@ class BulletinController extends BaseController {
                         'required' => '{field} cannot be blank',
                     ]
                 ],
+                'source' => [
+                    'label' => 'Source',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} cannot be blank',
+                    ]
+                ],
                 'title' => [
                     'label' => 'Title',
                     'rules' => 'required|min_length[4]',
@@ -100,6 +114,13 @@ class BulletinController extends BaseController {
             'update_announcements' => [
                 'category' => [
                     'label' => 'Category',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} cannot be blank',
+                    ]
+                ],
+                'source' => [
+                    'label' => 'Source',
                     'rules' => 'required',
                     'errors' => [
                         'required' => '{field} cannot be blank',
@@ -203,6 +224,7 @@ class BulletinController extends BaseController {
 
         $data_content = [
             'category' => '1',
+            'source' => $data['source'],
             'title' => $data['title'],
             'content' => $data['content'],
         ];
@@ -210,16 +232,24 @@ class BulletinController extends BaseController {
         $send_enail = $data['send_enail'] ?? '';
 
         try {
-            $inserted_id = $model->insertData('lites_bulletin', $data_content);
+            $inserted_id = $model->insert_data('lites_bulletin', $data_content);
             if ($inserted_id) {
                 $data = [
                     'bulletin_id' => $inserted_id,
                     'image' => $filename,
                     'is_banner' => 1
                 ];
-                if ($model->insertData('lites_bulletin_image', $data) 
+                if ($model->insert_data('lites_bulletin_image', $data) 
                     && optimizeImageUpload($path, $file, $filename)) {
-                    if ($send_enail == 1 && $this->sendEmail('announcement')) {
+                    $data = [
+                        'id' => $inserted_id,
+                        'category' => format_bulletin_category(1),
+                        'source' => $data_content['source'],
+                        'title' => $data_content['title'],
+                        'content' => substr(strip_tags($data_content['content']), 0, 300),
+                        'date' => date('F d, Y')
+                    ];
+                    if ($send_enail == 1 && $this->sendEmail('announcement', $data)) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'announcement bulletin was successfully created and the newsletter has been sent.',
@@ -262,6 +292,7 @@ class BulletinController extends BaseController {
 
         $data_content = [
             'category' => '2',
+            'source' => $data['source'],
             'title' => $data['title'],
             'content' => $data['content']
         ];
@@ -269,10 +300,10 @@ class BulletinController extends BaseController {
         $send_enail = $data['send_enail'] ?? '';
         
         try {
-            $insert_id = $model->insertData('lites_bulletin', $data_content);
-            if ($insert_id && optimizeImageUpload($path, $banner_file, $banner_filename)) {
+            $inserted_id = $model->insert_data('lites_bulletin', $data_content);
+            if ($inserted_id && optimizeImageUpload($path, $banner_file, $banner_filename)) {
                 $images[] = [
-                    'bulletin_id' => $insert_id,
+                    'bulletin_id' => $inserted_id,
                     'image' => $banner_filename,
                     'is_banner' => 1,
                 ];
@@ -281,15 +312,23 @@ class BulletinController extends BaseController {
                     foreach($content_file as $files) {
                         $filename = $files->getRandomName();
                         $images[] = [
-                            'bulletin_id' => $insert_id,
+                            'bulletin_id' => $inserted_id,
                             'image' => $filename,
                             'is_banner' => 0
                         ];
                         optimizeImageUpload($path, $files, $filename);
                     }
                 }
-                if($model->insertDataBatch('lites_bulletin_image', $images)) {
-                    if ($send_enail == 1 && $this->sendEmail('announcement')) {
+                if($model->insert_data_batch('lites_bulletin_image', $images)) {
+                    $data = [
+                        'id' => $inserted_id,
+                        'category' => format_bulletin_category(2),
+                        'source' => $data_content['source'],
+                        'title' => $data_content['title'],
+                        'content' => substr(strip_tags($data_content['content']), 0, 300),
+                        'date' => date('F d, Y')
+                    ];
+                    if($send_enail == 1 && $this->sendEmail('announcement', $data)) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'news bulletin was successfully created and the newsletter has been sent.',
@@ -352,12 +391,13 @@ class BulletinController extends BaseController {
 
                 $prepared_data = [
                     'category' => $category_id,
+                    'source' => $data['source'],
                     'title' => $data['title'],
                     'content' => $data['content']
                 ];
 
                 try {
-                    if($model->updateData('lites_bulletin', 'lites_bulletin.id', $data['id'], $prepared_data)) {
+                    if($model->update_data('lites_bulletin', 'lites_bulletin.id', $data['id'], $prepared_data)) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => $data['category'] . ' successfully updated',
@@ -433,7 +473,7 @@ class BulletinController extends BaseController {
                             'image' => $filename
                         ];
 
-                        if($model->updateData('lites_bulletin_image', 'lites_bulletin_image.id', $previous_id, $prepared_data)
+                        if($model->update_data('lites_bulletin_image', 'lites_bulletin_image.id', $previous_id, $prepared_data)
                             && (optimizeImageUpload($path, $file, $filename))) {
                             $flashdata = [
                                 'status' => 'success',
@@ -547,7 +587,7 @@ class BulletinController extends BaseController {
                 }
 
                 try {
-                    if($model->insertDataBatch('lites_bulletin_image', $images)) {
+                    if($model->insert_data_batch('lites_bulletin_image', $images)) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'Bulletin images for news added successfully',
@@ -634,23 +674,272 @@ class BulletinController extends BaseController {
         }
     }
 
-    public function sendEmail($type) {
+    public function sendEmail($type, $data) {
         
         $mail_lists = $this->getSubscribedEmails();
         
         if($type === 'announcement') {
             $subject = 'New Announcement Posted';
-        } else if($subject === 'news') {
+        } else if($type === 'news') {
             $subject = 'New News Posted';
         }
 
-        $config = [
-            'to' => $mail_lists,
-            'subject' => $subject,
-            'message' => 'test email from carl'
-        ];
+        $path = $data['category'];
+
+        if($path == 'announcements') {
+            $path = 'announcement';
+        }
+
+        $message = '
+        <body><u></u>
+            <div class="m_forceBgColor" style="background-color:transparent;margin:0;padding:0">
+                <table class="m_nl-container" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:transparent">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table class="m_row m_row-1" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#e3e5e8">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table class="m_row-content m_stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="color:#000;width:600px;margin:0 auto" width="600">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="m_column m_column-1" width="100%" style="font-weight:400;text-align:left;padding-left:5px;padding-right:5px;vertical-align:top;border-top:0;border-right:0;border-bottom:0;border-left:0">
+                                                                <div class="m_spacer_block m_block-1" style="height:60px;line-height:60px;font-size:1px"> </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="m_row m_row-2" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#e3e5e8">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table class="m_row-content m_stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#fff;color:#000;width:600px;margin:0 auto" width="600">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="m_column m_column-1" width="100%" style="font-weight:400;text-align:left;padding-bottom:20px;padding-left:20px;padding-right:20px;padding-top:40px;vertical-align:top;border-top:0;border-right:0;border-bottom:0;border-left:0">
+                                                                <table class="m_text_block m_block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="word-break:break-word">
+                                                                    <tr>
+                                                                        <td class="m_pad" style="padding-bottom:15px;padding-left:15px;padding-right:15px;padding-top:45px">
+                                                                            <div style="font-family:sans-serif">
+                                                                                <div style="font-size:12px;font-family:Arial,Helvetica Neue,Helvetica,sans-serif;color:#393a3d;line-height:1.2">
+                                                                                    <p style="margin:0;font-size:14px;text-align:center"><span style="font-size:36px;color:#393a3d"><strong>New Bulletin Posted! </strong>Visit our website now.</span></p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="m_row m_row-3" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#e3e5e8">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table class="m_row-content m_stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#fff;color:#000;width:600px;margin:0 auto" width="600">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="m_column m_column-1" width="100%" style="font-weight:400;text-align:left;vertical-align:top;border-top:0;border-right:0;border-bottom:0;border-left:0">
+                                                                <table class="m_image_block m_block-1" width="100%" border="0" cellpadding="30" cellspacing="0" role="presentation">
+                                                                    <tr>
+                                                                        <td class="m_pad">
+                                                                            <div class="m_alignment" align="center" style="line-height:10px"><img src="https://ci6.googleusercontent.com/proxy/R5wK8CRHUCI7MahrOsRdVHOj0ArIi4KZAXp4sIx2yXXmKxYi4oXdXyk5xtk_NKfyQoAxRnU21amjF_2fS1WIt2Toc0D4W1Dzo0Zle2k22L6afLvRi0_kQggZXxSj-64htxsWmjALXsMXpFgRprRksTm_6vuykKGhDbDMjo5a6SRxtu2Tuq7hZirgsYwlvSinI68jyA1NM6rMNUvI-0fTmBVbGpu_7sue0GZFDMKNBe6NMa9qd-4=s0-d-e1-ft#https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/0db9f180-d222-4b2b-9371-cf9393bf4764/0bd8b69e-4024-4f26-9010-6e2a146401fb/X%24a9nuhKW%20%281%29.jpg" style="display:block;height:auto;border:0;max-width:600px;width:100%" width="600"></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="m_row m_row-4" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#e3e5e8">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table class="m_row-content m_stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="color:#000;width:600px;margin:0 auto" width="600">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="m_column m_column-1" width="100%" style="font-weight:400;text-align:left;vertical-align:top;border-top:0;border-right:0;border-bottom:0;border-left:0">
+                                                                <table class="m_image_block m_block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                    <tr>
+                                                                        <td class="m_pad" style="width:100%">
+                                                                            <div class="m_alignment" align="center" style="line-height:10px"><img src="https://ci6.googleusercontent.com/proxy/LqYOpYLLNfB4p0KPJxlWvLw2FZ4NH3HMJScks2IbzmddAa0wI-uxLAgIU6jcWybreDfzUz1EATEKJFqG9ihbnCyFEIjxEx7zxjUbRPMXVIC4Eos_wS0rqRwaIe1w5ZuuHBc2o-Vs60q5bsFIaNAThkOynr_1GNUB7leZO8WzeawxzEMFTUd2T-z-SkkVcq-qQUjWS8Cqri1wiFZqdy3oUWiG8Uvaz8U93WNwRkXVdAR7eTykRiG19dn5wuqJKe2Webmcn9BKaPvZT1JzIdh_1YtT_KV6JTA=s0-d-e1-ft#https://pro-bee-user-content-eu-west-1.s3.amazonaws.com/public/users/Integrators/0db9f180-d222-4b2b-9371-cf9393bf4764/98761911-7cfb-4977-a5ec-1d41dfdd40f1/templates_images/up-white-grey-angle.png" style="display:block;height:auto;border:0;max-width:600px;width:100%" width="600" alt="Image" title="Image"></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="m_row m_row-5" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#e3e5e8">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table class="m_row-content m_stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#eceef1;color:#000;width:600px;margin:0 auto" width="600">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="m_column m_column-1" width="100%" style="font-weight:400;text-align:left;padding-bottom:15px;padding-left:30px;padding-right:30px;padding-top:15px;vertical-align:top;border-top:0;border-right:0;border-bottom:0;border-left:0">
+                                                                <table class="m_text_block m_block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="word-break:break-word">
+                                                                    <tr>
+                                                                        <td class="m_pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:30px">
+                                                                            <div style="font-family:sans-serif">
+                                                                                <div style="color: #323232; font-family:Arial,Helvetica Neue,Helvetica,sans-serif;color:#393a3d;line-height:1.2">
+                                                                                    <p style="margin:0;">
+                                                                                        <span style="font-size:18px"><strong><span>'.ucwords($data['title']).'<br></span></strong></span>
+                                                                                    </p>
+                                                                                    <p style="margin:8px 0 0 0;font-size:16px;color:#323232"><span style="font-size:16px"><strong style="font-family:Arial,Helvetica Neue,Helvetica,sans-serif;font-family:Arial,Helvetica Neue,Helvetica,sans-serif;font-size:16px;color:#323232">Posted on: </span><span style="color: #323232">'.$data['date'].'</span></p>
+                                                                                    <p style="margin:3px 0 0 0;font-size:16px;color:#323232"><span style="font-size:16px"><strong style="color:#323232"><span>Source: </span></strong>'.$data['source'].'</span></p>
+                                                                                    <p style="margin:0;font-size:13px"></p>
+                                                                                    <p style="margin:15px 0 0 0;font-size:18px;background-color:transparent">
+                                                                                        <span style="font-size:18px">'.$data['content'].'...</span>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table class="m_button_block m_block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                    <tr>
+                                                                        <td class="m_pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:25px;text-align:left">
+                                                                            <div class="m_alignment" align="left">
+
+                                                                                <a href="'.base_url('/bulletin/'.$path.'/'.$data["id"].'').'" style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#640f0f;border-radius:3px;width:auto;border-top:0px solid transparent;font-weight:700;border-right:0px solid transparent;border-bottom:0px solid transparent;border-left:0px solid transparent;padding-top:15px;padding-bottom:15px;font-family:Arial,Helvetica Neue,Helvetica,sans-serif;font-size:16px;text-align:center;word-break:keep-all" target="_blank" rel="noreferrer"><span style="padding-left:35px;padding-right:35px;font-size:16px;display:inline-block;letter-spacing:normal"><span style="word-break:break-word;line-height:32px">READ FULL STORY</span></span></a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="m_row m_row-6" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#e3e5e8">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table class="m_row-content m_stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="color:#000;width:600px;margin:0 auto" width="600">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="m_column m_column-1" width="100%" style="font-weight:400;text-align:left;vertical-align:top;border-top:0;border-right:0;border-bottom:0;border-left:0">
+                                                                <table class="m_image_block m_block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                    <tr>
+                                                                        <td class="m_pad" style="width:100%">
+                                                                            <div class="m_alignment" align="center" style="line-height:10px"><img src="https://ci4.googleusercontent.com/proxy/20Mywd-3F2ObCrNjjcVzwgyG8KZvpyHj9U2_E8oMlpfjnU8r0cNs63Ff0tvcTE1Me2Rmgd48rmUHM8ii3TrmxzIX7_45DpdydT3ya_0d5TbyL7tAyZsIqwimooz-ffLyUOB1mP8VAErKqBQrTGsF_XQGPw8VXDOszxHjPE1HOuJTPiFjPBs5CMbm9qvyr_BVAV4ZlTzNh1KHEdiLEM5_4Zb7Wp_ASjFO5hzIFa5vbjjsFxJOXXc6X0i7jysRGi8vx3GXJFkf8_7mHHbaEkaRBzrUHRJYx97Inw=s0-d-e1-ft#https://pro-bee-user-content-eu-west-1.s3.amazonaws.com/public/users/Integrators/0db9f180-d222-4b2b-9371-cf9393bf4764/98761911-7cfb-4977-a5ec-1d41dfdd40f1/templates_images/down-grey-white-angle.png" style="display:block;height:auto;border:0;max-width:600px;width:100%" width="600" alt="Image" title="Image"></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="m_row m_row-7" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#e3e5e8">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table class="m_row-content m_stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#fff;color:#000;width:600px;margin:0 auto" width="600">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="m_column m_column-1" width="100%" style="font-weight:400;text-align:left;padding-bottom:5px;padding-top:5px;vertical-align:top;border-top:0;border-right:0;border-bottom:0;border-left:0">
+                                                                <table class="m_divider_block m_block-1" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation">
+                                                                    <tr>
+                                                                        <td class="m_pad">
+                                                                            <div class="m_alignment" align="center">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                                                    <tr>
+                                                                                        <td class="m_divider_inner" style="font-size:1px;line-height:1px;border-top:1px solid #babec5"><span> </span></td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table class="m_text_block m_block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="word-break:break-word">
+                                                                    <tr>
+                                                                        <td class="m_pad" style="padding-bottom:10px;padding-left:45px;padding-right:45px;padding-top:25px">
+                                                                            <div style="font-family:sans-serif">
+                                                                                <div style="font-size:12px;font-family:Arial,Helvetica Neue,Helvetica,sans-serif;color:#393a3d;line-height:1.2">
+                                                                                    <p style="margin:0;font-size:14px"><span style="font-size:18px">You are currently receiving the latest updates because you subscribed to our newsletter. To unsubscribe, click the button below.</span></p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table class="m_button_block m_block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                    <tr>
+                                                                        <td class="m_pad" style="padding-bottom:10px;padding-left:40px;padding-right:40px;padding-top:30px;text-align:left">
+                                                                            <div class="m_alignment" align="left">
+
+                                                                                <a href="https://www.google.com/url?q=http://au.com&amp;source=gmail-html&amp;ust=1695362537198000&amp;usg=AOvVaw0oZt5q4bH3U2BhLPuB4-yx" style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#640f0f;border-radius:3px;width:auto;border-top:0px solid transparent;font-weight:700;border-right:0px solid transparent;border-bottom:0px solid transparent;border-left:0px solid transparent;padding-top:15px;padding-bottom:15px;font-family:Arial,Helvetica Neue,Helvetica,sans-serif;font-size:16px;text-align:center;word-break:keep-all" target="_blank" rel="noreferrer"><span style="padding-left:35px;padding-right:35px;font-size:16px;display:inline-block;letter-spacing:normal"><span style="word-break:break-word;line-height:32px">UNSUBSCRIBE</span></span></a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <div class="m_spacer_block m_block-4" style="height:110px;line-height:110px;font-size:1px"> </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="m_row m_row-8" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#e3e5e8">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table class="m_row-content m_stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="color:#000;width:600px;margin:0 auto" width="600">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="m_column m_column-1" width="100%" style="font-weight:400;text-align:left;padding-bottom:40px;padding-top:40px;vertical-align:top;border-top:0;border-right:0;border-bottom:0;border-left:0">
+                                                                <div class="m_spacer_block m_block-1" style="height:60px;line-height:60px;font-size:1px"> </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </body>
+        ';
 
         $email = new SendEmailController;
+
+        $config = [
+            'to' => 'no-reply@iamcarlllemos.online',
+            'bcc' => $mail_lists,
+            'subject' => $subject,
+            'message' => $email->template($message)
+        ];
+
 
         return $email->sendEmail($config);
     }
@@ -668,5 +957,4 @@ class BulletinController extends BaseController {
             echo 'error: ' . $e->getMessage();
         }
     }
-
 }

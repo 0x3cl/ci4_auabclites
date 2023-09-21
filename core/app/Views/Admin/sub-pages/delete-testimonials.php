@@ -35,8 +35,8 @@
 
                                                             } else {
                                                                 foreach($data["get_testimonial"] as $value) {
-                                                                    echo '<li class="mb-2">FULL NAME: <span>'.strtoupper($value->first_name .' '. $value->last_name).'</span></li>';
-                                                                    echo '<li class="mb-2">TESTIMONIAL: <span>'.($value->testimonial).'</span></li>';
+                                                                    echo '<li class="mb-1">FULL NAME: <span>'.strtoupper($value->first_name .' '. $value->last_name).'</span></li>';
+                                                                    echo '<li class="mb-1">TESTIMONIAL: <span>'.($value->testimonial).'</span></li>';
                                                                 }
                                                             }
                                                         ?>

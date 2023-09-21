@@ -75,7 +75,7 @@ class HomeController extends BaseController {
                     ];
 
                     if(removeImage($path . $previous_image) 
-                        && $model->updateData('lites_images', 'lites_images.id', $id, $data)
+                        && $model->update_data('lites_images', 'lites_images.id', $id, $data)
                         && optimizeImageUpload($path, $file, $filename)) {
                         $flashdata = [
                             'status' => 'success',

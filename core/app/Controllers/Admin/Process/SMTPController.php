@@ -79,7 +79,7 @@ class SMTPController extends BaseController {
                 ];
 
                 try {
-                    if($model->updateData('lites_smtp', 'lites_smtp.id', 1, $data)) {
+                    if($model->update_data('lites_smtp', 'lites_smtp.id', 1, $data)) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'smtp updated successfully'
@@ -109,66 +109,4 @@ class SMTPController extends BaseController {
         }
     }
 
-    public function update_password() {
-        if($this->request->getMethod() === 'post') {
-            if($this->validation('update_password')) {
-                $id = $this->request->getPost('id'); 
-                $old_password = $this->request->getPost('old-password');               
-                $new_password = $this->request->getPost('new-password');
-                $confirm_password = $this->request->getPost('confirm-password');
-                $model = new CustomModel;
-
-                try {
-                    $result = $model->get_data([
-                        'table' => 'lites_users',
-                        'condition' => [
-                            'column' => 'lites_users.id',
-                            'value' => $id
-                        ]  
-                    ]);
-                   
-                    if(password_verify($old_password, $result[0]->password)) {
-                        if($new_password === $confirm_password) {
-                            $data = [
-                                'password' => password_hash($new_password, PASSWORD_BCRYPT)
-                            ];
-                            if($model->updateData('lites_users', 'lites_users.id', $id, $data)) {
-                                $flashdata = [
-                                    'status' => 'success',
-                                    'message' => 'your password updated successfully'
-                                ];
-                            }
-                        } else {
-                            $flashdata = [
-                                'status' => 'error',
-                                'message' => 'passwords do not match'
-                            ];
-                        }
-                    } else {
-                        $flashdata = [
-                            'status' => 'error',
-                            'message' => 'old password is incorrect'
-                        ];
-                    }
-                } catch (\Exception $e) {
-                    $flashdata = [
-                        'status' => 'error',
-                        'message' => 'error: ' . $e->getMessage()
-                    ];
-                }
-            } else {
-                $message = array_values($this->validator->getErrors());
-                $flashdata = [
-                    'status' => 'error',
-                    'message' => $message,
-                    'fields' => $this->request->getPost(),
-                    'scrollTo' => 'update-banner'
-                ];
-            }
-
-            session()->setFlashdata('flashdata', $flashdata);
-            return redirect()->back();
-
-        }
-    }
 }

@@ -35,8 +35,8 @@
 
                                                             } else {
                                                                 foreach($data["get_officers"] as $value) {
-                                                                    echo '<li class="mb-2">FULL NAME: <span>'.strtoupper($value->first_name .' '. $value->last_name).'</span></li>';
-                                                                    echo '<li class="mb-2">POSITION: <span>'.strtoupper($value->position).'</span></li>';
+                                                                    echo '<li class="mb-1">FULL NAME: <span>'.strtoupper($value->first_name .' '. $value->last_name).'</span></li>';
+                                                                    echo '<li class="mb-1">POSITION: <span>'.strtoupper($value->position).'</span></li>';
                                                                 }
                                                             }
                                                         ?>

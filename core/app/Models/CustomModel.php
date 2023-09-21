@@ -74,13 +74,13 @@ class CustomModel extends Model {
         return $builder->get()->getResult();
     }
 
-    public function insertData($table, $data) {
+    public function insert_data($table, $data) {
         $builder = $this->db->table($table);
         $builder->insert($data);
         return $this->db->insertID();
     }
 
-    public function insertDataBatch($table, $data) {
+    public function insert_data_batch($table, $data) {
         $builder = $this->db->table($table);
         return $builder->insertBatch($data);
     }
@@ -96,13 +96,13 @@ class CustomModel extends Model {
         return $builder->delete();
     }
 
-    public function updateData($table, $where, $value, $data) {
+    public function update_data($table, $where, $value, $data) {
         $builder = $this->db->table($table);
         $builder->where($where, $value);
         return $builder->update($data);
     }
 
-    public function updateDataBatch($table, $data, $param) {
+    public function update_data_batch($table, $data, $param) {
         $builder = $this->db->table($table);
         $builder->updateBatch($data, $param);
         return $this->db->affectedRows();

@@ -20,7 +20,7 @@ class LogsController extends BaseController {
     public function saveLogs($data) {
         $model = new CustomModel();
         try {
-            $model->insertData('lites_logs', $data);
+            $model->insert_data('lites_logs', $data);
         } catch (\Exception $e) {
             print_r($e);
         }

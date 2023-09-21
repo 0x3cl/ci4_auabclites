@@ -26,10 +26,9 @@
                         </nav>
                         ';
                         foreach($data['site_news'] as $key => $value) {
-                            $title = strtolower(preg_replace('/-+/', '-', str_replace(' ', '-', preg_replace('/[^a-zA-Z0-9\s]+/', '', trim($value->title)))));
                             echo '
                             <div class="col-12 col-md-6">
-                                <div class="redirect-page" data-src="'.base_url('/bulletin/news/'.$value->id.'/'.$title.'').'">
+                                <div class="redirect-page" data-src="'.base_url('/bulletin/news/'.$value->id).'">
                                     <div class="d-flex align-items-center gap-0 gap-md-3 mb-2 news-content" data-aos="fade-up">
                                         <div class="news-image pe-3 pe-md-0 ">
                                             <img src="'.base_url('/assets/home/images/bulletin/news/'.$value->image.'').'" alt="news">

@@ -124,7 +124,7 @@ class TestimonialsController extends BaseController {
 
 
                 try {
-                    if($model->insertData('lites_testimonials', $data)
+                    if($model->insert_data('lites_testimonials', $data)
                     && optimizeImageUpload($path, $file, $filename)) {
                         $flashdata = [
                             'status' => 'success',
@@ -181,7 +181,7 @@ class TestimonialsController extends BaseController {
     
     
                     if(removeImage($path . $previous_image)
-                        && $model->updateData('lites_testimonials', 'lites_testimonials.id', $id, $data)
+                        && $model->update_data('lites_testimonials', 'lites_testimonials.id', $id, $data)
                         && optimizeImageUpload($path, $file, $filename)) {
                         $flashdata = [
                             'status' => 'success',
@@ -236,7 +236,7 @@ class TestimonialsController extends BaseController {
                 ];
 
                 try {
-                    if($model->updateData('lites_testimonials', 'lites_testimonials.id', $id, $data)) {
+                    if($model->update_data('lites_testimonials', 'lites_testimonials.id', $id, $data)) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'testimonial&apos;s information updated successfully'
@@ -294,7 +294,7 @@ class TestimonialsController extends BaseController {
                     ],
                 ])[0]->image;
                 
-                if($model->deleteData('lites_testimonials', ['id' => $id]) && removeImage('./assets/home/images/testimonials/'. $previous_image)) {
+                if($model->delete_data('lites_testimonials', ['id' => $id]) && removeImage('./assets/home/images/testimonials/'. $previous_image)) {
                     $flashdata = [
                         'status' => 'success',
                         'message' => 'testimonial successfully deleted'

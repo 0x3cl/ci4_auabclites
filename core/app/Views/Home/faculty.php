@@ -76,34 +76,4 @@
             ';
         }
     ?>
-    <div id="other-orgs" class="my-5">
-        <div class="container">
-            <hr>
-            <div class="organization mt-5 pb-5">
-                <div class="d-lg-flex justify-content-center gap-4 text-center" data-aos="fade-up">
-                    <a href="https://www.arellanolaw.edu/news/latest.html" target="_blank" class="text-link">
-                        <img src="<?= base_url('/assets/home/images/organizations/ausl_logo.png') ?>" class="mb-4" alt="" srcset="">
-                    </a>
-                    <a hreg="https://arellanoinp.com/">
-                        <img src="<?= base_url('/assets/home/images/organizations/cbe_logo.png') ?>" class="mb-4" alt="" srcset="">
-                    </a>    
-                    <a href="https://www.arellano.edu.ph/international-programs/" target="_blank" class="text-link">
-                        <img src="<?= base_url('/assets/home/images/organizations/ipd_logo.png') ?>" class="mb-4" alt="" srcset="">
-                    </a>
-                    <a href="https://www.arellanolaw.edu/news/latest.html" target="_blank" class="text-link">
-                        <img src="<?= base_url('/assets/home/images/organizations/new_phil_logo.png') ?>" class="mb-4" alt="" srcset="">
-                    </a>
-                    <a href="https://dev.arellano.edu.ph/sites/default/files/2022-09/the_standard_one.png" target="_blank" class="text-link">
-                        <img src="<?= base_url('/assets/home/images/organizations/standard.png') ?>" class="mb-4" alt="" srcset="">
-                    </a>
-                    <a href="https://dev.arellano.edu.ph/sites/default/files/2023-06/chiefs-logo-low-res.png" target="_blank" class="text-link">
-                        <img src="<?= base_url('/assets/home/images/organizations/chiefs.png') ?>" class="mb-4" alt="" srcset="">
-                    </a>
-                    <a href="https://www.arellano.edu.ph/student-council/arellano-university-student-council/" target="_blank" class="text-link">
-                        <img src="<?= base_url('/assets/home/images/organizations/ssc.png') ?>" class="mb-4" alt="" srcset="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>

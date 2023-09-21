@@ -38,6 +38,12 @@
                                         </div>
                                         <div class="col-12 col-md-12 mb-4">
                                             <div class="form-group">
+                                                <input type="text" name="source" id="source" class="form-control" value="<?= format_field_value($fields_data, 'source')  ?>" autocomplete="disabled" required>
+                                                <label for="source">Source <span class="text-danger fw-bold">*</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 mb-4">
+                                            <div class="form-group">
                                                 <input type="text" name="title" id="title" class="form-control" value="<?= format_field_value($fields_data, 'title')  ?>" autocomplete="disabled" required>
                                                 <label for="title">Title <span class="text-danger fw-bold">*</span></label>
                                             </div>

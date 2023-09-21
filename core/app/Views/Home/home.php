@@ -104,7 +104,6 @@
                         <hr>
                         ';
                         foreach ($data['site_bulletin'] as $key => $value) {
-                            $title = strtolower(preg_replace("/[\s]+/", '-', preg_replace("/[^A-Za-z0-9\s-]+/", '', $value->title)));
                             $path = format_bulletin_category($value->category);
                             $link_path = '';
                             if($path == 'announcements') {
@@ -114,7 +113,7 @@
                             }
                             echo '
                            <div class="col-12 col-md-6 mb-3">
-                                <a href="'.base_url('/bulletin/'.$link_path.'/'.$value->id.'/'.$title.'').'" class="text-link">
+                                <a href="'.base_url('/bulletin/'.$link_path.'/'.$value->id.'').'" class="text-link">
                                     <div class="d-flex align-items-center gap-3 news-content" data-aos="fade-up">
                                         <div class="news-image">
                                             <img src="'.base_url('/assets/home/images/bulletin/'.$path.'/'.$value->image.'').'" alt="news">

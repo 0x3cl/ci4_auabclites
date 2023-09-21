@@ -125,7 +125,7 @@ class FacultyController extends BaseController {
                 ];
 
                 try {
-                    if($model->insertData('lites_faculty', $data)
+                    if($model->insert_data('lites_faculty', $data)
                     && optimizeImageUpload($path, $file, $filename)) {
                         $flashdata = [
                             'status' => 'success',
@@ -181,7 +181,7 @@ class FacultyController extends BaseController {
                     ];
 
                     if(removeImage($path . $previous_image) 
-                        && $model->updateData('lites_faculty', 'lites_faculty.id', $id, $data)
+                        && $model->update_data('lites_faculty', 'lites_faculty.id', $id, $data)
                         && optimizeImageUpload($path, $file, $filename)) {
                             $flashdata = [
                                 'status' => 'success',
@@ -231,7 +231,7 @@ class FacultyController extends BaseController {
                 ];
 
                 try {
-                    if($model->updateData('lites_faculty', 'lites_faculty.id', $id, $data)) {
+                    if($model->update_data('lites_faculty', 'lites_faculty.id', $id, $data)) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'faculty&apos;s information updated successfully'
@@ -290,7 +290,7 @@ class FacultyController extends BaseController {
                     ]
                 ])[0];
 
-                if($model->deleteData('lites_faculty', ['id' => $id]) 
+                if($model->delete_data('lites_faculty', ['id' => $id]) 
                     && removeImage('./assets/home/images/faculty/'. $previous_image)) {
                         $flashdata = [
                             'status' => 'success',

@@ -232,7 +232,7 @@ class ResearchController extends BaseController {
 
                 try {
                     
-                    $inserted_id = $model->insertData('lites_research', $research_data);
+                    $inserted_id = $model->insert_data('lites_research', $research_data);
 
                     $research_platform = [
                         'research_id' => $inserted_id,
@@ -288,10 +288,10 @@ class ResearchController extends BaseController {
                         }
                     }
 
-                    if($model->insertData('lites_research_platforms', $research_platform)
-                        && $model->insertData('lites_research_repositories', $research_repository)
-                        && $model->insertDataBatch('lites_research_image', $research_image)
-                        && $model->insertDataBatch('lites_research_technologies', $research_technologies)) {
+                    if($model->insert_data('lites_research_platforms', $research_platform)
+                        && $model->insert_data('lites_research_repositories', $research_repository)
+                        && $model->insert_data_batch('lites_research_image', $research_image)
+                        && $model->insert_data_batch('lites_research_technologies', $research_technologies)) {
 
                         foreach($filename_array as $filename) {
                             optimizeImageUpload($path, $filename['inst'], $filename['name']);
@@ -381,7 +381,7 @@ class ResearchController extends BaseController {
 
                 foreach($updateData as $data) {
                     try {
-                        $model->updateData($data['table'], $data['column'], $data['value'], $data['data']);
+                        $model->update_data($data['table'], $data['column'], $data['value'], $data['data']);
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'research updated successfully'
@@ -395,8 +395,8 @@ class ResearchController extends BaseController {
                 }
 
                 try {
-                    $model->deleteData('lites_research_technologies', ['research_id' => $id]);
-                    $model->insertDataBatch('lites_research_technologies', $research_technologies);
+                    $model->delete_data('lites_research_technologies', ['research_id' => $id]);
+                    $model->insert_data_batch('lites_research_technologies', $research_technologies);
                     $flashdata = [
                         'status' => 'success',
                         'message' => 'research updated successfully'
@@ -457,7 +457,7 @@ class ResearchController extends BaseController {
                             'filename' => $banner_filename
                         ];
         
-                        if($model->updateData('lites_research_image', 'id', $previous_id, $data)
+                        if($model->update_data('lites_research_image', 'id', $previous_id, $data)
                             && optimizeImageUpload($path, $banner_image, $banner_filename)) {
                             $flashdata = [
                                 'status' => 'success',
@@ -514,7 +514,7 @@ class ResearchController extends BaseController {
                 }
 
                 try {
-                    if($model->insertDataBatch('lites_research_image', $data)) {
+                    if($model->insert_data_batch('lites_research_image', $data)) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'research image/s added successfully'
@@ -568,7 +568,7 @@ class ResearchController extends BaseController {
                 ];
 
                 try {
-                    if($model->insertData('lites_research_authors', $data)
+                    if($model->insert_data('lites_research_authors', $data)
                         && optimizeImageUpload($path, $file, $filename)) {
                         $flashdata = [
                             'status' => 'success',
@@ -639,7 +639,7 @@ class ResearchController extends BaseController {
                         ]
                     ])[0];
                     foreach ($tables as $table => $column) {
-                        $success &= $model->deleteData($table, [$column => $id]);
+                        $success &= $model->delete_data($table, [$column => $id]);
                     }
                     $flashdata = [
                         'status' => $success ? 'success' : 'error',
@@ -691,7 +691,7 @@ class ResearchController extends BaseController {
                         ]
                     ])[0];
 
-                    if($model->deleteData('lites_research_image', ['id' => $id])) {
+                    if($model->delete_data('lites_research_image', ['id' => $id])) {
                         $flashdata = [
                            'status' =>'success',
                            'message' => 'image deleted successfully'
@@ -743,7 +743,7 @@ class ResearchController extends BaseController {
                             'value' => $id
                         ]
                     ])[0];
-                    if($model->deleteData('lites_research_authors', ['id' => $id])) {
+                    if($model->delete_data('lites_research_authors', ['id' => $id])) {
                         $flashdata = [
                            'status' =>'success',
                            'message' => 'author deleted successfully'

@@ -115,7 +115,7 @@ class ContactController extends BaseController {
                 ];
 
                 try {
-                    if($model->updateDataBatch('lites_contacts', $data, 'id') > 0) {
+                    if($model->update_data_batch('lites_contacts', $data, 'id') > 0) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'contact informations successfully updated',

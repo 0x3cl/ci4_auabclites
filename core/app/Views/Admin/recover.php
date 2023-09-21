@@ -5,6 +5,10 @@
                     <h1>Recover Account</h1>
                     <p>Provide email or username...</p>
                 </div>
+                <?php 
+                    $flashdata = session()->getFlashData('flashdata');
+                    readFlashData($flashdata);
+                ?>
                 <form action="<?= base_url('/admin/recover') ?>" method="post">
                     <div class="form-group">
                         <input type="text" name="umail" id="umail" class="form-control mb-3" autocomplete="off" required>

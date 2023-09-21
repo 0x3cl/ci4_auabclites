@@ -562,7 +562,7 @@ class ViewsController extends BaseController {
         
     }
 
-    public function bulletin_view($type, $id, $title, $page = 'view-bulletin') {
+    public function bulletin_view($type, $id, $page = 'view-bulletin') {
         $view = [
             'page' => $page,
             'isSubPage' => 'true',
@@ -847,7 +847,7 @@ class ViewsController extends BaseController {
         return $this->renderView('Home/'.$page.'', $render);
     }
 
-    public function research_view($id, $title, $page = 'view-research') {
+    public function research_view($id, $page = 'view-research') {
 
         $view = [
             'page' => $page,

@@ -69,7 +69,7 @@ $routes->group('', ['namespace' => 'App\Controllers\Home'], function($routes) {
         
         $routes->get('bulletin/news', 'ViewsController::bulletin_news');
         $routes->get('bulletin/news/page/(:num)', 'ViewsController::bulletin_news/$1');
-        $routes->get('bulletin/(:any)/(:num)/(:any)', 'ViewsController::bulletin_view/$1/$2/$3');
+        $routes->get('bulletin/(:any)/(:num)', 'ViewsController::bulletin_view/$1/$2');
     });
 
     $routes->group('/', function($routes) {
@@ -83,7 +83,7 @@ $routes->group('', ['namespace' => 'App\Controllers\Home'], function($routes) {
     $routes->group('/', function($routes) {
         $routes->get('research', 'ViewsController::research');
         $routes->get('research/page/(:num)', 'ViewsController::research_page/$1');
-        $routes->get('research/view/(:num)/(:any)', 'ViewsController::research_view/$1/$2');
+        $routes->get('research/view/(:num)', 'ViewsController::research_view/$1');
     });
 
     $routes->group('/', function($routes) {

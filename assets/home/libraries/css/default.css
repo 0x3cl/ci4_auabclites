@@ -109,9 +109,9 @@ body.modal-open {
 .loader-content .logo-content img:nth-child(2),
 .loader-content .logo-content img:nth-child(4),
 .loader-content .logo-content img:nth-child(5) {
-    width: 120px;
-    height: 120px;
-    margin: -20px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
     position: relative;
     z-index: -1;
 }
@@ -128,7 +128,7 @@ body.modal-open {
     width: 250px;
     height: 250px;
     z-index: 999;
-    margin: -30px;
+    margin: 0px;
     top: -30px;
     position: relative;
 }
@@ -605,20 +605,20 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
     color: var(--primary-text-color);
 }
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 425px) {
     .loader-content .logo-content img:nth-child(1),
     .loader-content .logo-content img:nth-child(2),
     .loader-content .logo-content img:nth-child(4),
     .loader-content .logo-content img:nth-child(5) {
-        width: 80px;
-        height: 80px;
-        margin: -20px;
+        width: 50px;
+        height: 50px;
+        margin: 0 -2px 30px -2px;
         position: relative;
         z-index: -1;
     }
     .loader-content .logo-content img:nth-child(4) {
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
     }
     .loader-content .logo-content img:nth-child(1),
     .loader-content .logo-content img:nth-child(5) {
@@ -626,10 +626,41 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
         z-index: -2;
     }
     .loader-content .logo-content img:nth-child(3) {
+        width: 80px;
+        height: 80px;
+        z-index: 999;
+        margin: 0 -2px 0 -2px;
+        top: -20px;
+        position: relative;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+
+    .loader-content .logo-content img:nth-child(1),
+    .loader-content .logo-content img:nth-child(2),
+    .loader-content .logo-content img:nth-child(4),
+    .loader-content .logo-content img:nth-child(5) {
         width: 120px;
         height: 120px;
+        margin: 0 -2px 30px -2px;
+        position: relative;
+        z-index: -1;
+    }
+    .loader-content .logo-content img:nth-child(4) {
+        width: 120px;
+        height: 120px;
+    }
+    .loader-content .logo-content img:nth-child(1),
+    .loader-content .logo-content img:nth-child(5) {
+        position: relative;
+        z-index: -2;
+    }
+    .loader-content .logo-content img:nth-child(3) {
+        width: 200px;
+        height: 200px;
         z-index: 999;
-        margin: -30px;
+        margin: 0 -2px 0 -2px;
         top: -20px;
         position: relative;
     }

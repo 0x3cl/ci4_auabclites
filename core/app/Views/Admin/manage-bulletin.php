@@ -44,7 +44,7 @@
                                                     </td>
                                                     <td>'.$value->title.'</td>
                                                     <td>
-                                                        <a href="'. base_url('/bulletin/'.$link_path.'/'.$value->id.'/'.$title).'" class="btn my-2 btn-primary" target="_blank"><i class="bx bx-show" ></i> View</a>
+                                                        <a href="'. base_url('/bulletin/'.$link_path.'/'.$value->id).'" class="btn my-2 btn-primary" target="_blank"><i class="bx bx-show" ></i> View</a>
                                                         <a href="'. base_url('/admin/manage/page/bulletin/update/'.$value->id.'').'" class="btn my-2 btn-success"><i class="bx bxs-edit" ></i> Update</a>
                                                         <a href="'. base_url('/admin/manage/page/bulletin/delete/'.$value->id.'').'" class="btn my-2 btn-danger"><i class="bx bxs-trash bx-tada" ></i> Delete</a>
                                                     </td>

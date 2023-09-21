@@ -1,0 +1,944 @@
+CRITICAL - 2023-09-20 07:02:37 --> Undefined variable $fullname
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 666.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fullname', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 666)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 07:56:26 --> Undefined property: stdClass::$user_id
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 88.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_id', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 07:57:10 --> Undefined property: stdClass::$user_id
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 88.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_id', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 07:57:57 --> Undefined variable $fullname
+in APPPATH\Libraries\SendEmailController.php on line 672.
+ 1 APPPATH\Libraries\SendEmailController.php(672): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fullname', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 672)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(127): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 07:58:47 --> Undefined variable $fullname
+in APPPATH\Libraries\SendEmailController.php on line 672.
+ 1 APPPATH\Libraries\SendEmailController.php(672): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fullname', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 672)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(127): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 07:59:57 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(127): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:01:35 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(127): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:02:05 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:02:09 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:02:17 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:02:23 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:03:09 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:03:29 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:04:11 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:05:03 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:05:08 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:05:28 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:05:35 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:05:38 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:05:48 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:05:51 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:05:58 --> Undefined array key "role"
+in APPPATH\Libraries\SendEmailController.php on line 719.
+ 1 APPPATH\Libraries\SendEmailController.php(719): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 719)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(125): App\Libraries\SendEmailController->template('recover', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:10:07 --> Object of class App\Libraries\SendEmailController could not be converted to string
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 245.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:12:08 --> Object of class App\Libraries\SendEmailController could not be converted to string
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 245.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:12:40 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:12:40 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+Failed to authenticate password. Error: 530 Invalid username or password
+
+CRITICAL - 2023-09-20 08:12:40 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 150.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:13:11 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:13:11 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+Failed to authenticate password. Error: 530 Invalid username or password
+
+ERROR - 2023-09-20 08:14:22 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:14:22 --> 220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH CRAM-MD5 PLAIN LOGIN
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+ERROR - 2023-09-20 08:14:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:14:54 --> 220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH CRAM-MD5 PLAIN LOGIN
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+ERROR - 2023-09-20 08:20:43 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:20:43 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+Failed to authenticate password. Error: 530 Invalid username or password
+
+CRITICAL - 2023-09-20 08:20:43 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 545.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(545): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 545)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:21:05 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 534.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(534): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 534)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:22:31 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:22:31 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+Failed to authenticate password. Error: 530 Invalid username or password
+
+CRITICAL - 2023-09-20 08:22:31 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 545.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(545): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 545)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:24:01 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:24:01 --> 220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+CRITICAL - 2023-09-20 08:24:01 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 545.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(545): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 545)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:24:41 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:24:41 --> 220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH CRAM-MD5 PLAIN LOGIN
+250 SIZE 20971520
+
+Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+CRITICAL - 2023-09-20 08:24:41 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 545.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(545): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 545)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:24:51 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:24:51 --> 220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH LOGIN CRAM-MD5 PLAIN
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+ERROR - 2023-09-20 08:25:41 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:25:41 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+Failed to authenticate password. Error: 530 Invalid username or password
+
+ERROR - 2023-09-20 08:26:18 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:26:18 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+Failed to authenticate password. Error: 530 Invalid username or password
+
+CRITICAL - 2023-09-20 08:26:18 --> Undefined property: CodeIgniter\Email\Email::$error_msg
+in APPPATH\Libraries\SendEmailController.php on line 79.
+ 1 APPPATH\Libraries\SendEmailController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Email\\Email::$error_msg', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Libraries\\SendEmailController.php', 79)
+ 2 APPPATH\Controllers\Admin\Process\LoginAuthController.php(531): App\Libraries\SendEmailController->sendEmail([...])
+ 3 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 4 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:26:27 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:26:27 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+Failed to authenticate password. Error: 530 Invalid username or password
+
+CRITICAL - 2023-09-20 08:26:27 --> Call to undefined method CodeIgniter\Email\Email::error_msg()
+in APPPATH\Libraries\SendEmailController.php on line 79.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(531): App\Libraries\SendEmailController->sendEmail([...])
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:26:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:26:55 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+Failed to authenticate password. Error: 530 Invalid username or password
+
+ERROR - 2023-09-20 08:32:18 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:32:18 --> 220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH CRAM-MD5 PLAIN LOGIN
+250 SIZE 20971520
+
+Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+ERROR - 2023-09-20 08:32:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:32:42 --> 220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+ERROR - 2023-09-20 08:32:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:32:42 --> Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+ERROR - 2023-09-20 08:33:13 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:33:13 --> 220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH CRAM-MD5 PLAIN LOGIN
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+CRITICAL - 2023-09-20 08:33:13 --> Call to undefined method App\Libraries\SendEmailController::printDebugger()
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 539.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:34:24 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:34:24 --> 220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+ERROR - 2023-09-20 08:34:38 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:34:38 --> 220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH CRAM-MD5 PLAIN LOGIN
+250 SIZE 20971520
+
+Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+CRITICAL - 2023-09-20 08:34:38 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 545.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(545): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 545)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:34:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:34:52 --> 220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH LOGIN CRAM-MD5 PLAIN
+250 SIZE 20971520
+
+Failed to authenticate password. Error: 454 4.7.0 Invalid password
+
+CRITICAL - 2023-09-20 08:34:52 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 545.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(545): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 545)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:35:11 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:35:11 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+Failed to authenticate password. Error: 530 Invalid username or password
+
+ERROR - 2023-09-20 08:35:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:35:36 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+Failed to authenticate password. Error: 530 Invalid username or password
+
+CRITICAL - 2023-09-20 08:35:36 --> Undefined variable $flashdata
+in APPPATH\Controllers\Admin\Process\LoginAuthController.php on line 545.
+ 1 APPPATH\Controllers\Admin\Process\LoginAuthController.php(545): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flashdata', 'D:\\DATABASE\\XAMPP\\htdocs\\auabclites\\core\\app\\Controllers\\Admin\\Process\\LoginAuthController.php', 545)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->recover()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 08:40:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:40:30 --> 220 smtp-relay.sendinblue.com ESMTP Sendinblue SMTP 2.0
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250-AUTH LOGIN PLAIN CRAM-MD5
+250 STARTTLS
+
+starttls: 220 Ready to start TLS
+
+hello: 250-smtp-relay.sendinblue.com Nice to meet you, [112.210.235.254]
+250-PIPELINING
+250-8BITMIME
+250 AUTH LOGIN PLAIN CRAM-MD5
+
+Failed to authenticate password. Error: 530 Invalid username or password
+
+ERROR - 2023-09-20 08:40:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 08:40:30 --> Failed to authenticate password. Error: 530 Invalid username or password
+
+CRITICAL - 2023-09-20 08:41:59 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Libraries\LogsController.php(23): CodeIgniter\Model->__call('insertData', [...])
+ 4 APPPATH\Libraries\LogsController.php(17): App\Libraries\LogsController->saveLogs([...])
+ 5 APPPATH\Controllers\Admin\Process\LoginAuthController.php(44): App\Libraries\LogsController->init('logged in')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:43:52 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Libraries\LogsController.php(23): CodeIgniter\Model->__call('insertData', [...])
+ 4 APPPATH\Libraries\LogsController.php(17): App\Libraries\LogsController->saveLogs([...])
+ 5 APPPATH\Controllers\Admin\ViewsController.php(97): App\Libraries\LogsController->init('logged out')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->signout()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:44:01 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Libraries\LogsController.php(23): CodeIgniter\Model->__call('insertData', [...])
+ 4 APPPATH\Libraries\LogsController.php(17): App\Libraries\LogsController->saveLogs([...])
+ 5 APPPATH\Controllers\Admin\ViewsController.php(97): App\Libraries\LogsController->init('logged out')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->signout()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:44:02 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Libraries\LogsController.php(23): CodeIgniter\Model->__call('insertData', [...])
+ 4 APPPATH\Libraries\LogsController.php(17): App\Libraries\LogsController->saveLogs([...])
+ 5 APPPATH\Controllers\Admin\ViewsController.php(97): App\Libraries\LogsController->init('logged out')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->signout()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:44:09 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Libraries\LogsController.php(23): CodeIgniter\Model->__call('insertData', [...])
+ 4 APPPATH\Libraries\LogsController.php(17): App\Libraries\LogsController->saveLogs([...])
+ 5 APPPATH\Controllers\Admin\ViewsController.php(97): App\Libraries\LogsController->init('logged out')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->signout()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:44:54 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Libraries\LogsController.php(23): CodeIgniter\Model->__call('insertData', [...])
+ 4 APPPATH\Libraries\LogsController.php(17): App\Libraries\LogsController->saveLogs([...])
+ 5 APPPATH\Controllers\Admin\ViewsController.php(97): App\Libraries\LogsController->init('logged out')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->signout()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:45:08 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Libraries\LogsController.php(23): CodeIgniter\Model->__call('insertData', [...])
+ 4 APPPATH\Libraries\LogsController.php(17): App\Libraries\LogsController->saveLogs([...])
+ 5 APPPATH\Controllers\Admin\Process\LoginAuthController.php(44): App\Libraries\LogsController->init('logged in')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\LoginAuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\LoginAuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:45:20 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Libraries\LogsController.php(23): CodeIgniter\Model->__call('insertData', [...])
+ 4 APPPATH\Libraries\LogsController.php(17): App\Libraries\LogsController->saveLogs([...])
+ 5 APPPATH\Controllers\Admin\ViewsController.php(97): App\Libraries\LogsController->init('logged out')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->signout()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:46:09 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Libraries\LogsController.php(23): CodeIgniter\Model->__call('insertData', [...])
+ 4 APPPATH\Libraries\LogsController.php(17): App\Libraries\LogsController->saveLogs([...])
+ 5 APPPATH\Controllers\Admin\ViewsController.php(97): App\Libraries\LogsController->init('logged out')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->signout()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:46:35 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Libraries\LogsController.php(23): CodeIgniter\Model->__call('insertData', [...])
+ 4 APPPATH\Libraries\LogsController.php(17): App\Libraries\LogsController->saveLogs([...])
+ 5 APPPATH\Controllers\Admin\ViewsController.php(97): App\Libraries\LogsController->init('logged out')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\ViewsController->signout()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ViewsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:48:50 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\Process\SMTPController.php(82): CodeIgniter\Model->__call('updateData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\SMTPController->update_data()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\SMTPController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 08:49:31 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\Process\SMTPController.php(82): CodeIgniter\Model->__call('updateData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\SMTPController->update_data()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\SMTPController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 09:31:21 --> strpos(): Argument #1 ($haystack) must be of type string, App\Libraries\SendEmailController given
+in SYSTEMPATH\Email\Email.php on line 737.
+ 1 SYSTEMPATH\Email\Email.php(737): strpos(Object(App\Libraries\SendEmailController), ',')
+ 2 SYSTEMPATH\Email\Email.php(550): CodeIgniter\Email\Email->stringToArray(Object(App\Libraries\SendEmailController))
+ 3 APPPATH\Libraries\SendEmailController.php(68): CodeIgniter\Email\Email->setTo(Object(App\Libraries\SendEmailController))
+ 4 APPPATH\Controllers\Admin\Process\UserController.php(768): App\Libraries\SendEmailController->sendEmail([...])
+ 5 APPPATH\Controllers\Admin\Process\UserController.php(164): App\Controllers\Admin\Process\UserController->sendEmail('password', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\UserController->add()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 09:38:08 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\Process\UserController.php(161): CodeIgniter\Model->__call('insertData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\UserController->add()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 09:38:29 --> strpos(): Argument #1 ($haystack) must be of type string, App\Libraries\SendEmailController given
+in SYSTEMPATH\Email\Email.php on line 737.
+ 1 SYSTEMPATH\Email\Email.php(737): strpos(Object(App\Libraries\SendEmailController), ',')
+ 2 SYSTEMPATH\Email\Email.php(550): CodeIgniter\Email\Email->stringToArray(Object(App\Libraries\SendEmailController))
+ 3 APPPATH\Libraries\SendEmailController.php(68): CodeIgniter\Email\Email->setTo(Object(App\Libraries\SendEmailController))
+ 4 APPPATH\Controllers\Admin\Process\UserController.php(772): App\Libraries\SendEmailController->sendEmail([...])
+ 5 APPPATH\Controllers\Admin\Process\UserController.php(164): App\Controllers\Admin\Process\UserController->sendEmail('llemoschloe3741@gmail.com', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\UserController->add()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 09:41:04 --> Call to a member function template() on string
+in APPPATH\Controllers\Admin\Process\UserController.php on line 767.
+ 1 APPPATH\Controllers\Admin\Process\UserController.php(164): App\Controllers\Admin\Process\UserController->sendEmail('password', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\UserController->add()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-20 10:01:29 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin\Process\BulletinController.php(213): CodeIgniter\Model->__call('insertData', [...])
+ 4 APPPATH\Controllers\Admin\Process\BulletinController.php(174): App\Controllers\Admin\Process\BulletinController->upload_announcements([...], Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Admin\Process\BulletinController->add()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Process\BulletinController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-20 10:05:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-20 10:05:55 --> Invalid email address: ""
+220 smtp-relay.brevo.com ESMTP Service Ready
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH LOGIN CRAM-MD5 PLAIN
+250 SIZE 20971520
+
+from: 250 2.0.0 Roger, accepting mail from <auabclites@iamcarlllemos.online>
+
+to: 451 4.0.0 Invalid to
+
+The following SMTP error was encountered: 451 4.0.0 Invalid to
+
+quit: 221 2.0.0 Bye
+

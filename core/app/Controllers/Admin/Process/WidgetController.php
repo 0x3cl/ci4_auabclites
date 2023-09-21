@@ -42,7 +42,7 @@ class WidgetController extends BaseController {
                     ];
     
                     if(empty($result)
-                        && $model->insertData('lites_user_widgets', $data)) {
+                        && $model->insert_data('lites_user_widgets', $data)) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'widget enabled successfully'
@@ -53,7 +53,7 @@ class WidgetController extends BaseController {
                             'widget_id' => $widget_id
                         ];
     
-                        if($model->deleteData('lites_user_widgets', $condition)) {
+                        if($model->delete_data('lites_user_widgets', $condition)) {
                             $flashdata = [
                                 'status' => 'success',
                                 'message' => 'widget disabled successfully'

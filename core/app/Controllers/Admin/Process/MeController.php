@@ -93,7 +93,7 @@ class MeController extends BaseController {
                     ];
 
                     if(removeImage($path . $previous_image) 
-                        && $model->updateData('lites_users', 'lites_users.id', $id, $data)
+                        && $model->update_data('lites_users', 'lites_users.id', $id, $data)
                         && $file->move($path, $filename)) {
                         $flashdata = [
                             'status' => 'success',
@@ -138,7 +138,7 @@ class MeController extends BaseController {
                 ];
 
                 try {
-                    if($model->updateData('lites_users', 'lites_users.id', $id, $data)) {
+                    if($model->update_data('lites_users', 'lites_users.id', $id, $data)) {
                         $flashdata = [
                             'status' => 'success',
                             'message' => 'your profile information updated successfully'
@@ -190,7 +190,7 @@ class MeController extends BaseController {
                             $data = [
                                 'password' => password_hash($new_password, PASSWORD_BCRYPT)
                             ];
-                            if($model->updateData('lites_users', 'lites_users.id', $id, $data)) {
+                            if($model->update_data('lites_users', 'lites_users.id', $id, $data)) {
                                 $flashdata = [
                                     'status' => 'success',
                                     'message' => 'your password updated successfully'

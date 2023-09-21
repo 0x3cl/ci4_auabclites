@@ -23,10 +23,9 @@
                         </nav>
                         ';
                         foreach($data['site_research'] as $key => $value) {
-                            $title = strtolower(preg_replace('/-+/', '-', str_replace(' ', '-', preg_replace('/[^a-zA-Z0-9\s]+/', '', trim($value->title)))));
                             echo '
                             <div class="col-12 col-md-4 col-xl-3 mb-2" data-aos="fade-up">
-                                <a href="'.base_url('/research/view/'.$value->id.'/'.$title.'').'" class="text-link">
+                                <a href="'.base_url('/research/view/'.$value->id).'" class="text-link">
                                     <div class="card card-design-2">
                                         <div class="card-image">
                                             <img src="'.base_url('/assets/home/images/research/'.$value->image.'').'" alt="research">

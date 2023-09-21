@@ -26,7 +26,10 @@
                                         <span class="announce"><i class="bx bxs-megaphone"></i></span>'. ucwords($data['bulletin_data'][0]->title).'
                                     </div>
                                     <div class="bulletin-date">
-                                        '. format_timestamp_to_date($data['bulletin_data'][0]->date_updated).'
+                                        Posted on: '. format_timestamp_to_date($data['bulletin_data'][0]->date_updated).'
+                                    </div>
+                                    <div class="bulletin-date">
+                                       By: '.ucwords($data['bulletin_data'][0]->source).'
                                     </div>
                                     <div class="bulletin-content mt-4">
                                         '. $data['bulletin_data'][0]->content .'
@@ -58,13 +61,13 @@
                                         <h6 class="text-muted">Share this page <i class="bx bxs-share share"></i></h6>
                                         <div class="d-flex align-items-center gap-2">
                                             <i class="bx bxs-share share"></i>
-                                            <a href="https://www.facebook.com/sharer/sharer.php?u='.base_url('/bulletin/announcement/'.$data['bulletin_data'][0]->id.'/'.$title.'').'" target="_blank" class="text-link">
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u='.base_url('/bulletin/announcement/'.$data['bulletin_data'][0]->id.'').'" target="_blank" class="text-link">
                                                 <i class="bx bxl-facebook-square"></i>
                                             </a>
-                                            <a href="https://twitter.com/intent/tweet?url='.base_url('/bulletin/announcement/'.$data['bulletin_data'][0]->id.'/'.$title.'').'" target="_blank" class="text-link">
+                                            <a href="https://twitter.com/intent/tweet?url='.base_url('/bulletin/announcement/'.$data['bulletin_data'][0]->id.'').'" target="_blank" class="text-link">
                                                 <i class="bx bxl-twitter"></i>
                                             </a>
-                                            <a href="fb-messenger://share/?link='.base_url('/bulletin/announcement/'.$data['bulletin_data'][0]->id.'/'.$title.'').'" target="_blank">
+                                            <a href="fb-messenger://share/?link='.base_url('/bulletin/announcement/'.$data['bulletin_data'][0]->id.'').'" target="_blank">
                                                 <i class="bx bxl-messenger"></i>
                                             </a>
                                         </div>
@@ -114,9 +117,8 @@
                                 ';
 
                             foreach($data['bulletin_other'] as $value) {
-                                $title = strtolower(preg_replace('/-+/', '-', str_replace(' ', '-', preg_replace('/[^a-zA-Z0-9\s]+/', '', trim($value->title)))));
                                 echo '
-                                <div class="redirect-page" data-src="'.base_url('/bulletin/news/'.$value->id.'/'.$title.'').'">
+                                <div class="redirect-page" data-src="'.base_url('/bulletin/news/'.$value->id).'">
                                     <div class="d-flex align-items-center gap-0 gap-md-3 mb-2 news-content" data-aos="fade-up">
                                         <div class="news-image pe-3 pe-md-0 ">
                                             <img src="'.base_url('/assets/home/images/bulletin/announcements/'.$value->image.'').'" alt="news">
@@ -165,7 +167,6 @@
                     }
                     if($request == 'news') {
                         if(!empty($data['bulletin_data'])) {
-                            $title = strtolower(preg_replace('/-+/', '-', str_replace(' ', '-', preg_replace('/[^a-zA-Z0-9\s]+/', '', trim($data['bulletin_data'][0]->title)))));
                             echo '
                             <nav aria-label="breadcrumb" class="mb-3">
                                 <ol class="breadcrumb">
@@ -184,7 +185,10 @@
                                         '. ucwords($data['bulletin_data'][0]->title).'
                                     </div>
                                     <div class="bulletin-date">
-                                        '. format_timestamp_to_date($data['bulletin_data'][0]->date_updated).'
+                                        Posted on: '. format_timestamp_to_date($data['bulletin_data'][0]->date_updated).'
+                                    </div>
+                                    <div class="bulletin-date">
+                                       By: '.ucwords($data['bulletin_data'][0]->source).'
                                     </div>
                                     <div class="bulletin-content mt-4">
                                         '. $data['bulletin_data'][0]->content .'
@@ -216,13 +220,13 @@
                                     <div class="bulletin-share">
                                         <h6 class="text-muted">Share this page <i class="bx bxs-share share"></i></h6>
                                         <div class="d-flex align-items-center gap-2">
-                                            <a href="https://www.facebook.com/sharer/sharer.php?u='.base_url('/bulletin/news/'.$data['bulletin_data'][0]->id.'/'.$title.'').'" target="_blank" class="text-link">
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u='.base_url('/bulletin/news/'.$data['bulletin_data'][0]->id.'').'" target="_blank" class="text-link">
                                                 <i class="bx bxl-facebook-square"></i>
                                             </a>
-                                            <a href="https://twitter.com/intent/tweet?url='.base_url('/bulletin/news/'.$data['bulletin_data'][0]->id.'/'.$title.'').'" target="_blank" class="text-link">
+                                            <a href="https://twitter.com/intent/tweet?url='.base_url('/bulletin/news/'.$data['bulletin_data'][0]->id.'').'" target="_blank" class="text-link">
                                                 <i class="bx bxl-twitter"></i>
                                             </a>
-                                            <a href="fb-messenger://share/?link='.base_url('/bulletin/news/'.$data['bulletin_data'][0]->id.'/'.$title.'').'" target="_blank">
+                                            <a href="fb-messenger://share/?link='.base_url('/bulletin/news/'.$data['bulletin_data'][0]->id.'').'" target="_blank">
                                                 <i class="bx bxl-messenger"></i>
                                             </a>
                                         </div>
@@ -272,9 +276,8 @@
                                 ';
                             
                             foreach($data['bulletin_other'] as $value) {
-                                $title = strtolower(preg_replace('/-+/', '-', str_replace(' ', '-', preg_replace('/[^a-zA-Z0-9\s]+/', '', trim($value->title)))));
                                 echo '
-                                <div class="redirect-page" data-src="'.base_url('/bulletin/news/'.$value->id.'/'.$title.'').'">
+                                <div class="redirect-page" data-src="'.base_url('/bulletin/news/'.$value->id).'">
                                     <div class="d-flex align-items-center gap-0 gap-md-3 mb-2 news-content" data-aos="fade-up">
                                         <div class="news-image pe-3 pe-md-0 ">
                                             <img src="'.base_url('/assets/home/images/bulletin/news/'.$value->image.'').'" alt="news">

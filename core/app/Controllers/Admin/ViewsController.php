@@ -500,7 +500,7 @@ class ViewsController extends BaseController {
 
         $data['get_bulletin_data'] = $this->model->get_data([
             'table' => 'lites_bulletin',
-            'select' => 'lites_bulletin.id, lites_bulletin.category, lites_bulletin.title, 
+            'select' => 'lites_bulletin.id, lites_bulletin.category, lites_bulletin.source, lites_bulletin.title, 
                         lites_bulletin_image.is_banner, lites_bulletin.content, 
                         lites_bulletin_image.image, lites_bulletin.date_created',
             'condition' => [

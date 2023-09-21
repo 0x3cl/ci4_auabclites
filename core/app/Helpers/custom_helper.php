@@ -161,3 +161,17 @@ function removeImage($path) {
     }
     return false;
 }
+
+function generateRandomCode($minLength, $maxLength) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $password = '';
+    
+    $length = rand($minLength, $maxLength);
+
+    for ($i = 0; $i < $length; $i++) {
+        $randomChar = $characters[rand(0, strlen($characters) - 1)];
+        $password .= $randomChar;
+    }
+
+    return $password;
+}

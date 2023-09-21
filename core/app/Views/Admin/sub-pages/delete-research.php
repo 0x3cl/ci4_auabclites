@@ -31,8 +31,8 @@
                                                         
                                                             if(!empty($data["get_research_data"])) {
                                                                 foreach($data["get_research_data"] as $value) {
-                                                                    echo '<li class="mb-2">TITLE: <span>'.ucwords($value->title).'</span></li>';
-                                                                    echo '<li class="mb-2">ABSTRACT: <span>'.($value->abstract).'</span></li>';
+                                                                    echo '<li class="mb-1">TITLE: <span>'.ucwords($value->title).'</span></li>';
+                                                                    echo '<li class="mb-1">ABSTRACT: <span>'.($value->abstract).'</span></li>';
                                                                 }
                                                             }
                                                         ?>
