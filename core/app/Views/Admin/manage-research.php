@@ -32,7 +32,6 @@
                                     <?php 
                                         if(!empty($data)) {
                                             foreach($data['get_research_data'] as $value) {
-                                                $title = strtolower(str_replace(' ', '-', preg_replace('/[^a-zA-Z0-9\s]+/', '', trim($value->title))));
                                                 echo ' 
                                                 <tr>
                                                     <td>'.$value->id.'</td>
@@ -42,7 +41,7 @@
                                                     <td>'.$value->title.'</td>
                                                     <td>'.format_timestamp_to_date($value->date_updated).'</td>
                                                     <td>
-                                                        <a href="'.base_url('/research/view/'.$value->id.'/'.$title.'/') .'" class="btn my-2 d-flex justify-content-center btn-primary" target="_blank"><i class="bx bx-show" ></i> View</a>
+                                                        <a href="'.base_url('/research/view/'.$value->id) .'" class="btn my-2 d-flex justify-content-center btn-primary" target="_blank"><i class="bx bx-show" ></i> View</a>
                                                         <a href="'.base_url('/admin/manage/page/research/update/'.$value->id.'') .'" class="btn my-2 d-flex justify-content-center btn-success"><i class="bx bxs-edit" ></i> Update</a>
                                                         <a href="'.base_url('/admin/manage/page/research/delete/'.$value->id.'') .'" class="btn my-2 d-flex justify-content-center btn-danger"><i class="bx bxs-trash bx-tada" ></i> Delete</a>
                                                     </td>

@@ -32,7 +32,6 @@
                                     <?php 
                                         if(!empty($data)) {
                                             foreach($data['get_bulletin'] as $value) {
-                                                $title = strtolower(str_replace(' ', '-', preg_replace('/[^a-zA-Z0-9\s]+/', '', trim($value->title))));
                                                 $link_path = ($value->category == 1) ? 'announcement' : (($value->category == 2) ? 'news' : '');
                                                 $image_path = ($value->category == 1) ? 'announcements' : (($value->category == 2) ? 'news' : '');
                                                 echo ' 

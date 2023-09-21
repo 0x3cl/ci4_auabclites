@@ -29,7 +29,7 @@
                                         Posted on: '. format_timestamp_to_date($data['bulletin_data'][0]->date_updated).'
                                     </div>
                                     <div class="bulletin-date">
-                                       By: '.ucwords($data['bulletin_data'][0]->source).'
+                                       Source: '.ucwords($data['bulletin_data'][0]->source).'
                                     </div>
                                     <div class="bulletin-content mt-4">
                                         '. $data['bulletin_data'][0]->content .'
@@ -118,7 +118,7 @@
 
                             foreach($data['bulletin_other'] as $value) {
                                 echo '
-                                <div class="redirect-page" data-src="'.base_url('/bulletin/news/'.$value->id).'">
+                                <div class="redirect-page" data-src="'.base_url('/bulletin/announcement/'.$value->id).'">
                                     <div class="d-flex align-items-center gap-0 gap-md-3 mb-2 news-content" data-aos="fade-up">
                                         <div class="news-image pe-3 pe-md-0 ">
                                             <img src="'.base_url('/assets/home/images/bulletin/announcements/'.$value->image.'').'" alt="news">
@@ -188,7 +188,7 @@
                                         Posted on: '. format_timestamp_to_date($data['bulletin_data'][0]->date_updated).'
                                     </div>
                                     <div class="bulletin-date">
-                                       By: '.ucwords($data['bulletin_data'][0]->source).'
+                                       Source: '.ucwords($data['bulletin_data'][0]->source).'
                                     </div>
                                     <div class="bulletin-content mt-4">
                                         '. $data['bulletin_data'][0]->content .'
