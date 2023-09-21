@@ -368,12 +368,21 @@ class LoginAuthController extends BaseController {
                         ];   
                     }
 
-                    session()->setFlashData('flashdata', $flashdata);
-                    return redirect()->to('admin/recover');
-
+                } else {
+                    $flashdata = [
+                        'status' => 'error',
+                        'message' => 'no admin with this email',
+                    ];   
                 }
-
+            } else {
+                $flashdata = [
+                    'status' => 'error',
+                    'message' => 'email is required',
+                ];   
             }
+
+            session()->setFlashData('flashdata', $flashdata);
+            return redirect()->to('admin/recover');
         }
     }
 
