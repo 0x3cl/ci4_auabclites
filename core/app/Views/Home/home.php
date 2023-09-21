@@ -113,7 +113,7 @@
                             }
                             echo '
                            <div class="col-12 col-md-6 mb-3">
-                                <a href="'.base_url('/bulletin/'.$link_path.'/'.$value->id.'').'" class="text-link">
+                                <div class="redirect-page" data-src="'.base_url('/bulletin/'.$link_path.'/'.$value->id).'">
                                     <div class="d-flex align-items-center gap-3 news-content" data-aos="fade-up">
                                         <div class="news-image">
                                             <img src="'.base_url('/assets/home/images/bulletin/'.$path.'/'.$value->image.'').'" alt="news">
@@ -126,7 +126,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                            </div>
                             ';
                         }
